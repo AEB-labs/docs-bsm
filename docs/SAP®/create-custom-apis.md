@@ -36,8 +36,11 @@ The template is copied to your clipboard if you click the buttons in the SAP AEB
 
 Insert this code simply into the service class to comfortably change the supplied data in the afterStdFilling method.
 
-```
+```Text Tab1
 Code to see
+```
+```Text Tab2
+Another text
 ```
 
 <br />
