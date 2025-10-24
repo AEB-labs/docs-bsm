@@ -35,6 +35,3 @@ To make writing the code more comfortable we created a template you can insert i
 The template is copied to your clipboard if you click the buttons in the SAP AEB delivery collector profiles or the SAP Compliance check profiles (General).
 
 Insert this code simply into the service class to comfortably change the supplied data in the afterStdFilling method.
-
-Hier wäre noch ein Beispiel schön.
-<br />
