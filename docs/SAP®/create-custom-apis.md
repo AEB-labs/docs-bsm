@@ -30,8 +30,14 @@ Publish the communication scenario locally (top right). Then create a communicat
 
 # Write the code
 
-To make writing the code more comfortable we created a template you can insert into your service class. 
+To make writing the code more comfortable we created a template you can insert into your service class.
 
 The template is copied to your clipboard if you click the buttons in the SAP AEB delivery collector profiles or the SAP Compliance check profiles (General).
 
 Insert this code simply into the service class to comfortably change the supplied data in the afterStdFilling method.
+
+```
+Code to see
+```
+
+<br />
