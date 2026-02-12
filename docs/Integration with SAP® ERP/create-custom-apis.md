@@ -1,5 +1,5 @@
 ---
-title: Create custom APIs
+title: Create a custom API
 excerpt: Modify the data using a custom api.
 deprecated: false
 hidden: false
