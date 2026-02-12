@@ -8,23 +8,23 @@ metadata:
 ---
 To modify data collected from the SAP System by us, you can hook your own custom API to our process and change all the data on the fly.
 
-# Create API via ADT
+# Create the API via ADT
 
 Connect you cloud system to the ADT by creating a new project, entering the system URL and login. Then create a package.
 
-## Create HTTP service
+## Create an HTTP service
 
 Create a new HTTP service via New -> Other -> HTTP Service
 
 Fill the rest accordingly to create a inbound service.
 
-## Create communication scenario
+## Create a communication scenario
 
 Create a new communication scenario via New -> Other -> Communication Scenario
 
 Switch the tab on the bottom to 'Inbound' and enter your newly created service by using the 'browse' function.
 
-## Publish API
+## Publish the API
 
 Publish the communication scenario locally (top right). Then create a communication arrangement for the system with the BSM communication user.
 
