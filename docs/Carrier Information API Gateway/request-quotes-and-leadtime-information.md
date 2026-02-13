@@ -20,6 +20,8 @@ AEB refers to the clearly formulated information in the service descriptions and
 
 With the getQuotes API call, one can retrieve quoted freight charges and lead times based on the data sent in the request. This API call does not require an existing shipping order in Carrier Connect, differently to the "getShipment"-API.
 
+<br />
+
 ```Text JSON
 {
 	"clientSystemId": "Host System Name",
