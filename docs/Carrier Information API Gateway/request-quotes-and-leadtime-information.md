@@ -1,5 +1,8 @@
 ---
 title: Request quotes and leadtime information
+excerpt: >-
+  The service "Carrier Information API Gateway" provides carrier related
+  information, e.g. runtimes and freight charges. 
 deprecated: false
 hidden: false
 metadata:
@@ -13,9 +16,9 @@ All API responses include important notices stating that freight costs and trans
 
 AEB refers to the clearly formulated information in the service descriptions and notes in the API responses. The responsibility for compliance with carrier conditions lies with the customer. Individual customer solutions are outside of AEB responsibility.
 
-## About this API
+## getQuotes 
 
-The service "Carrier Information API Gateway" provides carrier related information, e.g. runtimes and freight charges. With the getQuotes API, one can retrieve quoted freight charges and lead times based on the data sent in the request. This API call does not require an existing shipping order in Carrier Connect, differently to the "getShipment"-API.
+With the getQuotes API call, one can retrieve quoted freight charges and lead times based on the data sent in the request. This API call does not require an existing shipping order in Carrier Connect, differently to the "getShipment"-API.
 
 ```Text JSON
 {
