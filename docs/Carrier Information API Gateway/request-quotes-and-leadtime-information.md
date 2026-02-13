@@ -15,4 +15,6 @@ AEB refers to the clearly formulated information in the service descriptions and
 
 ## About this API
 
-The service "Carrier Information API Gateway" provides carrier related information, e.g. runtimes and freight charges. With the getQuotes API , one can retrieve the possible freight charges and lead times based on the data sent in the request. This API does not require an existing shipment in Carrier Connect, different to the getShipment API.     
+The service "Carrier Information API Gateway" provides carrier related information, e.g. runtimes and freight charges. With the getQuotes API, one can retrieve quoted freight charges and lead times based on the data sent in the request. This API does not require an existing shipment in Carrier Connect, differently to the "getShipment"-API.     
+
+<br />
