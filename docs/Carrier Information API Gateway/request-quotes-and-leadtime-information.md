@@ -15,6 +15,55 @@ AEB refers to the clearly formulated information in the service descriptions and
 
 ## About this API
 
-The service "Carrier Information API Gateway" provides carrier related information, e.g. runtimes and freight charges. With the getQuotes API, one can retrieve quoted freight charges and lead times based on the data sent in the request. This API does not require an existing shipment in Carrier Connect, differently to the "getShipment"-API.     
+The service "Carrier Information API Gateway" provides carrier related information, e.g. runtimes and freight charges. With the getQuotes API, one can retrieve quoted freight charges and lead times based on the data sent in the request. This API call does not require an existing shipping order in Carrier Connect, differently to the "getShipment"-API.
+
+```Text JSON
+{
+	"clientSystemId": "Host System Name",
+	"clientIdentCode": "Carrier Connect Client Name",
+	"userName": "User Name",
+	"resultLanguageIsoCodes": [
+		"de"
+	],
+	"creationParms": {
+		"creationMode": "VALIDATION_OK"
+	},
+	"processParms": {
+		"processMode": {
+			"mode": "EXTENDED"
+		},
+		"documentPrepareScope": {
+			"scope": "ALL"
+		},
+		"workstationId": "ZPL203_A4LASER",
+		"documentOutputScope": {
+			"scope": "ALL"
+		},
+		"documentOutputMode": {
+			"mode": "RETURN"
+		},
+		"doCompletion": true
+	},
+	"shipment": {
+		"transactionId": "516513219",
+		"referenceNumber1": "1000001",
+		"carrierIdentCode": "GENERICCARRIER",
+		"serviceCode": "STD",
+		"termsOfDeliveryCode": "EXW",
+		"contents": "spare parts",
+		"shippingDate": "2025-01-10",
+		"shippingPt": {
+			"city": "Stuttgart",
+			"companyNumber": "1000",
+			"countryISOCode": "DE",
+			"name": "AEB SE",
+			"postcode": "70567",
+			"street": "Sigmaringer Straße 109"
+		},
+		]
+	}
+```
+
+<br />
 
 <br />
