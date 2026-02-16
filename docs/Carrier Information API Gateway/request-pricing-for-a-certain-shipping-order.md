@@ -14,7 +14,7 @@ This API determines the pricing (freight charges) for a shipping order that alre
 
 The API expects the following parameters:
 
-* reference - the reference number of the shipping order in Carrier Connect
+* reference - a unique reference to an existing shipping order in Carrier Connect. See <Anchor label="ShpimentReferenceDTO" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentReferenceDTO.html">ShpimentReferenceDTO</Anchor>
 * includeDocuments - indicates that documents should be returned - boolean (TRUE or FALSE)
 * shippingTime  - the expected time of shipping, in format HH:MM:SS
 
