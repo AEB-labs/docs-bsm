@@ -14,7 +14,7 @@ With the getQuotes API call, you can retrieve quotes for freight charges and lea
 
 The API expects two parameters in the request:
 
-* shipment -  shipping data to request a quote, see list of fields [here](https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentRequestDataDTO.html). Mandatory are just a few, e.g. ship-to.   
+* shipment -  shipping data to request a quote, see list of fields [here](https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentRequestDataDTO.html). Mandatory are just a few, e.g. ship-from, ship-to, carrier ID.   
 * shippingTime  - the expected time of shipping, in format HH:MM:SS
 
 <br />
@@ -101,7 +101,7 @@ The API expects two parameters in the request:
           <STREET>Sigmaringerstr. 109</STREET>
         </SHIPPINGPT>
         <TERMSOFDELIVERYCODE>FCA</TERMSOFDELIVERYCODE>
-        <TRANSACTIONID>T01     400008000058420260216092737JLF  1010</TRANSACTIONID>
+        <TRANSACTIONID>S01     400008000058420260216092737JLF  1010</TRANSACTIONID>
         <TRANSACTIONLABEL>80000584</TRANSACTIONLABEL>
         <ORGANIZATIONUNITCLIENTSYSTEM>7000</ORGANIZATIONUNITCLIENTSYSTEM>
         <ALTINVOICERECIPIENT>
