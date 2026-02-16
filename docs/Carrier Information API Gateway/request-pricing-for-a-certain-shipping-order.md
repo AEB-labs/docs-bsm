@@ -15,7 +15,7 @@ This API determines the pricing (freight charges) for a shipping order that alre
 The API expects the following parameters:
 
 * reference - the reference number of the shipping order in Carrier Connect
-* includeDocuments - indicates that documents should be returned
+* includeDocuments - indicates that documents should be returned - boolean (TRUE or FALSE)
 * shippingTime  - the expected time of shipping, in format HH:MM:SS
 
 Example call:
