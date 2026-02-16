@@ -28,7 +28,7 @@ The API expects two parameters in the request:
           <CITY>Hamburg</CITY>
           <COUNTRYISOCODE>DE</COUNTRYISOCODE>
           <EMAILADDRESS>info@acme.com</EMAILADDRESS>
-          <NAME>Elblogistik Services GmbH</NAME>
+          <NAME>Elblogistik Services</NAME>
           <POSTCODE>54001</POSTCODE>
           <STREET>Hafenstrasse 678</STREET>
         </CONSIGNEE>
