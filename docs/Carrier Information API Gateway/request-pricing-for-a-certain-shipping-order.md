@@ -18,6 +18,18 @@ The API expects the following parameters:
 * includeDocuments - indicates that documents should be returned
 * shippingTime  - the expected time of shipping, in format HH:MM:SS
 
+Example call:
+
+```xml
+<INCLUDEDOCUMENTS>false</INCLUDEDOCUMENTS>
+<REFERENCE>
+    <TRANSACTIONID>S01     400008000058420260216092737JLF  1010</TRANSACTIONID>
+</REFERENCE>
+<SHIPPINGTIME>  </SHIPPINGTIME>
+
+
+```
+
 <br />
 
 <br />
