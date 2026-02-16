@@ -12,7 +12,11 @@ metadata:
 
 This API determines the pricing (freight charges) for a shipping order that already exists in Carrier Connect.
 
-<br />
+The API expects the following parameters: 
+
+* reference - the reference number of the shipping order in Carrier Connect
+* includeDocuments - indicates that documents should be returned
+* shippingTime  - the expected time of shipping, in format HH:MM:SS
 
 <br />
 
