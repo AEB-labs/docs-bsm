@@ -120,6 +120,10 @@ The API expects two parameters in the request:
 
 <br />
 
+## WSDL
+
+WSDL can be downloaded here: <Anchor label="WSDL" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/BSMCarrierBF?WSDL">WSDL</Anchor>
+
 ## Legal disclaimers for using the API
 
 All API responses include important notices stating that freight costs and transit times may not be used for comparison with other service providers. This is a legal requirement for using the gateway.
