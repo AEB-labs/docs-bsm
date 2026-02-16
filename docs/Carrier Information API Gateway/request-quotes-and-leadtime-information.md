@@ -114,8 +114,8 @@ The API expects two parameters in the request:
           <POSTCODE>54001</POSTCODE>
           <STREET>Hafenstrasse 678</STREET>
         </ALTINVOICERECIPIENT>
-      </SHIPMENT>
-      
+</SHIPMENT>
+<SHIPPINGTIME>18:30:00</SHIPPINGTIME>      
 ```
 
 <br />
