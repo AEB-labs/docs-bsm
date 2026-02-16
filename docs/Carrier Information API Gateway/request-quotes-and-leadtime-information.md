@@ -120,8 +120,6 @@ The API expects two parameters in the request:
 
 <br />
 
-<br />
-
 ## Legal disclaimers for using the API
 
 All API responses include important notices stating that freight costs and transit times may not be used for comparison with other service providers. This is a legal requirement for using the gateway.
