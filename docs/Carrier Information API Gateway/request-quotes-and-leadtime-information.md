@@ -17,7 +17,7 @@ The API expects two parameters in the request:
 * shipment -  shipping data to request a quote, see list of fields [here](https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentRequestDataDTO.html). Mandatory are just a few, e.g. ship-from, ship-to, carrier ID.
 * shippingTime  - the expected time of shipping, in format HH:MM:SS
 
-<br />
+Example call:
 
 ```xml XML
 <SHIPMENT>
