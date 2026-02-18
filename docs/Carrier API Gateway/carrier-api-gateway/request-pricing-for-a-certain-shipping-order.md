@@ -7,7 +7,15 @@ metadata:
 ---
 # getShipment API
 
-This API determines the pricing (freight charges) for a shipping order that already exists in Carrier Connect.
+For shipping orders already processed via Carrier Connect (e.g. after successful label printing), the associated freight costs can be determined. The calculated freight costs are based on the actual shipping order data transmitted.
+
+The determined freight costs can be used for further processing, e.g.
+
+* for cost control and post-calculation,
+* for internal billing,
+* for evaluations and analyses.
+
+<br />
 
 The API expects the following parameters:
 
@@ -32,12 +40,4 @@ Example call:
 
 <br />
 
-## WSDL
-
-WSDL can be downloaded here: <Anchor label="WSDL" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/BSMCarrierBF?WSDL">WSDL</Anchor>
-
-## Legal disclaimers for using the API
-
-All API responses include important notices stating that freight costs and transit times may not be used for comparison with other service providers. This is a legal requirement for using the gateway.
-
-AEB refers to the clearly formulated information in the service descriptions and notes in the API responses. The responsibility for compliance with carrier conditions lies with the customer. Individual customer solutions are outside of AEB responsibility.
+<br />
