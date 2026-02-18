@@ -17,7 +17,7 @@ next:
 
 With this function, you can determine freight costs based on your customer-specific freight agreements. This gives you cost transparency and enables you to make well-founded shipping decisions – both in the actual shipping process and in upstream process steps.  The API provides two central features:
 
-* Determination of freight costs for already completed shipping orders
+* Determination of freight costs for already completed shipping orders - see [Determine freight costs](https://aeb-bsm.readme.io/docs/determine-freight-costs)
 * Rate shopping - see [Request quotes](https://aeb-bsm.readme.io/docs/request-quotes)
 
 <br />
