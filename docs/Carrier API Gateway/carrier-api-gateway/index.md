@@ -6,10 +6,10 @@ metadata:
   robots: index
 next:
   pages:
-    - slug: request-pricing-for-a-certain-shipping-order
-      title: 'Request pricing for a shipping order  '
+    - slug: determine-freight-costs
+      title: 'Determine freight costs for completed shipping orders  '
       type: basic
-    - slug: request-quotes-and-leadtime-information
+    - slug: request-quotes
       title: 'Request quotes '
       type: basic
 ---
