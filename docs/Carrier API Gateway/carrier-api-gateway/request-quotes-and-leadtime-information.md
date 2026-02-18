@@ -13,7 +13,7 @@ The getQuotes API allows you to determine the available shipping options of the 
 * the respective prices, and
 * the associated schedule.
 
-Unlike the getShipment API, this call does not require an existing shipping order in Carrier Connect.
+Unlike the getShipment API, this call does not require an existing shipping order in Carrier Connect. However, if packages are not yet physically packed at this point, the data basis (e.g. planned weights and dimensions) on which the freight costs are to be determined must be specified within the call.
 
 The API expects two parameters in the request:
 
