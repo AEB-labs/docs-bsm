@@ -1,5 +1,5 @@
 ---
-title: Request quotes and leadtime information
+title: 'Request quotes '
 deprecated: false
 hidden: false
 metadata:
@@ -7,7 +7,13 @@ metadata:
 ---
 ## getQuotes API
 
-With the getQuotes API call, you can retrieve quotes for freight charges and lead times based on the data sent in the request. Unlike the getShipment API, this call does not require an existing shipping order in Carrier Connect.
+The getQuotes API allows you to determine the available shipping options of the selected transport service provider at an early, freely selectable stage in the process. Based on complete shipping order data, you will receive:
+
+* the possible services of the transport service provider,
+* the respective prices, and
+* the associated schedule.
+
+Unlike the getShipment API, this call does not require an existing shipping order in Carrier Connect.
 
 The API expects two parameters in the request:
 
