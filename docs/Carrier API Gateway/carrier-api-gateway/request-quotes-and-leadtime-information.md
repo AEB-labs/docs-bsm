@@ -14,7 +14,7 @@ With the getQuotes API call, you can retrieve quotes for freight charges and lea
 
 The API expects two parameters in the request:
 
-* Shipment -  shipping data to request a quote, see list of fields [here](https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentRequestDataDTO.html) 
+* Shipment -  shipping data to request a quote, see list of fields [here](https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentRequestDataDTO.html)
 * ShippingTime  - the expected time of shipping, in format HH:MM:SS
 
 Example call:
@@ -106,10 +106,6 @@ Example call:
 ```
 
 <br />
-
-## WSDL
-
-WSDL can be downloaded here: <Anchor label="WSDL" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/BSMCarrierBF?WSDL">WSDL</Anchor>
 
 ## Legal disclaimers for using the API
 
