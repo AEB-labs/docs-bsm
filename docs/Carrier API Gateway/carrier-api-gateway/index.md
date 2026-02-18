@@ -1,5 +1,8 @@
 ---
 title: 'Carrier API Gateway '
+excerpt: >-
+  The "Carrier API Gateway" provides carrier related information, e.g. freight
+  charges or runtimes. 
 deprecated: false
 hidden: false
 metadata:
