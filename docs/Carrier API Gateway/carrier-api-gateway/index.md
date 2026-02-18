@@ -13,7 +13,7 @@ next:
       title: Request quotes and leadtime information
       type: basic
 ---
-## General information
+## Purpose
 
 The "Carrier API Gateway" provides carrier related information, e.g. freight charges or runtimes.
 
