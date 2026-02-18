@@ -13,13 +13,18 @@ next:
       title: Request quotes and leadtime information
       type: basic
 ---
-## Purpose
+## Functional overview
 
-The "Carrier API Gateway" provides carrier related information, e.g. freight charges or runtimes.
+With this option, you can determine freight costs based on your customer-specific freight agreements. This gives you cost transparency and enables you to make well-founded shipping decisions – both in the actual shipping process and in upstream process steps.  The API provides two central features:
+
+* Determination of freight costs for already completed shipping orders
+* Rate shopping 
+
+<br />
 
 ## WSDL
 
-WSDL can be downloaded here: <Anchor label="WSDL" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/BSMCarrierBF?WSDL">WSDL</Anchor>
+The WSDL file can be downloaded here: <Anchor label="WSDL" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/BSMCarrierBF?WSDL">WSDL</Anchor>
 
 <br />
 
