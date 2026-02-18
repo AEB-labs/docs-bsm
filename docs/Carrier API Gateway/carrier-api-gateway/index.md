@@ -1,8 +1,5 @@
 ---
-title: 'Carrier API Gateway '
-excerpt: >-
-  The "Carrier API Gateway" provides carrier related information, e.g. freight
-  charges or runtimes. 
+title: Carrier API Gateway - Overview
 deprecated: false
 hidden: false
 metadata:
@@ -16,7 +13,9 @@ next:
       title: Request quotes and leadtime information
       type: basic
 ---
-<br />
+## General information
+
+The "Carrier API Gateway" provides carrier related information, e.g. freight charges or runtimes.
 
 ## WSDL
 
