@@ -7,7 +7,7 @@ metadata:
 ---
 ## getQuotes API
 
-The getQuotes API allows you to determine the available shipping options of the selected transport service provider at an early, freely selectable stage in the process. Based on complete shipping order data, you will receive:
+The getQuotes API allows you to determine the available shipping options of the selected transport service provider at an early, freely selectable stage in the process. Based on he provided shipping order data, you will receive:
 
 * the possible services of the transport service provider,
 * the respective prices, and
