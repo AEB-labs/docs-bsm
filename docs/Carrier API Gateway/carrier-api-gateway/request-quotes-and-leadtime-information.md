@@ -1,8 +1,5 @@
 ---
 title: Request quotes and leadtime information
-excerpt: >-
-  The service "Carrier Information API Gateway" provides carrier related
-  information, e.g. runtimes and freight charges. 
 deprecated: false
 hidden: false
 metadata:
