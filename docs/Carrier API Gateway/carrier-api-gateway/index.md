@@ -7,6 +7,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: request-pricing-for-a-certain-shipping-order
+      title: 'Request pricing for a shipping order  '
+      type: basic
+    - slug: request-quotes-and-leadtime-information
+      title: Request quotes and leadtime information
+      type: basic
 ---
 <br />
 
