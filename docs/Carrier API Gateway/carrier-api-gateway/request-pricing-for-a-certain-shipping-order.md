@@ -1,8 +1,5 @@
 ---
-title: 'Request pricing for a shipping order  '
-excerpt: >-
-  The service "Carrier Information API Gateway" provides carrier related
-  information, e.g. runtimes and freight charges. 
+title: 'Determine freight costs for completed shipping orders  '
 deprecated: false
 hidden: false
 metadata:
