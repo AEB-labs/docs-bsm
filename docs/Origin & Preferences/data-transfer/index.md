@@ -5,6 +5,7 @@ hidden: false
 metadata:
   robots: index
 next:
+  description: Start with transfer addresses.
   pages:
     - slug: transfer-addresses
       title: Transfer Addresses
