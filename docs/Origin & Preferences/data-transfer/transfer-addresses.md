@@ -15,7 +15,6 @@ In the following you can see an API-Call of transfer Addresses with one address.
             <request>
                 <clientIdentCode>AEB_TEST_CLIENT</clientIdentCode>
                 <clientSystemId>ERP_SYSTEM_X</clientSystemId>
-                <resultLanguageIsoCodes>DE</resultLanguageIsoCodes>
                 <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
                 <userName>userName</userName>
                 <adressRequests>
@@ -78,6 +77,30 @@ And here you can see the response of the request.
 </S:Envelope>
 ```
 
-<br />
+In case of an error it looks like this.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:transferAddressesResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
+            <result>
+                <hasErrors>true</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <messages>
+                    <messageType>ERROR</messageType>
+                    <messageIdentCode>EMPTY_MANDATORY_FIELD</messageIdentCode>
+                    <messageTexts>
+                        <languageISOCode>en</languageISOCode>
+                        <text>The mandatory field "idHost" must be filled.</text>
+                    </messageTexts>
+                    <indentationLevel>0</indentationLevel>
+                </messages>
+            </result>
+        </ns2:transferAddressesResponse>
+    </S:Body>
+</S:Envelope>
+```
 
 <br />
