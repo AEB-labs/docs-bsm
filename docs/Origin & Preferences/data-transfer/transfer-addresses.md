@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
+In the following you can see an API-Call of transfer Addresses with one address.
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
@@ -55,5 +55,29 @@ metadata:
     </soapenv:Body>
 </soapenv:Envelope>
 ```
+
+And here you can see the response of the request.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:transferAddressesResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <responses>
+                    <hasErrors>false</hasErrors>
+                    <hasWarnings>false</hasWarnings>
+                    <idHost>su_0000001004</idHost>
+                </responses>
+            </result>
+        </ns2:transferAddressesResponse>
+    </S:Body>
+</S:Envelope>
+```
+
+<br />
 
 <br />
