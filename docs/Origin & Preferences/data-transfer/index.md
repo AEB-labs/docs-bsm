@@ -4,6 +4,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: transfer-addresses
+      title: Transfer Addresses
+      type: basic
 ---
 This is really the main part. Transferring all the business object which are relevant for O&P. 
 
