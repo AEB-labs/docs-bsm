@@ -1,5 +1,5 @@
 ---
-title: Transfer Addresses
+title: Transfer addresses
 deprecated: false
 hidden: false
 metadata:
