@@ -6,9 +6,9 @@ excerpt: >-
 hidden: false
 icon: far fa-house-medical
 ---
-But the BSM offers more than side by side integrations for SAP, Salesforce and HAUFE X360. It also extends the AEB business services and the interaction between if it is needed. 
+But the BSM offers more than side-by-side integrations for SAP, Salesforce and HAUFE X360 ERP. It also extends the AEB business services and the interaction between if it is needed. 
 
-Also the BSM could be used as an API-Hub for the most APIs offered by AEB. 
+And the BSM could be used as an API-Hub for the most APIs offered by AEB. 
 
 So in the following chapters we describe our build in side-by-side Integrations for the following Systems:
 
