@@ -7,10 +7,10 @@ metadata:
 next:
   description: Data transfer
 ---
-From an API perspective we have two main parts which a relevant for intergrate and automate our O&P product.
+From an API perspective we have two main parts which are relevant to intergrate and automate our O&P product.
 
 * Data transfer of all the business objects needed for O&P processes
-* Get the results of calculation of materials 
+* Get the results of calculation of materials
 * Or get an declaration of origin for a business transaction
 
 <br />
