@@ -5,6 +5,12 @@ excerpt: >-
   components of AEB running through Business Service Management (BSM). 
 hidden: false
 icon: far fa-house-medical
+next:
+  description: 'You could start where you interesseted. '
+  pages:
+    - slug: carrier-api-gateway
+      title: Carrier API Gateway - Overview
+      type: basic
 ---
 But the BSM offers more than side-by-side integrations for SAP, Salesforce and HAUFE X360 ERP. It also extends the AEB business services and the interaction between if it is needed. 
 
