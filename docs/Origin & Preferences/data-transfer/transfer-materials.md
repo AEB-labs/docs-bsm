@@ -7,7 +7,7 @@ metadata:
 ---
 <br />
 
-In the following you can see an API-Call of transfer Addresses with one address.
+In the following you can see an API-Call of transfer materials with one material
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
