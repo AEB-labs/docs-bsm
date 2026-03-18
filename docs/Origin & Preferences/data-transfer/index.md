@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 next:
-  description: Start with transfer addresses.
+  description: Start with your first business object the addresses.
   pages:
     - slug: transfer-addresses
       title: Transfer Addresses
@@ -22,4 +22,16 @@ This is really the main part. Transferring all the business object which are rel
 
 The APIs we provide for those data transfer are bulk-APIs. **VERY IMPORTANT**. You should not transfer more than **50** objects per API-Call. Otherwise you could run into timeouts.
 
-<br />
+When we look into the transfer-APIs there always the following fields for one business object:
+
+* idHost: this has to be unique for one client in combination with the organizational unit.
+* isDeleted: If the object should be deleted, this is always possible over this flag
+* labelHost: in addition to idHost a readable id
+* organizationUnit: used to differ between orginazational units, if not filled "DEFAULT" is used. 
+
+Also each transfer request needs some basic information:
+
+* clientIdentCode: The identcode of the client in BSM
+* clientSystemId: The id of the calling system
+* resultLanguages: the given languages are used for error messages
+* userName: gibt the API-Call an functional user, this is not a user for authentifcation
