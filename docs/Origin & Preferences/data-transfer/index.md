@@ -27,7 +27,7 @@ When we look into the transfer-APIs there always the following fields for one bu
 * idHost: this has to be unique for one client in combination with the organizational unit.
 * isDeleted: If the object should be deleted, this is always possible over this flag
 * labelHost: in addition to idHost a readable id
-* organizationUnit: used to differ between orginazational units, if not filled "DEFAULT" is used. 
+* organizationalUnit: used to differ between orginazational units, if not filled "DEFAULT" is used. 
 
 Also each transfer request needs some basic information:
 
