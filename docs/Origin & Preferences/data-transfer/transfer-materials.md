@@ -35,7 +35,7 @@ In the following you can see an API-Call of transfer materials with one material
       </td>
 
       <td>
-        [transferAdresses](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses)
+        [transferMaterials](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferMaterials)
       </td>
     </tr>
 
@@ -46,7 +46,7 @@ In the following you can see an API-Call of transfer materials with one material
 
       <td>
         [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [transferAddresses (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses\(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO\))
+        [transferMaterials (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferMaterials\(de.aeb.xnsg.onpintegration.bf.onp.TransferMaterialsRequestDTO\))
       </td>
     </tr>
   </tbody>
