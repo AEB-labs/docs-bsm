@@ -13,20 +13,24 @@ If you like to have a declaration of origin on your invoice document or a check 
     <soapenv:Body>
         <urn:getDeclarationOfOrigin>
             <request>
-                <clientIdentCode>ATC_TEST_CLIENT</clientIdentCode>
+                <clientIdentCode>AEB_TEST_CLIENT</clientIdentCode>
                 <clientSystemId>ERP_SYSTEM_X</clientSystemId>
+                <resultLanguageIsoCodes>DE</resultLanguageIsoCodes>
                 <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
-                <userName>Sue</userName>
-                <destinationCountry>US</destinationCountry>
+                <userName>{{user}}</userName>
+                <destinationCountry>CH</destinationCountry>
                 <documentDate>2026-01-27</documentDate>
                 <factoryPriceCurrency>EUR</factoryPriceCurrency>
                 <idHost>0090000138_U_F5</idHost>
+                <place>Stuttgart</place>
+                <signatoryName>Emil</signatoryName>
                 <isInvoiceSigned>false</isInvoiceSigned>
                 <items>
                     <factoryPrice>1111.000</factoryPrice>
                     <itemNo>000010</itemNo>
-                    <materialNo>M-11</materialNo>
-                    <materialNoInternal>M-11</materialNoInternal>
+                    <materialNo>MAT</materialNo>
+                    <materialNoInternal>MAT</materialNoInternal>
+                    <materialOrderItemReference>4711_10</materialOrderItemReference>
                     <quantity>1.0000000</quantity>
                 </items>
                 <labelHost>Client: 400 Invoice: 90000138 Sales document category: U Invoice type: F5</labelHost>
@@ -51,9 +55,22 @@ And the response look like the following.
                 <hasErrors>false</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
                 <hasWarnings>false</hasWarnings>
-                <isDeclarationOfOriginAllowed>false</isDeclarationOfOriginAllowed>
+                <text>The exporter of the products covered by this document declares that, except where otherwise clearly indicated, these products are of EU preferential origin.
+
+Stuttgart, Jan 27, 2026
+(Place and date)
+________________________________________ Emil
+(Signature of the exporter, in addition the name of the person signing the declaration has to be indicated in clear script)</text>
+                <isDeclarationOfOriginAllowed>true</isDeclarationOfOriginAllowed>
                 <isDeclarationOfOriginToSign>true</isDeclarationOfOriginToSign>
-                <linkToDeclOfOriginCheckLog>https://origin-preferences-management-test.internal.aeb.com/doo/home/protocols/doo-sap/view/452?system=0bbcdf2c000ff8c</linkToDeclOfOriginCheckLog>
+                <items>
+                    <itemNo>000010</itemNo>
+                    <text>- Preferential origin: EU
+- Non-preferential origin: CH</text>
+                    <hasPreference>true</hasPreference>
+                    <preferentialOrigin>EU</preferentialOrigin>
+                </items>
+                <linkToDeclOfOriginCheckLog>https://origin-preferences-management-test.internal.aeb.com/doo/home/protocols/doo-sap/view/461?system=0bbcdf2c000ff8c</linkToDeclOfOriginCheckLog>
             </result>
         </ns2:getDeclarationOfOriginResponse>
     </S:Body>
