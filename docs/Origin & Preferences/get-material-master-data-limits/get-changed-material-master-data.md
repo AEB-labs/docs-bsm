@@ -181,7 +181,7 @@ As you can see the isComplete is set to true and the syncId is 8. So let's do th
       </td>
 
       <td>
-        [getMaterialMasterData](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getMaterialMasterData)
+        [acknowledgeGetChangedMaterialMasterData](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/acknowledgeGetChangedMaterialMasterData)
       </td>
     </tr>
 
@@ -192,7 +192,7 @@ As you can see the isComplete is set to true and the syncId is 8. So let's do th
 
       <td>
         [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [getMaterialMasterData (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#getMaterialMasterData\(de.aeb.xnsg.onpintegration.bf.onp.GetMaterialMasterDataRequestDTO\))
+        [acknowledgeGetChangedMaterialMasterData (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#acknowledgeGetChangedMaterialMasterData\(de.aeb.xnsg.onpintegration.bf.onp.acknowledgeGetChangedMaterialMasterDataRequestDTO\))
       </td>
     </tr>
   </tbody>
