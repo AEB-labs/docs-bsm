@@ -21,6 +21,43 @@ If you like to synchronize the material master data e.g. to persist the data in 
 
 Ok and now let's do that in detail with some sample calls. So as i sad first we call getChangedMaterialMasterData.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [getChangedMaterialMasterData](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getChangedMaterialMasterData)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [getChangedMaterialMasterData (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#getChangedMaterialMasterData\(de.aeb.xnsg.onpintegration.bf.onp.GetChangedMaterialMasterDataRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 ```json
 `{
   "clientSystemId": "ERP_SYSTEM_ID",
@@ -122,9 +159,44 @@ The answer of this call could then look like this.
 </S:Envelope>
 ```
 
-<br />
-
 As you can see the isComplete is set to true and the syncId is 8. So let's do the acknowledge-API call.
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [getMaterialMasterData](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getMaterialMasterData)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [getMaterialMasterData (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#getMaterialMasterData\(de.aeb.xnsg.onpintegration.bf.onp.GetMaterialMasterDataRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ```json
 `{
