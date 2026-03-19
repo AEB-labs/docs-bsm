@@ -53,8 +53,8 @@ In the following you can see an API-Call of transfer Addresses with one address.
 ```json
 {
   "clientSystemId": "E01_400",
-  "clientIdentCode": "{{client}}",
-  "userName": "{{user}}",
+  "clientIdentCode": "API_TEST",
+  "userName": "API_TEST",
   "resultLanguageIsoCodes": [
     "en",
     "de"
