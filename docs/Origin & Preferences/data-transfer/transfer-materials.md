@@ -19,37 +19,37 @@ In the following you can see an API-Call of transfer materials with one material
                 <clientSystemId>YLI_POSTMAN</clientSystemId>
                 <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
                 <userName>{{user}}</userName>
-            <materialRequests>
-               <idHost>MAT-1</idHost>
-               <labelHost>MAT-1</labelHost>
-               <organizationalUnit>10001</organizationalUnit>
-               <referenceNo>MAT-1</referenceNo>
-               <isDeleted>false</isDeleted>
-               <materialNo>MAT</materialNo>
-               <isActive>true</isActive>
-               <factoryType>i</factoryType>
-               <materialPriority>1</materialPriority>
-               <commodityCode1>010121051</commodityCode1>
-               <commodityCode2>010121051</commodityCode2>
-               <commodityCode3>010121051</commodityCode3>
-               <purchaseValue>1.23</purchaseValue>
-               <lotSize>5</lotSize>
-               <currency>EUR</currency>
-               <quantityUnit>ST</quantityUnit>
-               <isRelavantForCalculation>true</isRelavantForCalculation>
-               <averageStorage>7</averageStorage>
-               <mainDescriptionLanguage>DE</mainDescriptionLanguage>
-               <orderItemReference>4711_10</orderItemReference>
-               <isCompositionOfGoods>true</isCompositionOfGoods>
-               <requestMaterial>1</requestMaterial>
-               <isConfigured>true</isConfigured>
-               <nonPreferentialOriginCountry>CH</nonPreferentialOriginCountry>
-               <descriptions>
-                  <description>DE Textä</description>
-                  <isDeleted>false</isDeleted>
-                  <language>DE</language>
-               </descriptions>
-            </materialRequests>
+                   <materialRequests>
+                 <idHost>MAT-1</idHost>
+                 <labelHost>MAT-1</labelHost>
+                 <organizationalUnit>10001</organizationalUnit>
+                 <referenceNo>MAT-1</referenceNo>
+                 <isDeleted>false</isDeleted>
+                 <materialNo>MAT</materialNo>
+                 <isActive>true</isActive>
+                 <factoryType>i</factoryType>
+                 <materialPriority>1</materialPriority>
+                 <commodityCode1>010121051</commodityCode1>
+                 <commodityCode2>010121051</commodityCode2>
+                 <commodityCode3>010121051</commodityCode3>
+                 <purchaseValue>1.23</purchaseValue>
+                 <lotSize>5</lotSize>
+                 <currency>EUR</currency>
+                 <quantityUnit>ST</quantityUnit>
+                 <isRelavantForCalculation>true</isRelavantForCalculation>
+                 <averageStorage>7</averageStorage>
+                 <mainDescriptionLanguage>DE</mainDescriptionLanguage>
+                 <orderItemReference>4711_10</orderItemReference>
+                 <isCompositionOfGoods>true</isCompositionOfGoods>
+                 <requestMaterial>1</requestMaterial>
+                 <isConfigured>true</isConfigured>
+                 <nonPreferentialOriginCountry>CH</nonPreferentialOriginCountry>
+                 <descriptions>
+                    <description>DE Textä</description>
+                    <isDeleted>false</isDeleted>
+                    <language>DE</language>
+                 </descriptions>
+              </materialRequests>
          </request>
       </urn:transferMaterials>
    </soapenv:Body>
