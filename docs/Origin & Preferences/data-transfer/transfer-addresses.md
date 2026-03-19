@@ -33,7 +33,7 @@ In the following you can see an API-Call of transfer Addresses with one address.
       </td>
 
       <td>
-        https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses
+        [transferAdresses](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses)
       </td>
     </tr>
 
@@ -43,8 +43,8 @@ In the following you can see an API-Call of transfer Addresses with one address.
       </td>
 
       <td>
-        https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL  
-        https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO)
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [transferAddresses (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses\(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO\))
       </td>
     </tr>
   </tbody>
