@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: Go on with purchase orders.
+  pages:
+    - slug: transfer-purchase-orders
+      title: Transfer purchase orders
+      type: basic
 ---
 <br />
 
