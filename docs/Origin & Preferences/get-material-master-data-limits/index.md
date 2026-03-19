@@ -6,6 +6,10 @@ metadata:
   robots: index
 next:
   description: Try to get a single material master data
+  pages:
+    - slug: get-single-material-master-data
+      title: Get single material master data
+      type: basic
 ---
 There are two option how to consume the material master data. 
 
