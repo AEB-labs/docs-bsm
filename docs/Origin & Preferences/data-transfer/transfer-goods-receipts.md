@@ -4,6 +4,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: >-
+    Now that you transferred all your business objects. You can go on with
+    getting data back.
+  pages:
+    - slug: get-material-master-data-limits
+      title: Get material master data (limits)
+      type: basic
 ---
 <br />
 
