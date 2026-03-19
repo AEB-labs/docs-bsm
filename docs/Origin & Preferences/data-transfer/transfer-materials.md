@@ -55,7 +55,7 @@ In the following you can see an API-Call of transfer materials with one material
 ```json
 {
   "clientSystemId": "ERP_SYSTEM_X",
-  "clientIdentCode": "{{client}}",
+  "clientIdentCode": "API_TEST",
   "userName": "API_TEST",
   "resultLanguageIsoCodes": [
     "en"
