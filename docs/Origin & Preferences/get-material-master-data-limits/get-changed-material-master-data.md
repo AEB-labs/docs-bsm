@@ -79,7 +79,7 @@ As you can see the isComplete is set to true and the syncId is 8. So let's do th
 
 ```json
 `{
-  "clientSystemId": "E01_400",
+  "clientSystemId": "ERP_SYSTEM_ID",
   "clientIdentCode": "AEB_TEST_CLIENT",
   "userName": "user",
   "syncId" : 8,
