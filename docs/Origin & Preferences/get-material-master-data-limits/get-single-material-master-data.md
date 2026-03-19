@@ -13,6 +13,43 @@ next:
 ---
 In the following you can see an API-Call of getting a single material master data.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [getMaterialMasterData](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getMaterialMasterData)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [getMaterialMasterData (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#getMaterialMasterData\(de.aeb.xnsg.onpintegration.bf.onp.GetMaterialMasterDataRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 ```json
 {
   "clientSystemId": "TEST_ID",
