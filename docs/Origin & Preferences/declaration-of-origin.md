@@ -27,7 +27,7 @@ If you like to have a declaration of origin on your invoice document or a check 
       </td>
 
       <td>
-        [transferGoodsReceipts](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferGoodsReceipts)
+        [GetDeclarationOfOrigin](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/GetDeclarationOfOrigni)
       </td>
     </tr>
 
@@ -37,8 +37,8 @@ If you like to have a declaration of origin on your invoice document or a check 
       </td>
 
       <td>
-        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [transferGoodsReceipts (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferGoodsReceipts\(de.aeb.xnsg.onpintegration.bf.onp.TransferGoodsReceiptsRequestDTO\))
+        [DeclarationOfOriginBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL)
+        [getDeclarationOfOrigin (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin\(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO\))
       </td>
     </tr>
   </tbody>
