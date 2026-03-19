@@ -13,46 +13,54 @@ In the following you can see an API-Call of transfer Addresses with one address.
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
     <soapenv:Header/>
     <soapenv:Body>
-        <urn:transferAddresses>
+        <urn:transferBillOfMaterials>
             <request>
-                <clientIdentCode>AEB_TEST_CLIENT</clientIdentCode>
-                <clientSystemId>ERP_SYSTEM_X</clientSystemId>
+                <clientIdentCode>{{client}}</clientIdentCode>
+                <clientSystemId>ERP_SYSTEM_1</clientSystemId>
                 <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
-                <userName>userName</userName>
-                <adressRequests>
-                    <idHost>su_0000001004</idHost>
-                    <isDeleted></isDeleted>
-                    <labelHost>Mandant: 400 Lieferantennr.: 1004</labelHost>
-                    <organizationalUnit>DEFAULT</organizationalUnit>
-                    <referenceNo>su_1004</referenceNo>
-                    <addressNo>1004</addressNo>
-                    <city>Paris</city>
-                    <contactPerson></contactPerson>
-                    <contactPersonTitle></contactPersonTitle>
-                    <country>FR</country>
-                    <createProof>true</createProof>
-                    <defaultPrefVerificationType></defaultPrefVerificationType>
-                    <department></department>
-                    <dunsNo></dunsNo>
-                    <email></email>
-                    <faxNo></faxNo>
-                    <language>FR</language>
-                    <name1>UEC Saturn</name1>
-                    <name2></name2>
-                    <name3></name3>
-                    <name4></name4>
-                    <outputType></outputType>
-                    <postBox></postBox>
-                    <postBoxCity>Paris</postBoxCity>
-                    <postCodePostbox></postCodePostbox>
-                    <postCodeStreet>54321</postCodeStreet>
-                    <role>su</role>
-                    <streetAndNo>644 Rue Morgue</streetAndNo>
-                    <supplierPriority></supplierPriority>
-                    <telephoneNo></telephoneNo>
-                </adressRequests>
+                <userName>{{user}}</userName>
+                <billOfMaterialRequests>
+                    <idHost>id_123</idHost>
+                    <labelHost>Id 123</labelHost>
+                    <organizationalUnit>DE_1000</organizationalUnit>
+                    <referenceNo>123</referenceNo>
+                    <isDeleted>false</isDeleted>
+                    <materialNo>123</materialNo>
+                    <materialNoInternal>00000123</materialNoInternal>
+                    <orderItemReference></orderItemReference>
+                    <description>car</description>
+                    <createDate>2026-10-02</createDate>
+                    <modifyDate>2026-10-02</modifyDate>
+                    <validToDate>2029-10-02</validToDate>
+                    <quantity>1</quantity>
+                    <quantityUnit>ST</quantityUnit>
+                    <value>100</value>
+                    <manufactoringCosts>200</manufactoringCosts>
+                    <currency>EUR</currency>
+                    <lotSize>1</lotSize>
+                    <isHandledMinimal>true</isHandledMinimal>
+                    <isMaterialSet>false</isMaterialSet>
+                    <isActive>true</isActive>
+                    <alternativeNo>5000</alternativeNo>
+                    <productOrigin>DE</productOrigin>
+                    <items>
+                        <itemIdHost>1</itemIdHost>
+                        <itemLabelHost>1</itemLabelHost>
+                        <itemReferenceNo>1</itemReferenceNo>
+                        <isDeleted>false</isDeleted>
+                        <materialNo>M-11</materialNo>
+                        <materialNoInternal>M-11</materialNoInternal>
+                        <materialOrderItemReference></materialOrderItemReference>
+                        <type>X</type>
+                        <description>Other one</description>
+                        <quantity>1</quantity>
+                        <quantityUnit>ST</quantityUnit>
+                        <value>100</value>
+                        <lotSize>1</lotSize>
+                    </items>
+                </billOfMaterialRequests>
             </request>
-        </urn:transferAddresses>
+        </urn:transferBillOfMaterials>
     </soapenv:Body>
 </soapenv:Envelope>
 ```
