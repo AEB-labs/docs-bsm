@@ -13,7 +13,44 @@ next:
 ---
 <br />
 
-In the following you can see an API-Call of transfer Addresses with one address.
+In the following you can see an API-Call of transfer sales orders with one sales order.
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [transferSalesOrders](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferSalesOrders)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [transferSalesOrders (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferSalesOrders\(de.aeb.xnsg.onpintegration.bf.onp.TransferSalesOrdersRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ```json
 {
