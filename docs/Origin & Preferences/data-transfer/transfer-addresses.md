@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: Go on with materials.
+  pages:
+    - slug: transfer-materials
+      title: Transfer materials
+      type: basic
 ---
 In the following you can see an API-Call of transfer Addresses with one address.
 
