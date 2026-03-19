@@ -13,8 +13,88 @@ next:
 ---
 <br />
 
-In the following you can see an API-Call of transfer Addresses with one address.
+In the following you can see an API-Call of transfer purchase orders with one purchase order.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [transferPurchaseOrders](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferPurchaseOrders)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [transferPurchaseOrders (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferPurchaseOrders\(de.aeb.xnsg.onpintegration.bf.onp.TransferPurchaseOrdersRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+```json
+{
+  "clientSystemId": "TEST_ID",
+  "clientIdentCode": "API_TEST",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "purchaseOrderRequests": [
+    {
+      "idHost": "4711",
+      "labelHost": "4711",
+      "organizationalUnit": "1000",
+      "referenceNo": "4711",
+      "isDeleted": false,
+      "purchaseOrderNo": "4711",
+      "purchaseOrderDate": "2010-10-10",
+      "items": [
+        {
+          "itemIdHost": "1",
+          "itemLabelHost": "1",
+          "itemReferenceNo": "1",
+          "isDeleted": false,
+          "materialNo": "M-11",
+          "materialNoInternal": "M-11",
+          "supplierMaterialNo": "M-15",
+          "itemNo": "1",
+          "supplierNo": "1200",
+          "value": 100,
+          "currency": "EUR",
+          "lotSize": 1,
+          "quantityUnit": "ST",
+          "isSupplierMaterial": true,
+          "comment": "This is a comment"
+        }
+      ],
+      "supplierNo": "1200",
+      "supplierNoInternal": "1200"
+    }
+  ]
+}
+
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
     <soapenv:Header/>
@@ -61,6 +141,22 @@ In the following you can see an API-Call of transfer Addresses with one address.
 
 And here you can see the response of the request.
 
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "responses": [
+    {
+      "hasErrors": false,
+      "hasWarnings": false,
+      "messages": [],
+      "idHost": "4711"
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
@@ -83,6 +179,26 @@ And here you can see the response of the request.
 
 In case of an error it looks like this.
 
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "EMPTY_MANDATORY_FIELD",
+      "messageTexts": [
+        {
+          "languageISOCode": "en",
+          "text": "The mandatory field \"idHost\" must be filled."
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
