@@ -53,7 +53,7 @@ In the following you can see an API-Call of getting a single material master dat
 ```json
 {
   "clientSystemId": "TEST_ID",
-  "clientIdentCode": "{{client}}",
+  "clientIdentCode": "API_TEST_CLIENT",
   "userName": "API_TEST",
   "resultLanguageIsoCodes": [
     "en"
