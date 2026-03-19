@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: Go on with goods receipt.
+  pages:
+    - slug: transfer-goods-receipts
+      title: Transfer goods receipts
+      type: basic
 ---
 <br />
 
