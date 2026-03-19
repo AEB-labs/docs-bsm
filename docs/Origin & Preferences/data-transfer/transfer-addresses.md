@@ -11,6 +11,10 @@ next:
       title: Transfer materials
       type: basic
 ---
+| Technique | Documentation |
+| --------- | ------------- |
+|           |               |
+
 In the following you can see an API-Call of transfer Addresses with one address.
 
 ```xml
