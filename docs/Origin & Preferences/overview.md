@@ -12,5 +12,6 @@ From an API perspective we have two main parts which are relevant to intergrate 
 * Data transfer of all the business objects needed for O&P processes
 * Get the results of calculation of materials
 * Or get an declaration of origin for a business transaction
+* integrate UIs in the ERP-System 
 
 <br />
