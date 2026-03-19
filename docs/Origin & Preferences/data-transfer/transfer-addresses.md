@@ -50,6 +50,50 @@ In the following you can see an API-Call of transfer Addresses with one address.
   </tbody>
 </Table>
 
+```json
+{
+  "clientSystemId": "E01_400",
+  "clientIdentCode": "{{client}}",
+  "userName": "{{user}}",
+  "resultLanguageIsoCodes": [
+    "en",
+    "de"
+  ],
+  "adressRequests": [
+    {
+      "idHost" : "su_10004",
+      "isDeleted" : false,
+      "labelHost": "Lieferantennr.: 1004",
+      "reference": "su_1004",
+      "addressNo": "1004",
+      "city" : "Paris",
+      "contactPerson": "Franz",
+      "contactPersonTitle" : "Mr.",
+      "country": "DE",
+      "createProof" : true,
+      "defaultPrefVerificationType": null,
+      "department": null,
+      "dunsNo" : null,
+      "email" : null,
+      "faxNo" : null,
+      "language" : "DE",
+      "name1" : "UEC Saturn",
+      "name2" : "UEC Saturn2",
+      "name3" : "UEC Saturn3",
+      "name4" : "UEC Saturn4",
+      "outputType": null,
+      "postBox" : "71088",
+      "postBoxCity" : "Paris",
+      "postCodePostbox" : "71099",
+      "postCodeStreet" : null,
+      "role" : "su",
+      "streetAndNo" : "644 Rue Morgue",
+      "supplierPriority" : null,
+      "telephoneNo": null
+    }
+  ]
+}
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
     <soapenv:Header/>
