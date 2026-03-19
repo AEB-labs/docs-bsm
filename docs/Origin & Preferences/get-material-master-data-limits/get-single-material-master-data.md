@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: If you like to sync your material master go on with that.
+  pages:
+    - slug: get-changed-material-master-data
+      title: Get changed material master data
+      type: basic
 ---
 In the following you can see an API-Call of getting a single material master data. 
 
