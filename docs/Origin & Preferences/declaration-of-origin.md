@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: 'Ok last but not least, you can integrate our UIs. '
+  pages:
+    - slug: integrate-uis
+      title: Integrate UIs
+      type: basic
 ---
 If you like to have a declaration of origin on your invoice document or a check if a transaction has preference you could use our API getDeclarationOfOrigin like the following.
 
