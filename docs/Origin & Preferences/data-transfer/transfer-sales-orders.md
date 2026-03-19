@@ -15,6 +15,45 @@ next:
 
 In the following you can see an API-Call of transfer Addresses with one address.
 
+```json
+{
+  "clientSystemId": "ERP_SYSTEM_X",
+  "clientIdentCode": "API_TEST",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "salesOrderRequests": [
+    {
+      "idHost": "4711",
+      "labelHost": "4711",
+      "organizationalUnit": "1000",
+      "referenceNo": "4711",
+      "isDeleted": false,
+      "salesOrderNo": "4711",
+      "salesOrderDate": "2020-12-10",
+      "items": [
+        {
+          "itemIdHost": "1",
+          "itemLabelHost": "1",
+          "itemReferenceNo": "1",
+          "isDeleted": false,
+          "materialNo": "M-11",
+          "materialNoInternal": "M-11",
+          "customerMaterialNo": "M-15",
+          "itemNo": "1",
+          "value": 100,
+          "currency": "EUR",
+          "lotSize": 1,
+          "quantityUnit": "EUR"
+        }
+      ],
+      "customerNo": "1650",
+      "customerNoInternal": "1650"
+    }
+  ]
+}
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
     <soapenv:Header/>
@@ -59,6 +98,22 @@ In the following you can see an API-Call of transfer Addresses with one address.
 
 And here you can see the response of the request.
 
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "responses": [
+    {
+      "hasErrors": false,
+      "hasWarnings": false,
+      "messages": [],
+      "idHost": "4711"
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
@@ -81,6 +136,26 @@ And here you can see the response of the request.
 
 In case of an error it looks like this.
 
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "EMPTY_MANDATORY_FIELD",
+      "messageTexts": [
+        {
+          "languageISOCode": "en",
+          "text": "The mandatory field \"idHost\" must be filled."
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
