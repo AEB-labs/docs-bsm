@@ -144,6 +144,22 @@ In the following you can see an API-Call of transfer Addresses with one address.
 
 And here you can see the response of the request.
 
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "responses": [
+    {
+      "hasErrors": false,
+      "hasWarnings": false,
+      "messages": [],
+      "idHost": "su_10004"
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
@@ -166,6 +182,30 @@ And here you can see the response of the request.
 
 In case of an error it looks like this.
 
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "EMPTY_MANDATORY_FIELD",
+      "messageTexts": [
+        {
+          "languageISOCode": "en",
+          "text": "The mandatory field \"idHost\" must be filled."
+        },
+        {
+          "languageISOCode": "de",
+          "text": "Das Pflichtfeld \"idHost\" muss gefüllt sein."
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
