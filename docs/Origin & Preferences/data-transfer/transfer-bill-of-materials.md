@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: Go on with sales orders.
+  pages:
+    - slug: transfer-sales-orders
+      title: Transfer sales orders
+      type: basic
 ---
 <br />
 
