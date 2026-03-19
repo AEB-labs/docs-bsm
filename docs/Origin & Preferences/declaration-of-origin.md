@@ -7,6 +7,8 @@ metadata:
 ---
 If you like to have a declaration of origin on your invoice document or a check if a transaction has preference you could use our API getDeclarationOfOrigin like the following.
 
+```json
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.declarationoforigin">
     <soapenv:Header/>
@@ -46,6 +48,8 @@ If you like to have a declaration of origin on your invoice document or a check 
 
 And the response look like the following.
 
+```json
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
