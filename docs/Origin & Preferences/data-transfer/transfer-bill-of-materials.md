@@ -15,10 +15,10 @@ In the following you can see an API-Call of transfer Addresses with one address.
     <soapenv:Body>
         <urn:transferBillOfMaterials>
             <request>
-                <clientIdentCode>{{client}}</clientIdentCode>
+                <clientIdentCode>AEB_TEST_CLIENT</clientIdentCode>
                 <clientSystemId>ERP_SYSTEM_1</clientSystemId>
                 <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
-                <userName>{{user}}</userName>
+                <userName>PAUL</userName>
                 <billOfMaterialRequests>
                     <idHost>id_123</idHost>
                     <labelHost>Id 123</labelHost>
