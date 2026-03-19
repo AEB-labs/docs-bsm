@@ -11,11 +11,44 @@ next:
       title: Transfer materials
       type: basic
 ---
-| Technique | Documentation |
-| --------- | ------------- |
-|           |               |
-
 In the following you can see an API-Call of transfer Addresses with one address.
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL  
+        https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO)
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
