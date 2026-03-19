@@ -13,46 +13,42 @@ In the following you can see an API-Call of transfer Addresses with one address.
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
     <soapenv:Header/>
     <soapenv:Body>
-        <urn:transferAddresses>
+        <urn:transferPurchaseOrders>
             <request>
                 <clientIdentCode>AEB_TEST_CLIENT</clientIdentCode>
                 <clientSystemId>ERP_SYSTEM_X</clientSystemId>
                 <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
-                <userName>userName</userName>
-                <adressRequests>
-                    <idHost>su_0000001004</idHost>
-                    <isDeleted></isDeleted>
-                    <labelHost>Mandant: 400 Lieferantennr.: 1004</labelHost>
+                <userName>Steve</userName>
+                <purchaseOrderRequests>
+                    <idHost>1</idHost>
+                    <labelHost>1</labelHost>
                     <organizationalUnit>DEFAULT</organizationalUnit>
-                    <referenceNo>su_1004</referenceNo>
-                    <addressNo>1004</addressNo>
-                    <city>Paris</city>
-                    <contactPerson></contactPerson>
-                    <contactPersonTitle></contactPersonTitle>
-                    <country>FR</country>
-                    <createProof>true</createProof>
-                    <defaultPrefVerificationType></defaultPrefVerificationType>
-                    <department></department>
-                    <dunsNo></dunsNo>
-                    <email></email>
-                    <faxNo></faxNo>
-                    <language>FR</language>
-                    <name1>UEC Saturn</name1>
-                    <name2></name2>
-                    <name3></name3>
-                    <name4></name4>
-                    <outputType></outputType>
-                    <postBox></postBox>
-                    <postBoxCity>Paris</postBoxCity>
-                    <postCodePostbox></postCodePostbox>
-                    <postCodeStreet>54321</postCodeStreet>
-                    <role>su</role>
-                    <streetAndNo>644 Rue Morgue</streetAndNo>
-                    <supplierPriority></supplierPriority>
-                    <telephoneNo></telephoneNo>
-                </adressRequests>
+                    <referenceNo>1</referenceNo>
+                    <isDeleted>false</isDeleted>
+                    <purchaseOrderNo>1</purchaseOrderNo>
+                    <purchaseOrderDate>2024-10-10</purchaseOrderDate>
+                    <items>
+                        <itemIdHost>1</itemIdHost>
+                        <itemLabelHost>1</itemLabelHost>
+                        <itemReferenceNo>1</itemReferenceNo>
+                        <isDeleted>false</isDeleted>
+                        <materialNo>M-11</materialNo>
+                        <materialNoInternal>M-11</materialNoInternal>
+                        <supplierMaterialNo></supplierMaterialNo>
+                        <itemNo>1</itemNo>
+                        <supplierNo>1000</supplierNo>
+                        <value>1</value>
+                        <currency>EUR</currency>
+                        <lotSize>1</lotSize>
+                        <quantityUnit>ST</quantityUnit>
+                        <isSupplierMaterial>false</isSupplierMaterial>
+                        <comment>asdsadsa</comment>
+                    </items>
+                    <supplierNo>1000</supplierNo>
+                    <supplierNoInternal>00000010000</supplierNoInternal>
+                </purchaseOrderRequests>
             </request>
-        </urn:transferAddresses>
+        </urn:transferPurchaseOrders>
     </soapenv:Body>
 </soapenv:Envelope>
 ```
@@ -63,7 +59,7 @@ And here you can see the response of the request.
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
     <S:Body>
-        <ns2:transferAddressesResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
+        <ns2:transferPurchaseOrdersResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
             <result>
                 <hasErrors>false</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
@@ -71,10 +67,10 @@ And here you can see the response of the request.
                 <responses>
                     <hasErrors>false</hasErrors>
                     <hasWarnings>false</hasWarnings>
-                    <idHost>su_0000001004</idHost>
+                    <idHost>1</idHost>
                 </responses>
             </result>
-        </ns2:transferAddressesResponse>
+        </ns2:transferPurchaseOrdersResponse>
     </S:Body>
 </S:Envelope>
 ```
@@ -85,7 +81,7 @@ In case of an error it looks like this.
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
     <S:Body>
-        <ns2:transferAddressesResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
+        <ns2:transferPurchaseOrdersResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
             <result>
                 <hasErrors>true</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
@@ -100,7 +96,7 @@ In case of an error it looks like this.
                     <indentationLevel>0</indentationLevel>
                 </messages>
             </result>
-        </ns2:transferAddressesResponse>
+        </ns2:transferPurchaseOrdersResponse>
     </S:Body>
 </S:Envelope>
 ```
