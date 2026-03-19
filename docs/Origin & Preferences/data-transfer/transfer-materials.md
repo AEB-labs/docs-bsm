@@ -13,8 +13,102 @@ next:
 ---
 <br />
 
-In the following you can see an API-Call of transfer materials with one material
+In the following you can see an API-Call of transfer materials with one material.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [transferAdresses](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [transferAddresses (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses\(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+```json
+{
+  "clientSystemId": "ERP_SYSTEM_X",
+  "clientIdentCode": "{{client}}",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "materialRequests": [
+    {
+      "idHost": "MAT-1",
+      "labelHost": "MAT-1",
+      "organizationalUnit": "1000",
+      "referenceNo": "Mat-1",
+      "isDeleted": true,     
+      "materialNo": "Mat-1",
+      "materialNoInternal": "Mat-1",
+      "isActive": true,
+      "factoryType": "i",
+      "materialPriority": 1,
+      "commodityCode1": "010121051",
+      "commodityCode2": "010121051",
+      "commodityCode3": "010121051",
+      "purchaseValue": 100,
+      "lotSize": 1,
+      "currency": "EUR",
+      "quantityUnit": "ST",
+      "isRelavantForCalculation": true,
+      "averageStorage": 0,
+      "mainDescriptionLanguage": "EN",
+      "orderItemReference": null,
+      "isCompositionOfGoods": false,
+      "requestMaterial": "1",
+      "isConfigured": true,
+      "nonPreferentialOriginCountry": "DE",
+      "descriptions": [
+        {
+          "description": "EN Description",
+          "isDeleted": true,
+          "language": "EN"
+        }
+      ],
+      "materialType": "HAWA",
+      "quantities": [
+        {
+          "type": "string",
+          "quantity": {
+            "value": 999999999999.999,
+            "unit": "kg"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
    <soapenv:Header/>
@@ -64,6 +158,22 @@ In the following you can see an API-Call of transfer materials with one material
 
 And here you can see the response of the request.
 
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "responses": [
+    {
+      "hasErrors": false,
+      "hasWarnings": false,
+      "messages": [],
+      "idHost": "MAT-1"
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
@@ -108,4 +218,24 @@ In case of an error it looks like this.
         </ns2:transferMaterialsResponse>
     </S:Body>
 </S:Envelope>
+```
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "EMPTY_MANDATORY_FIELD",
+      "messageTexts": [
+        {
+          "languageISOCode": "en",
+          "text": "The mandatory field \"idHost\" must be filled."
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
 ```
