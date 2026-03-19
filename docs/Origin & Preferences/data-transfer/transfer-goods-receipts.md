@@ -15,8 +15,94 @@ next:
 ---
 <br />
 
-In the following you can see an API-Call of transfer Addresses with one address.
+In the following you can see an API-Call of transfer goods receipts with one goods receipt.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [transferGoodsReceipts](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferGoodsReceipts)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [transferGoodsReceipts (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferGoodsReceipts\(de.aeb.xnsg.onpintegration.bf.onp.TransferGoodsReceiptsRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+```json
+{
+  "clientSystemId": "TEST_ID",
+  "clientIdentCode": "API_TEST",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "goodsReceiptRequests": [
+    {
+      "idHost": "2008_4711",
+      "labelHost": "2008_4711",
+      "organizationalUnit": "1000",
+      "referenceNo": "4711",
+      "isDeleted": false,
+      "goodsReceiptNo": "4711",
+      "goodsReceiptDate": "2020-10-10",
+      "documentType": "i",
+      "items": [
+        {
+          "itemIdHost": "1",
+          "itemLabelHost": "1",
+          "itemReferenceNo": "1",
+          "isDeleted": false,
+          "materialNo": "M-11",
+          "materialNoInternal": "M-11",
+          "supplierMaterialNo": "M-15",
+          "itemNo": "1",
+          "purchaseOrderNo": "66687",
+          "supplierNo": "1200",
+          "supplierNoInternal": "1200",
+          "value": 100,
+          "currency": "EUR",
+          "lotSize": 1,
+          "quantityUnit": "ST",
+          "valueForSubcontracting": 100,
+          "movementType": "0001",
+          "specialStockIndicator": "1"
+        }
+      ],
+      "deliveryNo": "873621",
+      "deliveryDate": "2029-11-10",
+      "invoiceNo": "6098760",
+      "invoiceDate": "2029-11-10",
+      "customerNoForSubcontracting": "1650"
+    }
+  ]
+}
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.onp">
    <soapenv:Header/>
@@ -64,6 +150,22 @@ In the following you can see an API-Call of transfer Addresses with one address.
 
 And here you can see the response of the request.
 
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "responses": [
+    {
+      "hasErrors": false,
+      "hasWarnings": false,
+      "messages": [],
+      "idHost": "2008_4711"
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
@@ -86,6 +188,26 @@ And here you can see the response of the request.
 
 In case of an error it looks like this.
 
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "EMPTY_MANDATORY_FIELD",
+      "messageTexts": [
+        {
+          "languageISOCode": "en",
+          "text": "The mandatory field \"idHost\" must be filled."
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
