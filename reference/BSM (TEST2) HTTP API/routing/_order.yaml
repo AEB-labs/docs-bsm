@@ -1,0 +1,10 @@
+- createroutingtask
+- createsupplementtask
+- getallcarriers_1
+- gethandoverpoints
+- getratingprofiles
+- getrejectedroutingtaskresult
+- getroutingrequirementtypes
+- getroutingtaskresult
+- getsupplementtaskresult
+- waitforroutingtaskresult
