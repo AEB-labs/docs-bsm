@@ -7,7 +7,83 @@ metadata:
 ---
 If you like to have a declaration of origin on your invoice document or a check if a transaction has preference you could use our API getDeclarationOfOrigin like the following.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [transferGoodsReceipts](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferGoodsReceipts)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
+        [transferGoodsReceipts (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferGoodsReceipts\(de.aeb.xnsg.onpintegration.bf.onp.TransferGoodsReceiptsRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 ```json
+{
+  "clientSystemId": "TEST_ID",
+  "clientIdentCode": "{{client}}",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "organizationalUnit": "1000",
+  "referenceNo": "4711",
+  "idHost": "4711",
+  "labelHost": "4711",
+  "destinationCountry": "CH",
+  "documentDate": "2026-01-27",
+  "place": "Stuttgart",
+  "remarks": "vermerk",
+  "signatoryName": "Peter",
+  "documentLanguageIso": "DE",
+  "isInvoiceSigned": true,
+  "isDateAndPlacePresentAtInvoice": true,
+  "mainOrganizationalUnit": "1000",
+  "sourceCountry": "DE",
+  "validFrom": "2026-01-27",
+  "validTo": "2028-01-27",
+  "nameOfExporter": "NameOfExp",
+  "factoryPriceCurrency": "DE",
+  "serialNumber": null,
+  "declarationOfOriginType": null,
+  "items": [
+    {
+      "itemNo": "1",
+      "materialNo": "M-11",
+      "materialNoInternal": "M-11",
+      "materialOrderItemReference": null,
+      "factoryPrice": 1111,
+      "quantity": 1
+    }
+  ]
+}
+
 ```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.bf.declarationoforigin">
@@ -49,6 +125,24 @@ If you like to have a declaration of origin on your invoice document or a check 
 And the response look like the following.
 
 ```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "text": "Der Ausführer der Waren, auf die sich dieses Handelspapier bezieht, erklärt, dass diese Waren, soweit nicht anders angegeben, präferenzbegünstigte EU Ursprungswaren sind.\n\nStuttgart, 27.01.2026\n(Ort und Datum)\n________________________________________ Peter\n(Unterschrift des Ausführers und Name des Unterzeichneten in Druckschrift)",
+  "isDeclarationOfOriginAllowed": true,
+  "isDeclarationOfOriginToSign": true,
+  "items": [
+    {
+      "itemNo": "1",
+      "text": "- Präferenzieller Ursprung: EU",
+      "hasPreference": true,
+      "preferentialOrigin": "EU"
+    }
+  ],
+  "linkToDeclOfOriginCheckLog": "https://origin-preferences-management-test.internal.aeb.com/doo/home/protocols/doo-sap/view/468?system=0bbcdf2c000ff8c"
+}
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
