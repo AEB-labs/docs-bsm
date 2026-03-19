@@ -4,6 +4,12 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: Go on with bill of materials.
+  pages:
+    - slug: transfer-bill-of-materials
+      title: Transfer bill of materials
+      type: basic
 ---
 <br />
 
