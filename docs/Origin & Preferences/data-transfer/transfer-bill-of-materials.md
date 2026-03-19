@@ -71,7 +71,7 @@ And here you can see the response of the request.
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
     <S:Body>
-        <ns2:transferAddressesResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
+        <ns2:transferBillOfMaterialsResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
             <result>
                 <hasErrors>false</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
@@ -79,10 +79,10 @@ And here you can see the response of the request.
                 <responses>
                     <hasErrors>false</hasErrors>
                     <hasWarnings>false</hasWarnings>
-                    <idHost>su_0000001004</idHost>
+                    <idHost>id_123</idHost>
                 </responses>
             </result>
-        </ns2:transferAddressesResponse>
+        </ns2:transferBillOfMaterialsResponse>
     </S:Body>
 </S:Envelope>
 ```
@@ -93,7 +93,7 @@ In case of an error it looks like this.
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
     <S:Body>
-        <ns2:transferAddressesResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
+        <ns2:transferBillOfMaterialsResponse xmlns:ns2="urn:de.aeb.xnsg.onpintegration.bf.onp">
             <result>
                 <hasErrors>true</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
@@ -108,7 +108,7 @@ In case of an error it looks like this.
                     <indentationLevel>0</indentationLevel>
                 </messages>
             </result>
-        </ns2:transferAddressesResponse>
+        </ns2:transferBillOfMaterialsResponse>
     </S:Body>
 </S:Envelope>
 ```
