@@ -33,7 +33,7 @@ If you like to have a declaration of origin on your invoice document or a check 
       </td>
 
       <td>
-        [GetDeclarationOfOrigin](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/GetDeclarationOfOrigni)
+        [GetDeclarationOfOrigin](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getDeclarationOfOrigin)
       </td>
     </tr>
 
