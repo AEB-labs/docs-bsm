@@ -6,6 +6,10 @@ metadata:
   robots: index
 next:
   description: Data transfer
+  pages:
+    - slug: data-transfer
+      title: Data Transfer
+      type: basic
 ---
 From an API perspective we have two main parts which are relevant to intergrate and automate our O&P product.
 
