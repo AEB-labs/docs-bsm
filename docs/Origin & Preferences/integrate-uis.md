@@ -27,7 +27,7 @@ If you like to integrate the material master data search you can use the followi
       </td>
 
       <td>
-        [GetDeclarationOfOrigin](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/GetDeclarationOfOrigni)
+        [OpenMaterialMasterDataSearchUI](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/openMaterialMasterDataSearchUI)
       </td>
     </tr>
 
@@ -37,8 +37,8 @@ If you like to integrate the material master data search you can use the followi
       </td>
 
       <td>
-        [DeclarationOfOriginBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL)
-        [getDeclarationOfOrigin (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin\(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO\))
+        [Origin&PreferencesAF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/Origin\&PreferencesAF?WSDL)
+        [openMaterialMasterDataSearch (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesAF/de/aeb/xnsg/onpintegration/af/onp/IOriginAndPreferencesAF.html#openMaterialMasterDataSearch\(de.aeb.xnsg.foundation.af.ApplicationFacadeParmsDTO,de.aeb.xnsg.onpintegration.af.onp.ONPMaterialMasterDataSearchDTO\))
       </td>
     </tr>
   </tbody>
