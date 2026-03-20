@@ -5,8 +5,58 @@ hidden: false
 metadata:
   robots: index
 ---
-If you like to integrate the material master data search you can use the following API. 
+If you like to integrate the material master data search you can use the following API.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [GetDeclarationOfOrigin](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/GetDeclarationOfOrigni)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [DeclarationOfOriginBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL)
+        [getDeclarationOfOrigin (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin\(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+```json
+{
+  "clientSystemId": "TEST_ID",
+  "clientIdentCode": "{{client}}",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "searchDTO": {
+    "storedFilterName": "filterName123"
+  }
+}
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.onpintegration.af.onp">
     <soapenv:Header/>
@@ -29,6 +79,13 @@ If you like to integrate the material master data search you can use the followi
 
 And the response of the API-Call looks like this.
 
+```json
+{
+  "sessionid": "AFCall-Invoke4543994161773980227668",
+  "httpUrl": "http://localhost:17080/bsm/servlet/LazyStartAF?call=Invoke4543994161773980227668",
+  "urlCloseToken": "goodbypage"
+}
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
@@ -44,4 +101,4 @@ And the response of the API-Call looks like this.
 </S:Envelope>
 ```
 
-Just use the httpUrl and open it in a browser tab. 
+Just use the httpUrl and open it in a browser tab.
