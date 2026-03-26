@@ -15,7 +15,42 @@ The determined freight costs can be used for further processing, e.g.
 * for internal billing,
 * for evaluations and analyses.
 
-<br />
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        [getShipment](https://rz3.aeb.de/test2bsm/swagger/#/BSM%20Carrier/getShipment)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        [BSMCarrierBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL)
+        [getShipment (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMCarrierBF/de/aeb/xnsg/bsm/carrier/bf/IBSMCarrierBF.html#getShipment\(de.aeb.xnsg.bsm.carrier.bf.get.GetShipmentRequestDTO\))
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 The API expects the following parameters:
 
