@@ -45,7 +45,7 @@ Unlike the getShipment API, this call does not require an existing shipping orde
       </td>
 
       <td>
-        <Anchor label="BSMCarrierBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL">BSMCarrierBF (WSDL)</Anchor>
+        <Anchor label="BSMCarrierBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL">BSMCarrierBF (WSDL)</Anchor> | 
         <Anchor label="getQuotes (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMCarrierBF/de/aeb/xnsg/bsm/carrier/bf/IBSMCarrierBF.html#getQuotes(de.aeb.xnsg.bsm.carrier.bf.get.GetQuotesRequestDTO)">getQuotes (Java Doc)</Anchor>
       </td>
     </tr>
