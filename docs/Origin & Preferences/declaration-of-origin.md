@@ -43,7 +43,7 @@ If you like to have a declaration of origin on your invoice document or a check 
       </td>
 
       <td>
-        <Anchor label="DeclarationOfOriginBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL">DeclarationOfOriginBF (WSDL)</Anchor>
+        <Anchor label="DeclarationOfOriginBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL">DeclarationOfOriginBF (WSDL)</Anchor> | 
         <Anchor label="getDeclarationOfOrigin (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO)">getDeclarationOfOrigin (Java Doc)</Anchor>
       </td>
     </tr>
