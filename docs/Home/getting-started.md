@@ -6,7 +6,7 @@ excerpt: >-
 hidden: false
 icon: far fa-house-medical
 next:
-  description: 'You could start where you are interessted in. '
+  description: 'You could start with whatever interests you. '
   pages:
     - slug: overview
       title: Origin & Preferences - Overview
