@@ -45,7 +45,7 @@ In the following you can see an API-Call of transfer purchase orders with one pu
       </td>
 
       <td>
-        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor> | 
         <Anchor label="transferPurchaseOrders (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferPurchaseOrders(de.aeb.xnsg.onpintegration.bf.onp.TransferPurchaseOrdersRequestDTO)">transferPurchaseOrders (Java Doc)</Anchor>
       </td>
     </tr>
