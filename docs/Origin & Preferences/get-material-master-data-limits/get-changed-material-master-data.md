@@ -41,7 +41,7 @@ Ok and now let's do that in detail with some sample calls. So as i sad first we 
       </td>
 
       <td>
-        [getChangedMaterialMasterData](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getChangedMaterialMasterData)
+        <Anchor label="getChangedMaterialMasterData" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getChangedMaterialMasterData">getChangedMaterialMasterData</Anchor>
       </td>
     </tr>
 
@@ -51,8 +51,8 @@ Ok and now let's do that in detail with some sample calls. So as i sad first we 
       </td>
 
       <td>
-        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [getChangedMaterialMasterData (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#getChangedMaterialMasterData\(de.aeb.xnsg.onpintegration.bf.onp.GetChangedMaterialMasterDataRequestDTO\))
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="getChangedMaterialMasterData (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#getChangedMaterialMasterData(de.aeb.xnsg.onpintegration.bf.onp.GetChangedMaterialMasterDataRequestDTO)">getChangedMaterialMasterData (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
