@@ -33,7 +33,7 @@ In the following you can see an API-Call of transfer Addresses with one address.
       </td>
 
       <td>
-        [transferAdresses](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses)
+        <Anchor label="transferAdresses" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferAddresses">transferAdresses</Anchor>
       </td>
     </tr>
 
@@ -43,8 +43,8 @@ In the following you can see an API-Call of transfer Addresses with one address.
       </td>
 
       <td>
-        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [transferAddresses (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses\(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO\))
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="transferAddresses (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferAddresses(de.aeb.xnsg.onpintegration.bf.onp.TransferAddressesRequestDTO)">transferAddresses (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
