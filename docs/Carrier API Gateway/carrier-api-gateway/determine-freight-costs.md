@@ -25,13 +25,44 @@ The API expects the following parameters:
 
 Example call:
 
+```json
+{
+  "clientSystemId": "ERP_SYSTEM_A",
+  "clientIdentCode": "API_TEST_CLIENT",
+  "userName": "AnyUserName",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "reference": {
+    "transactionId": "PR1     400008000026920251105101712JLO  1000",
+    "referenceNumber1": "",
+    "shipmentNumber": ""
+  },
+  "includeDocuments": false,
+  "shippingTime": "12:00:00"
+}
+```
 ```xml
-<INCLUDEDOCUMENTS>false</INCLUDEDOCUMENTS>
-<REFERENCE>
-  <REFERENCENUMBER1>87650010</REFERENCENUMBER1> 
-  <SHIPMENTNUMBER>5223</SHIPMENTNUMBER> 
-</REFERENCE>
-<SHIPPINGTIME>18:30:00</SHIPPINGTIME> 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.carrier.bf">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:getShipment>
+            <requestDTO>
+                <clientSystemId>PR1_400</clientSystemId>
+                <clientIdentCode>{{client}}</clientIdentCode>
+                <userName>{{user}}</userName>
+                <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
+                <reference>
+                    <transactionId>PR1     400008000026920251105101712JLO  1000</transactionId>
+                    <referenceNumber1/>
+                    <shipmentNumber/>
+                </reference>
+                <includeDocuments>true</includeDocuments>
+                <shippingTime>12:00:00</shippingTime>
+            </requestDTO>
+        </urn:getShipment>
+    </soapenv:Body>
+</soapenv:Envelope>
 
 
 ```
