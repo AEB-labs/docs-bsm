@@ -1,5 +1,5 @@
 ---
-title: 'Determine freight costs for completed shipping orders  '
+title: 'Determine freight costs for existing shipping orders  '
 deprecated: false
 hidden: false
 metadata:
