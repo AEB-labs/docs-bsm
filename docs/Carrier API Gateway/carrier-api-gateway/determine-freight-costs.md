@@ -45,7 +45,7 @@ The determined freight costs can be used for further processing, e.g.
       </td>
 
       <td>
-        <Anchor label="BSMCarrierBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL">BSMCarrierBF (WSDL)</Anchor>
+        <Anchor label="BSMCarrierBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL">BSMCarrierBF (WSDL)</Anchor> | 
         <Anchor label="getShipment (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMCarrierBF/de/aeb/xnsg/bsm/carrier/bf/IBSMCarrierBF.html#getShipment(de.aeb.xnsg.bsm.carrier.bf.get.GetShipmentRequestDTO)">getShipment (Java Doc)</Anchor>
       </td>
     </tr>
