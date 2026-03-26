@@ -37,7 +37,7 @@ In the following you can see an API-Call of transfer goods receipts with one goo
       </td>
 
       <td>
-        [transferGoodsReceipts](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferGoodsReceipts)
+        <Anchor label="transferGoodsReceipts" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferGoodsReceipts">transferGoodsReceipts</Anchor>
       </td>
     </tr>
 
@@ -47,8 +47,8 @@ In the following you can see an API-Call of transfer goods receipts with one goo
       </td>
 
       <td>
-        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [transferGoodsReceipts (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferGoodsReceipts\(de.aeb.xnsg.onpintegration.bf.onp.TransferGoodsReceiptsRequestDTO\))
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="transferGoodsReceipts (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferGoodsReceipts(de.aeb.xnsg.onpintegration.bf.onp.TransferGoodsReceiptsRequestDTO)">transferGoodsReceipts (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
