@@ -35,7 +35,7 @@ In the following you can see an API-Call of transfer materials with one material
       </td>
 
       <td>
-        [transferMaterials](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferMaterials)
+        <Anchor label="transferMaterials" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferMaterials">transferMaterials</Anchor>
       </td>
     </tr>
 
@@ -45,8 +45,8 @@ In the following you can see an API-Call of transfer materials with one material
       </td>
 
       <td>
-        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [transferMaterials (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferMaterials\(de.aeb.xnsg.onpintegration.bf.onp.TransferMaterialsRequestDTO\))
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="transferMaterials (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferMaterials(de.aeb.xnsg.onpintegration.bf.onp.TransferMaterialsRequestDTO)">transferMaterials (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
