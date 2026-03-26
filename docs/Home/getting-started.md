@@ -11,6 +11,9 @@ next:
     - slug: carrier-api-gateway
       title: Carrier API Gateway - Overview
       type: basic
+    - slug: overview
+      title: Overview
+      type: basic
 ---
 But the BSM offers more than side-by-side integrations for SAP, Salesforce and HAUFE X360 ERP. It also extends the AEB business services and the interaction between if it is needed. 
 
