@@ -45,7 +45,7 @@ In the following you can see an API-Call of transfer sales orders with one sales
       </td>
 
       <td>
-        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor> | 
         <Anchor label="transferSalesOrders (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferSalesOrders(de.aeb.xnsg.onpintegration.bf.onp.TransferSalesOrdersRequestDTO)">transferSalesOrders (Java Doc)</Anchor>
       </td>
     </tr>
