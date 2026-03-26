@@ -1,5 +1,5 @@
 ---
-title: Origin & Preferences - Overview
+title: Overview
 deprecated: false
 hidden: false
 metadata:
