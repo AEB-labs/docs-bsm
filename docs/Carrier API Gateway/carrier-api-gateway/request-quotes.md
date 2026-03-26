@@ -15,6 +15,43 @@ The getQuotes API allows you to determine the available shipping options of the 
 
 Unlike the getShipment API, this call does not require an existing shipping order in Carrier Connect. However, if packages are not yet physically packed at this point, the data basis (e.g. planned weights and dimensions) on which the freight costs are to be determined must be specified within the call.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        <Anchor label="getQuotes" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/BSM%20Carrier/getQuotes">getQuotes</Anchor>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        <Anchor label="BSMCarrierBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL">BSMCarrierBF (WSDL)</Anchor>
+        <Anchor label="getQuotes (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMCarrierBF/de/aeb/xnsg/bsm/carrier/bf/IBSMCarrierBF.html#getQuotes(de.aeb.xnsg.bsm.carrier.bf.get.GetQuotesRequestDTO)">getQuotes (Java Doc)</Anchor>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 The API expects two parameters in the request:
 
 * Shipment -  shipping data to request a quote, see list of fields [here](https://rz3.aeb.de/test1bsm/servlet/bf/doc/DLCarrierBF/de/aeb/xnsg/dl/bf/DLShipmentRequestDataDTO.html)
