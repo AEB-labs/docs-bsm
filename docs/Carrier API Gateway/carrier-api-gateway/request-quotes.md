@@ -107,6 +107,156 @@ Example call:
 </SHIPMENT>
 <SHIPPINGTIME>18:30:00</SHIPPINGTIME>      
 ```
+```json
+{
+  "clientSystemId": "PR1_400",
+  "clientIdentCode": "{{client}}",
+  "userName": "{{user}}",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "shipment": {
+    "transactionId": "123",
+    "transactionLabel": "123",
+    "organizationUnitClientSystem": "1000",
+    "masterShipmentTransactionId": "",
+    "isDocumentShipment": false,
+    "templateName": "",
+    "referenceNumber1": "123",
+    "referenceNumber2": "",
+    "numberOfExchangePallets": 0,
+    "shipToServicePointID": "",
+    "shipFromServicePointID": "",
+    "remark": "A remark",
+    "shippingDate": "2026-11-14",
+    "contents": "Content",
+    "extCarrierShipNum": "",
+    "extCarrierShipNumBasic": "",
+    "extCarrierShipNumReturn": "",
+    "extCarrierShipNumBasicReturn": "",
+    "shippingPt": {
+      "companyNumber": "1010",
+      "name": "AEB Zentrale",
+      "street": "Sigmaringer Straße 5",
+      "postcode": "88459",
+      "city": "Stuttgart",
+      "countryISOCode": "DE"
+    },
+    "customsValue": {
+      "value": 100,
+      "currencyIso": "string"
+    },
+    "consignee": {
+      "companyNumber": "1650",
+      "name": "Henderson INC",
+      "street": "Hafenstrasse 678",
+      "postcode": "54001",
+      "city": "Hamburg",
+      "district": "string",
+      "countryISOCode": "DE"
+    },
+    "carrierIdentCode": "UPS",
+    "serviceCode": null,
+    "termsOfDeliveryCode": "FCA",
+    "codValue": {
+      "value": 100,
+      "currencyIso": "EUR"
+    },
+    "insuranceValue": {
+      "value": 100,
+      "currencyIso": "EUR"
+    },
+    "goodsValue": {
+      "value": 100,
+      "currencyIso": "EUR"
+    },
+    "invoiceValue": {
+      "value": 100,
+      "currencyIso": "EUR"
+    },
+    "loadingMeters": 0,
+    "palletPlaces": 0,
+    "packages": [
+      {
+        "packageTypeIdentCode": "CT",
+        "packageTransactionId": "0000000642",
+        "referenceNumber1": "300001500",
+        "extCarrierPackNum": "string",
+        "grossWeight": {
+          "value": 1.000,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 10,
+          "height": 10,
+          "identCode": "CM"
+        },
+        "containedItems": [
+          {
+            "packedItemTransactionId": "string",
+            "shipmentReference": {
+              "transactionId": "string",
+              "referenceNumber1": "string",
+              "shipmentNumber": "string"
+            },
+            "itemTransactionId": "string",
+            "referenceNumber1": "string",
+            "quantityValue": 0
+          }
+        ],
+        "hazardousGoodsData": {
+          "hazardousGoodsType": "string",
+          "packagingTypeHandling": "string",
+          "hazardQValue": 0
+        },
+        "transportEquipment": {
+          "identification": "string",
+          "equipmentTransactionId": "string"
+        },
+        "marks": "string",
+        "stackability": "string",
+        "freightClass": "string",
+        "nmfcCode": "string",
+        "nmfcSubCode": "string",
+        "loadingMeters": 0,
+        "palletPlaces": 0
+      }
+    ],
+    "items": [
+      {
+        "itemNumber": 10,
+        "itemTransactionId": "10",
+        "referenceNumber1": "10",
+        "customsTariffNumber": "81022941",
+        "description": "LCD Monitor",
+        "countryOfOriginsISOCode": "DE",
+        "quantity": {
+          "value": 1,
+          "unit": "kg"
+        },
+        "netWeight": {
+          "value": 1,
+          "unit": "kg"
+        },
+        "grossWeight": {
+          "value": 1,
+          "unit": "kg"
+        },
+        "customsValue": {
+          "value": 1000,
+          "currencyIso": "EUR"
+        },
+        "goodsValue": {
+          "value": 100,
+          "currencyIso": "EUR"
+        }
+      }
+    ]    
+  },
+  "shippingTime": "12:00:00"
+}
+```
 
 <br />
 
