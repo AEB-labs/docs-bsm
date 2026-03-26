@@ -37,7 +37,7 @@ If you like to integrate the material master data search you can use the followi
       </td>
 
       <td>
-        <Anchor label="Origin&PreferencesAF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesAF?WSDL">Origin&PreferencesAF (WSDL)</Anchor>
+        <Anchor label="Origin&PreferencesAF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesAF?WSDL">Origin&PreferencesAF (WSDL)</Anchor> | 
         <Anchor label="openMaterialMasterDataSearch (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesAF/de/aeb/xnsg/onpintegration/af/onp/IOriginAndPreferencesAF.html#openMaterialMasterDataSearch(de.aeb.xnsg.foundation.af.ApplicationFacadeParmsDTO,de.aeb.xnsg.onpintegration.af.onp.ONPMaterialMasterDataSearchDTO)">openMaterialMasterDataSearch (Java Doc)</Anchor>
       </td>
     </tr>
