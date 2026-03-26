@@ -35,7 +35,7 @@ In the following you can see an API-Call of transfer sales orders with one sales
       </td>
 
       <td>
-        [transferSalesOrders](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferSalesOrders)
+        <Anchor label="transferSalesOrders" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/transferSalesOrders">transferSalesOrders</Anchor>
       </td>
     </tr>
 
@@ -45,8 +45,8 @@ In the following you can see an API-Call of transfer sales orders with one sales
       </td>
 
       <td>
-        [Origin&PreferencesBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL)
-        [transferSalesOrders (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferSalesOrders\(de.aeb.xnsg.onpintegration.bf.onp.TransferSalesOrdersRequestDTO\))
+        <Anchor label="Origin&PreferencesBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/OriginAndPreferencesBF?WSDL">Origin&PreferencesBF (WSDL)</Anchor>
+        <Anchor label="transferSalesOrders (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/OriginAndPreferencesBF/de/aeb/xnsg/onpintegration/bf/onp/IOriginAndPreferencesBF.html#transferSalesOrders(de.aeb.xnsg.onpintegration.bf.onp.TransferSalesOrdersRequestDTO)">transferSalesOrders (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
