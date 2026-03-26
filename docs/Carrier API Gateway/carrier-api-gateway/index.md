@@ -1,5 +1,5 @@
 ---
-title: Carrier API Gateway - Overview
+title: Overview
 deprecated: false
 hidden: false
 metadata:
