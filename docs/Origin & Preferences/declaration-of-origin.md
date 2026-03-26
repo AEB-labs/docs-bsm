@@ -33,7 +33,7 @@ If you like to have a declaration of origin on your invoice document or a check 
       </td>
 
       <td>
-        [GetDeclarationOfOrigin](https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getDeclarationOfOrigin)
+        <Anchor label="GetDeclarationOfOrigin" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getDeclarationOfOrigin">GetDeclarationOfOrigin</Anchor>
       </td>
     </tr>
 
@@ -43,8 +43,8 @@ If you like to have a declaration of origin on your invoice document or a check 
       </td>
 
       <td>
-        [DeclarationOfOriginBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL)
-        [getDeclarationOfOrigin (Java Doc)](https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin\(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO\))
+        <Anchor label="DeclarationOfOriginBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL">DeclarationOfOriginBF (WSDL)</Anchor>
+        <Anchor label="getDeclarationOfOrigin (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO)">getDeclarationOfOrigin (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
