@@ -237,4 +237,8 @@ Those informations are needed to distribute the event data to the target object/
 }
 ```
 
-<br />
+In addition to the data provided in the api call. There have to be an Journal Abo in BSM for Object VCP-Consignment. 
+
+The configuration of the abo should be done like the following. For e.g. the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_E01_080’.
+The shipping order is now to be synchronised with the ERP system using the installation ID ‘SAP_ERP_T01_080’.
+Then enter ‘SAP_ERP_T01_080’ in the ‘Installation ID’ field and “SAP_EWM_E01_080” in the ‘Source Installation ID’ field.
