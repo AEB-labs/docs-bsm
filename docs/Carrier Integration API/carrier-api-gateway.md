@@ -6,11 +6,11 @@ metadata:
   robots: index
 next:
   pages:
-    - slug: determine-freight-costs
-      title: 'Determine freight costs for completed shipping orders  '
+    - slug: freight-costs-quoted-services
+      title: Freight Costs & Quoted Services
       type: basic
-    - slug: request-quotes
-      title: 'Request quotes '
+    - slug: distribute-events
+      title: Distribute Events
       type: basic
 ---
 The Carrier Integration API of the Business Service Managment offers the following functionalities. 
