@@ -527,4 +527,29 @@ And here the part for the usecase in context of Export Controls & Approvals. Thi
 
 Ok but that's not all. We have to synchronize the data from Customs Management to Carrier Connect & Export Controls.
 
-For this the BSM has an extended Sync-API. 
+For this the BSM has an extended Sync-API. The synchronizeEvents-API in BSM is extended by an partner server which has to be filled. Here is an example call:
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.foundation.bf.sync">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:synchronizeEvents>
+         <request>
+            <clientSystemId>SAP_E01</clientSystemId>
+            <clientIdentCode>TEST</clientIdentCode>      
+           <userName>USER</userName>
+            <resultLanguageIsoCodes>DE</resultLanguageIsoCodes>
+            <syncId>87501</syncId>
+            <businessObjectType>EXPDECL</businessObjectType>
+            <ageInDays>100</ageInDays>
+            <blockSize>100</blockSize>
+            <returnTotalCount>false</returnTotalCount>        
+           <partnerServer>CustomsManagement</partnerServer>
+         </request>
+      </urn:synchronizeEvents>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+With this call the BSM gets the changes from Customs Management and could synchronize the data with Carrier Connect and Export Controls.
+
