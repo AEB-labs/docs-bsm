@@ -525,4 +525,6 @@ And here the part for the usecase in context of Export Controls & Approvals. Thi
 </interactionControls>
 ```
 
-<br />
+Ok but that's not all. We have to synchronize the data from Customs Management to Carrier Connect & Export Controls.
+
+For this the BSM has an extended Sync-API. 
