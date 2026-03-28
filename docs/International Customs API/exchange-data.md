@@ -465,4 +465,64 @@ The CreateShipment-API call could the look like the following.
 }
 ```
 
+The difference to the createConsigment-API of Customs Managment is that is the part with the fields interactionControls.
+
+Those fields are on consignment level and on item level. Here the example for the usecase Paperless Trade in context of Carrier Connect. This one is on consignment-Level.
+
+```json
+ "interactionControls": [
+      {
+        "usecase": {
+          "usecaseId": "CCO_SHP_CUSTOMS_UPD"
+        },
+        "ids": [
+          {
+            "boIdClientSystem": "SAP_E01_800_BILLING_DOC_90000001",
+            "clientSystemId": "SAP_E01"
+          }
+        ]
+      }
+```
+```xml
+<interactionControls>
+  <usecase>
+    <usecaseId>CCO_SHP_CUSTOMS_UPD</usecaseId>
+  </usecase>
+  <ids>
+    <boIdClientSystem>SAP_E01_800_BILLING_DOC_90000001</boIdClientSystem>
+    <clientSystemId>SAP_E01</clientSystemId>
+  </ids>
+</interactionControls>
+```
+
+And here the part for the usecase in context of Export Controls & Approvals. This one is on item level.
+
+```json
+"interactionControls": [
+              {
+                "usecase": {
+                  "usecaseId": "EC_APPROVAL_DATA"
+                },
+                "ids": [
+                  {
+                    "boIdClientSystem": "SAP_JNH_080_OUTBOUND_DELIVERY_80000061$DEFAULT",
+                    "clientSystemId": "PGTEST1BSM_ATC_TEST",
+                    "boItemIdClientSystem": "10"
+                  }
+                ]
+              }
+```
+```xml
+<interactionControls>
+  <usecase>
+    <usecaseId>EC_APPROVAL_DATA</usecaseId>
+  </usecase>
+  <ids>
+    <boIdClientSystem>SAP_JNH_080_OUTBOUND_DELIVERY_80000061$DEFAULT</boIdClientSystem>
+    <clientSystemId>PGTEST1BSM_ATC_TEST</clientSystemId>
+    <boItemIdClientSystem>10</boItemIdClientSystem>
+  </ids>
+</interactionControls>
+```
+
 <br />
