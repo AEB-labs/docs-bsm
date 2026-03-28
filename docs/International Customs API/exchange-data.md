@@ -529,6 +529,20 @@ Ok but that's not all. We have to synchronize the data from Customs Management t
 
 For this the BSM has an extended Sync-API. The synchronizeEvents-API in BSM is extended by an partner server which has to be filled. Here is an example call:
 
+```json
+{
+  "clientSystemId": "SAP_E01",
+  "clientIdentCode": "TEST",
+  "userName": "USER",
+  "resultLanguageIsoCodes": ["DE"],
+  "syncId": "87501",
+  "businessObjectType": "EXPDECL",
+  "ageInDays": 100,
+  "blockSize": 100,
+  "returnTotalCount": false,
+  "partnerServer": "CustomsManagement"
+}
+```
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.foundation.bf.sync">
    <soapenv:Header/>
