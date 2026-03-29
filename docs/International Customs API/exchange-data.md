@@ -2,7 +2,6 @@
 title: Exchange Data
 deprecated: false
 hidden: false
-icon: far fa-house-medical
 metadata:
   robots: index
 ---
@@ -566,4 +565,3 @@ For this the BSM has an extended Sync-API. The synchronizeEvents-API in BSM is e
 ```
 
 With this call the BSM gets the changes from Customs Management and could synchronize the data with Carrier Connect and Export Controls.
-
