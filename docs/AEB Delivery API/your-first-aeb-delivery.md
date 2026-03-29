@@ -10,6 +10,8 @@ The AEB delivery API offers two apis to update/delete the AEB delivery.
 * updateAEBDelivery
 * deleteAEBDelivery
 
+And it is also possible to get an existing AEB delivery via API.
+
 If you like to know more about what happens if an AEB delivery is updated by API have a look in our interface description.
 
 <Anchor label="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US" target="_blank" href="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US">https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US</Anchor>
