@@ -588,4 +588,50 @@ And the response of this update request could look like this. In the response yo
 </S:Envelope>
 ```
 
+If there was an error this could like this.
+
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "EMPTY_MANDATORY_FIELD",
+      "messageTexts": [
+        {
+          "languageISOCode": "de",
+          "text": "Die UsecaseId \"CCO_SHP_CUSTOMS_UPD1\" ist nicht bekannt."
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:updateDeliveryResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.core.bf.delivery">
+            <result>
+                <hasErrors>true</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <messages>
+                    <messageType>ERROR</messageType>
+                    <messageIdentCode>EMPTY_MANDATORY_FIELD</messageIdentCode>
+                    <messageTexts>
+                        <languageISOCode>de</languageISOCode>
+                        <text>Die UsecaseId "CCO_SHP_CUSTOMS_UPD1" ist nicht bekannt.</text>
+                    </messageTexts>
+                    <indentationLevel>0</indentationLevel>
+                </messages>
+            </result>
+        </ns2:updateDeliveryResponse>
+    </S:Body>
+</S:Envelope>
+```
+
 <br />
