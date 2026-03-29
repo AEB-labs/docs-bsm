@@ -5,9 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-The AEB delivery offers shipping functions bundled in one API. 
+The AEB delivery offers shipping functions bundled in one API.
 
-* Customs Management 
+* Customs Management
 * Automated consolidaton of AEB-Deliveries
 
 In the future this will be extended by:
