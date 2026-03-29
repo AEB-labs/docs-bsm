@@ -1,11 +1,11 @@
 ---
-title: Copy of Delete AEB Delivery
+title: Get AEB Delivery
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-Sometime it might be needed to delete the AEB Delivery via API. 
+Sometime it might be needed to get the AEB Delivery via API.
 
 <Table>
   <thead>
@@ -44,7 +44,7 @@ Sometime it might be needed to delete the AEB Delivery via API.
   </tbody>
 </Table>
 
-The request for a delete has to be like this.
+The request for a get request has to be like this.
 
 ```json
 ```
