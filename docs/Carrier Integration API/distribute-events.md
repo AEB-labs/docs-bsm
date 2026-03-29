@@ -46,7 +46,7 @@ There is the requirement that one System (e.g. SAP EWM) starts with creating an 
 
 In the follwing there is an example call for this usescase. Everything is the same as in the createShipment API of carrier connect only the field interactionControls is added. Those controls have two informations.
 
-* usecaseId: in this case CES_EVENT_DATA
+* usecaseId: in this case "CES_EVENT_DATA"
 * ids:
   * boIdClientSystem: id of the target business object for the event data
   * clientSystemId: id of the system for the event data
