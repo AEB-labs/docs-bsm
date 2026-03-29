@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: AEB Delivery API - Overview
 deprecated: false
 hidden: false
 metadata:
@@ -16,4 +16,4 @@ In the future this will be extended by:
 * Document Services
 * and further AEB business services
 
-So it will become a standard small shipping solution which could be used to intergrate in your ERP system. 
+So it will become a standard small shipping solution which could be used to intergrate in your ERP system.
