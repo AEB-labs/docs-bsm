@@ -581,7 +581,7 @@ And the response of this update request could look like this. In the response yo
                 <hasErrors>false</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
                 <hasWarnings>false</hasWarnings>
-                <wasCreated>false</wasCreated>
+                <wasCreated>true</wasCreated>
             </result>
         </ns2:updateDeliveryResponse>
     </S:Body>
