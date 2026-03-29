@@ -7,6 +7,43 @@ metadata:
 ---
 There is the requirement that one System (e.g. SAP EWM) starts with creating an carrier shipment, but the events for those shipments should be synchronized to another System (e.g. SAP ERP). For this usecase the Business Service Management offers the createShipment API of Carrier Connect extended with information about the target System and target business object (e.g. SAP delivery).
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        <Anchor label="createShipment" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/BSM%20Carrier/createShipment">createShipment</Anchor>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        <Anchor label="BSMCarrierBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMCarrierBF?WSDL">BSMCarrierBF (WSDL)</Anchor> |
+        <Anchor label="createShipment (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMCarrierBF/de/aeb/xnsg/bsm/carrier/bf/IBSMCarrierBF.html#createShipment(de.aeb.xnsg.bsm.carrier.bf.create.BSMDLCreateShipmentRequestDTO)">createShipment (Java Doc)</Anchor>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 In the follwing there is an example call for this usescase. Everything is the same as in the createShipment API of carrier connect only the field interactionControls is added. Those controls have two informations.
 
 * usecaseId: in this case CES_EVENT_DATA
@@ -237,7 +274,7 @@ Those informations are needed to distribute the event data to the target object/
 }
 ```
 
-In addition to the data provided in the api call. There have to be an Journal Abo in BSM for Object VCP-Consignment. 
+In addition to the data provided in the api call. There have to be an Journal Abo in BSM for Object VCP-Consignment.
 
 The configuration of the abo should be done like the following. For e.g. the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_E01_080’.
 The shipping order is now to be synchronised with the ERP system using the installation ID ‘SAP_ERP_T01_080’.
