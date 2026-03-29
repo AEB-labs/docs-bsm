@@ -12,6 +12,43 @@ There are two usecases where data between Customs Management and other business 
 
 For those usecases the Business Service Managment offers an extended createConsignment-API.
 
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        <Anchor label="createConsignment" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/BSM%20International%20Customs/createConsignment">createConsignment</Anchor>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        <Anchor label="BSMInternationalCustomsBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMInternationalCustomsBF?WSDL">BSMInternationalCustomsBF (WSDL)</Anchor> |
+        <Anchor label="createConsignment (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMInternationalCustomsBF/de/aeb/xnsg/bsm/customs/bf/IBSMInternationalCustomsBF.html#createConsignment(de.aeb.xnsg.bsm.customs.bf.dtos.BSMICCreateConsignmentRequestDTO)">createConsignment (Java Doc)</Anchor>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 The API is extended by information about the transaction of the processed mentioned before.
 
 There are two usecase-Ids:
