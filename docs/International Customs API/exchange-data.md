@@ -84,8 +84,8 @@ The CreateShipment-API call could the look like the following.
                     <consignmentNumber>90000001</consignmentNumber>
                     <profileCode>INVOICE_STD</profileCode>
                     <personInCharge>
-                        <forename>Jan</forename>
-                        <surname>Ambrosch</surname>
+                        <forename>Peter</forename>
+                        <surname>Fox</surname>
                     </personInCharge>
                     <bsmDeliveries>
                         <deliveryIdClientSystem>SAP_E01_800_BILLING_DOC_90000001</deliveryIdClientSystem>
@@ -295,8 +295,8 @@ The CreateShipment-API call could the look like the following.
     "consignmentNumber": "90000001",
     "profileCode": "INVOICE_STD",
     "personInCharge": {
-      "forename": "Jan",
-      "surname": "Ambrosch"
+      "forename": "Peter",
+      "surname": "Fox"
     },
     "bsmDeliveries": [
       {
