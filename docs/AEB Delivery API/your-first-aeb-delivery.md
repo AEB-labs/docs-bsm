@@ -4,6 +4,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: delete-aeb-delivery
+      title: Delete AEB Delivery
+      type: basic
 ---
 The AEB delivery API offers one api to create or update the AEB delivery.
 
