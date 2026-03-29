@@ -561,4 +561,31 @@ Ok but why not start directly with creating your first AEB delivery.
 </soapenv:Envelope>
 ```
 
+And the response of this update request could look like this. In the response you have the information if the AEB Delivery is created or updated in the field "wasCreated". This could sometimes be usefull. 
+
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "wasCreated": true
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:updateDeliveryResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.core.bf.delivery">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <wasCreated>false</wasCreated>
+            </result>
+        </ns2:updateDeliveryResponse>
+    </S:Body>
+</S:Envelope>
+```
+
 <br />
