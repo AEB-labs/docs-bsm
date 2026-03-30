@@ -27,7 +27,7 @@ Sometime it might be needed to delete the AEB Delivery via API.
       </td>
 
       <td>
-        <Anchor label="updateAEBDelivery" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/updateDelivery">updateAEBDelivery</Anchor>
+        <Anchor label="deleteAEBDelivery" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/deleteDelivery">deleteAEBDelivery</Anchor>
       </td>
     </tr>
 
@@ -38,7 +38,7 @@ Sometime it might be needed to delete the AEB Delivery via API.
 
       <td>
         <Anchor label="AEBDeliveryBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> |
-        <Anchor label="updateAEBDelivery (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#updateDelivery(de.aeb.xnsg.bsm.core.bf.delivery.update.UpdateAEBDeliveryRequestDTO)">updateAEBDelivery (Java Doc)</Anchor>
+        <Anchor label="deleteAEBDelivery (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#deleteDelivery(de.aeb.xnsg.bsm.core.bf.delivery.delete.DeleteAEBDeliveryRequestDTO)">deleteAEBDelivery (Java Doc)</Anchor>
       </td>
     </tr>
   </tbody>
@@ -74,7 +74,7 @@ The request for a delete has to be like this.
 </soapenv:Envelope>
 ```
 
-If the deletion of the AEB delivery is done the response looks like this. 
+If the deletion of the AEB delivery is done the response looks like this.
 
 ```json
 {
