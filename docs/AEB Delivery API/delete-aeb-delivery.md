@@ -4,6 +4,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: copy-of-delete-aeb-delivery
+      title: Get AEB Delivery
+      type: basic
 ---
 Sometime it might be needed to delete the AEB Delivery via API.
 
