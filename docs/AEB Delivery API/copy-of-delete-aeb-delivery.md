@@ -276,4 +276,50 @@ If an AEB delivery is found the response looks like this.
 </S:Envelope>
 ```
 
+If an error occured it looks like this.
+
+```json
+{
+  "hasErrors": true,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [
+    {
+      "messageType": "ERROR",
+      "messageIdentCode": "INTERNAL_SERVER_ERROR",
+      "messageTexts": [
+        {
+          "languageISOCode": "en",
+          "text": "An error occured: ExceptionID:d71d7e86a1f906ca488619b86a975aa7fddbfbfb"
+        }
+      ],
+      "indentationLevel": 0
+    }
+  ]
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:getDeliveryResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.core.bf.delivery">
+            <result>
+                <hasErrors>true</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <messages>
+                    <messageType>ERROR</messageType>
+                    <messageIdentCode>INTERNAL_SERVER_ERROR</messageIdentCode>
+                    <messageTexts>
+                        <languageISOCode>de</languageISOCode>
+                        <text>Es ist ein Fehler aufgetreten: ExceptionID:d71d7e86a1f906ca488619b86a975aa7fddbfbfb</text>
+                    </messageTexts>
+                    <indentationLevel>0</indentationLevel>
+                </messages>
+            </result>
+        </ns2:getDeliveryResponse>
+    </S:Body>
+</S:Envelope>
+```
+
 <br />
