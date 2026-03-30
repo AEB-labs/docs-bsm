@@ -4,6 +4,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: your-first-aeb-delivery
+      title: Your first AEB Delivery
+      type: basic
 ---
 The AEB delivery offers shipping functions bundled in one API.
 
