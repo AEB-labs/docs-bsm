@@ -54,9 +54,7 @@ The request for a get request has to be like this.
   "resultLanguageIsoCodes": [
     "en"
   ],
-  "reference" : {
-    "boIdClientSystem": "BRUYES_1"  
-  }  
+  "boIdClientSystem": "BRUYES_1"    
 }
 ```
 ```xml
@@ -69,9 +67,7 @@ The request for a get request has to be like this.
                 <clientIdentCode>{{client}}</clientIdentCode>
                 <userName>SOMEONE</userName>
                 <resultLanguageIsoCodes>DE</resultLanguageIsoCodes>
-                <reference>
-                    <boIdClientSystem>BRUYES_1</boIdClientSystem>
-                </reference>
+                <boIdClientSystem>BRUYES_1</boIdClientSystem>               
             </request>
         </urn:getDelivery>
     </soapenv:Body>
