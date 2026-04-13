@@ -5,7 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-There is the requirement that one System (e.g. SAP EWM) starts with creating an carrier shipment, but the events for those shipments should be synchronized to another System (e.g. SAP ERP). For this usecase the Business Service Management offers the createShipment API of Carrier Connect extended with information about the target System and target business object (e.g. SAP delivery).
+In some system landscapes, one system (e.g., SAP EWM) must initiate carrier shipment creation, while tracking events for those shipments are synchronized to another system (e.g., SAP ERP).
+
+For this use case, Business Service Management provides the `createShipment` API from Carrier Connect, extended with details about the target system and target business object (e.g., SAP delivery):
 
 <Table>
   <thead>
@@ -44,14 +46,16 @@ There is the requirement that one System (e.g. SAP EWM) starts with creating an 
   </tbody>
 </Table>
 
-In the follwing there is an example call for this usescase. Everything is the same as in the createShipment API of carrier connect only the field interactionControls is added. Those controls have two informations.
+The following shows an example call for this scenario. It matches the standard `createShipment` API of Carrier Connect, with only the `interactionControls` field added. This field contains two pieces of information.
 
 * usecaseId: in this case "CES_EVENT_DATA"
 * ids:
-  * boIdClientSystem: id of the target business object for the event data
-  * clientSystemId: id of the system for the event data
+  * boIdClientSystem: ID of the target business object in the backend ERP system
+  * clientSystemId: ID of the backend ERP system 
 
-Those informations are needed to distribute the event data to the target object/system.
+The IDs are required to link the event data (tracking data) to the business object in the backend ERP system.
+
+E
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.carrier.bf">
