@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+## Shipment creation 
+
 In some system landscapes, one system (e.g., SAP EWM) must initiate carrier shipment creation, while tracking events for those shipments are synchronized to another system (e.g., SAP ERP).
 
 For this use case, Business Service Management provides the `createShipment` API from Carrier Connect, extended with details about the target system and target business object (e.g., SAP delivery):
@@ -53,9 +55,7 @@ The following shows an example call for this scenario. It matches the standard `
   * boIdClientSystem: ID of the target business object in the backend ERP system
   * clientSystemId: ID of the backend ERP system 
 
-The IDs are required to link the event data (tracking data) to the business object in the backend ERP system.
-
-E
+The IDs are required to link the event data (tracking data) to the business object in the backend ERP system. In this example scenario, an EWM system JNH, with client 080,  sends shipment data to Carrier Cloud.  The backend ERP system is E01, client 400. The outbound delivery order in EWM is 80000123, same as the linked outbound delivery in ERP. 
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.carrier.bf">
@@ -66,11 +66,11 @@ E
              <interactionControls>
                <usecase><usecaseId>CES_EVENT_DATA</usecaseId></usecase>
                <ids>
-               <boIdClientSystem>SAP_ERP_ID_05</boIdClientSystem>
-               <clientSystemId>SAP_ERP_E01</clientSystemId>
+               <boIdClientSystem>SAP_80000123</boIdClientSystem>
+               <clientSystemId>SAP_E01_400</clientSystemId>
                </ids>
             </interactionControls>
- 						<clientSystemId>SAP_JNH_080</clientSystemId>
+ 						<clientSystemId>SAP_EWM_JNH_080</clientSystemId>
             <clientIdentCode>ATC_TEST</clientIdentCode>
             <userName>JAM</userName>
             <resultLanguageIsoCodes>DE</resultLanguageIsoCodes>
@@ -78,12 +78,12 @@ E
                <creationMode>ALWAYS</creationMode>
             </creationParms>
             <shipment>
-               <transactionId>SAP_JNH_080_OUTBOUND_DELIVERY_80000061</transactionId>
-               <transactionLabel>SAP_EWM_ID_05</transactionLabel>
+               <transactionId>SAP_EWM_JNH_080_OUTBOUND_DELIVERY_80000123</transactionId>
+               <transactionLabel>80000123</transactionLabel>
                <organizationUnitClientSystem>DEFAULT</organizationUnitClientSystem>
 
                <isDocumentShipment>false</isDocumentShipment>
-               <referenceNumber1>80000061</referenceNumber1>
+               <referenceNumber1>80000123</referenceNumber1>
           	<termsOfDeliveryCode>FCA</termsOfDeliveryCode>     
                <remark>remark</remark>
                <shippingDate></shippingDate>
@@ -278,8 +278,10 @@ E
 }
 ```
 
-In addition to the data provided in the api call. There have to be an Journal Abo in BSM for Object VCP-Consignment.
+<br />
 
-The configuration of the abo should be done like the following. For e.g. the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_E01_080’.
-The shipping order is now to be synchronised with the ERP system using the installation ID ‘SAP_ERP_T01_080’.
-Then enter ‘SAP_ERP_T01_080’ in the ‘Installation ID’ field and “SAP_EWM_E01_080” in the ‘Source Installation ID’ field.
+## Subscription 
+
+To synchronize the tracking data back to SAP ERP,  maintain a subscription in BSM for the object *VCP-Consignment*. Assuming the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_JNH_080’.
+The ERP system will synchronize all the the data with installation ID ‘SAP_ERP_E01_400’.
+Therefore, enter ‘SAP_ERP_E01_400’ in the field ‘Installation ID’ and “SAP_EWM_JNH_080” in the field ‘Source Installation ID’.
