@@ -8,14 +8,23 @@ icon: far fa-house-medical
 next:
   description: Main topics in this guide
   pages:
-    - slug: overview
-      title: Origin & Preferences - Overview
+    - slug: create-custom-apis
+      title: Create a custom API
       type: basic
     - slug: carrier-api-gateway
-      title: Carrier Integration API - Overview
+      title: Carrier Cloud - Overview
       type: basic
     - slug: overview
       title: Origin & Preferences - Overview
+      type: basic
+    - slug: exchange-data
+      title: Customs Management - data distribution
+      type: basic
+    - slug: overview-1
+      title: AEB Delivery API - Overview
+      type: basic
+    - slug: overview-2
+      title: Compliance - Overview
       type: basic
 ---
 BSM not only provides integrations for various ERP and CRM solutions, but also extends ceratin AEB business services and interaction points where beneficial. Additionally, BSM can serve as a hub for most APIs offered by AEB.
