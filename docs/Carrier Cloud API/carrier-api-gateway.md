@@ -1,5 +1,5 @@
 ---
-title: Carrier Integration API - Overview
+title: Carrier Cloud - Overview
 deprecated: false
 hidden: false
 metadata:
