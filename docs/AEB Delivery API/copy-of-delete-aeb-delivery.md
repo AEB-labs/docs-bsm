@@ -1,5 +1,5 @@
 ---
-title: Get AEB Delivery
+title: Get an AEB Delivery
 deprecated: false
 hidden: false
 metadata:
