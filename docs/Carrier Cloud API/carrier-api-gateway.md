@@ -13,8 +13,8 @@ next:
       title: Distribute Events
       type: basic
 ---
-The Carrier Integration API of the Business Service Managment offers the following functionalities. 
+The Carrier Integration API of the Business Service Managment offers the following functionalities.
 
-* all APIs of Carrier Connect are possible to use via BSM
-* For distribution of events there is an extended createShipment API (this could be used in combination with our SAP Add on) 
-* There are additional APIs to cacluate Freight Costs or get possible quoted services for a shipment
+* Call all APIs of Carrier Connect through Business Service Management (BSM)
+* For the provision of tracking data in a complex system landscape, use the extended createShipment API (can also be used in combination with the AEB add-on for SAP)
+* Make use of an API to calculate freight costs or to get quotes
