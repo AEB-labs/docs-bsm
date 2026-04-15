@@ -1,8 +1,8 @@
 ---
 title: Create a custom API
 excerpt: >-
-  o modify data collected from the SAP system, one can call a customized API in
-  addition and change data on the fly.
+  To modify the data collected from the SAP system,  call a customized API and
+  change data on the fly.
 deprecated: false
 hidden: false
 metadata:
@@ -12,7 +12,7 @@ metadata:
 
 # Create the API via ADT
 
-Connect you cloud system to the ADT by creating a new project, entering the system URL and login. Then create a package.
+Connect your SAP cloud system to the ADT by creating a new project, entering the system URL and login. Then create a package.
 
 ## Create an HTTP service
 
@@ -32,8 +32,9 @@ Publish the communication scenario locally (top right). Then create a communicat
 
 # Write the code
 
-To make writing the code more comfortable we created a template you can insert into your service class.
+To make the coding more comfortable we created a template you can insert into your service class. Copy the template to your clipboard like this:  
 
-The template is copied to your clipboard if you click the buttons in the SAP AEB delivery collector profiles or the SAP Compliance check profiles (General).
+* in the AEB delivery collector profile 
+* in SAP Compliance check profile (general)
 
 Insert this code simply into the service class to comfortably change the supplied data in the afterStdFilling method.
