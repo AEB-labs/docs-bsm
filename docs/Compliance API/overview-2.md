@@ -5,12 +5,12 @@ hidden: false
 metadata:
   robots: index
 ---
-The AEB Compliance API offers the following functionalities:
+Available APIs in Compliance can be used for:
 
 * **Check a business object**
-* **Fetch the check results**
-* **Delete the check results**
+* **Fetch check results**
+* **Delete check results**
 
-The functionalities can be accessed through either the SOAP API or the REST API.
+These functions can be executed either as SOAP or as REST calls.
 
 <br />
