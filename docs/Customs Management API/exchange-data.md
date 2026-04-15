@@ -7,10 +7,10 @@ metadata:
 ---
 There are two use cases where data between Customs Management and other business services needs to be exchanged:
 
-* Paperless Trade in context of Carrier Connect
-* Approvals in context of Export Controls
+* Paperless Trade with Carrier Connect
+* Approvals with Compliance Export Controls
 
-For those usecases the Business Service Managment offers an extended createConsignment-API.
+For this requirement Business Service Managment extends the createConsignment API.
 
 <Table>
   <thead>
@@ -49,14 +49,14 @@ For those usecases the Business Service Managment offers an extended createConsi
   </tbody>
 </Table>
 
-The API is extended by information about the transaction of the processed mentioned before.
+The API is extended by transactional data (references) of the business process.
 
 There are two usecase-Ids:
 
-* EC_APPROVAL_DATA for data exchange in context of Export Controls approvals
-* CCO_SHP_CUSTOMS_UPD for data exchange in context of Carrier Connect and Paperless Trade
+* EC_APPROVAL_DATA for data exchange with Compliance Export Controls (approvals)
+* CCO_SHP_CUSTOMS_UPD for data exchange with Carrier Connect (paperless trade) 
 
-The CreateShipment-API call could the look like the following.
+Example call for the createShipment API:
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.customs.bf">
@@ -501,9 +501,9 @@ The CreateShipment-API call could the look like the following.
 }
 ```
 
-The difference to the createConsigment-API of Customs Managment is that is the part with the fields interactionControls.
+The difference to the createConsigment-API of Customs Managment is the structure *interactionControls*.
 
-Those fields are on consignment level and on item level. Here the example for the usecase Paperless Trade in context of Carrier Connect. This one is on consignment-Level.
+The fields of this structure are on consignment and on item level both. The following example is for the paperless trade use case. This one requires the information on consignment level.
 
 ```json
  "interactionControls": [
