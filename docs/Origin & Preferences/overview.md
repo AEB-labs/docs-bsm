@@ -10,12 +10,23 @@ next:
     - slug: data-transfer
       title: Data Transfer
       type: basic
+    - slug: get-material-master-data-limits
+      title: Get material master data (limits)
+      type: basic
+    - slug: declaration-of-origin
+      title: Declaration of origin
+      type: basic
+    - slug: integrate-uis
+      title: Integrate UIs
+      type: basic
 ---
-From an API perspective we have the following parts which are relevant to intergrate and automate our O&P product.
+<br />
 
-* Data transfer of all the business objects needed for O&P processes
-* Get the results of calculation of materials
-* Or get an declaration of origin for a business transaction
-* integrate UIs in the ERP-System
+From an API perspective, the following components are relevant for integrating and automating the business service for  Origin & Preferences:
+
+* Data transfer of all business objects required for OPM processes  
+* Retrieval of material calculation results  
+* Retrieval of a declaration of origin for a business transaction  
+* Integration of user interfaces (UI) into the ERP system
 
 <br />
