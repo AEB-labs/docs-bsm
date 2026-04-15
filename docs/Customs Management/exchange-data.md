@@ -509,7 +509,7 @@ The difference to the createConsigment-API of Customs Managment is the structure
 
 ### Paperless trade (Carrier Connect)
 
-The following example can be applied for the "paperless trade" use case. This one requires the information on consignment level.
+The following example can be applied for the "paperless trade" use case. This one requires the interactionControls on consignment level.
 
 ```json
  "interactionControls": [
@@ -539,7 +539,7 @@ The following example can be applied for the "paperless trade" use case. This on
 
 ### Export controls (Trade Compliance Management)
 
-This example can be applied for the data exchange with Export Controls. This one requires the information on item level.
+This example can be applied for the data exchange with Export Controls. This one requires the interactionControls on item level.
 
 ```json
 "interactionControls": [
