@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-Sometime it might be needed to get the AEB Delivery via API.
+To fetch the data of an AEB Delivery, use the according API: 
 
 <Table>
   <thead>
@@ -44,7 +44,7 @@ Sometime it might be needed to get the AEB Delivery via API.
   </tbody>
 </Table>
 
-The request for a get request has to be like this.
+The request is structured like this:
 
 ```json
 {
@@ -74,7 +74,7 @@ The request for a get request has to be like this.
 </soapenv:Envelope>
 ```
 
-If an AEB delivery is found the response looks like this.
+This is a response containing the delivery data:
 
 ```json
 {
@@ -95,9 +95,9 @@ If an AEB delivery is found the response looks like this.
         "prefOriginCountry": "DE",
         "originCountry": "DE",
         "originRegion": "01",
-        "orderNumber": "BUREYS_1",
+        "orderNumber": "5020",
         "orderItemNumber": "1",
-        "invoiceIdClientSystem": "BRUYES_1",
+        "invoiceIdClientSystem": "90000077",
         "goodsDescriptions": [
           {
             "language": "DE",
