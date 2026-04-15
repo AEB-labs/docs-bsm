@@ -505,7 +505,7 @@ Example call for the createShipment API:
 
 The difference to the createConsigment-API of Customs Managment is the structure *interactionControls*. The fields of this structure are on consignment and on item level both. 
 
-## Paperless trade (Customs Management - Carrier Connect)
+### Paperless trade (Carrier Connect)
 
 The following example can be applied for the "paperless trade" use case. This one requires the information on consignment level.
 
@@ -535,7 +535,7 @@ The following example can be applied for the "paperless trade" use case. This on
 </interactionControls>
 ```
 
-## Export controls approvals (Customs Management - Trade Complliance Management)
+### Export controls (Trade Compliance Management)
 
 This example can be applied for the data exchange with Export Controls. This one requires the information on item level.
 
@@ -567,11 +567,9 @@ This example can be applied for the data exchange with Export Controls. This one
 </interactionControls>
 ```
 
-## Synchronize
+## Synchronize the data from Customs Management
 
-Next step is synchronizin the data from Customs Management to Carrier Connect & Export Controls.
-
-For this the BSM has an extended Sync-API. The synchronizeEvents-API in BSM is extended by an partner server which has to be filled. Here is an example call:
+Next step is synchronizing the data from Customs Management toword Carrier Connect & Export Controls. The API to  synchronizeEvents is extended by a field for the partner server which needs to be provided. Here is an example call:
 
 ```json
 {
