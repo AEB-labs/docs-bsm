@@ -1,11 +1,13 @@
 ---
-title: 'Exchange customs related data '
+title: 'Customs Management '
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## Extend the createShipment call 
+# Exchange data with Customs Management
+
+## Extend the createShipment call
 
 There are two use cases where data between Customs Management and other business services needs to be exchanged:
 
@@ -56,7 +58,7 @@ The API is extended by transactional data (references) of the business process.
 There are two usecase-Ids:
 
 * EC_APPROVAL_DATA for data exchange with Compliance Export Controls (approvals)
-* CCO_SHP_CUSTOMS_UPD for data exchange with Carrier Connect (paperless trade) 
+* CCO_SHP_CUSTOMS_UPD for data exchange with Carrier Connect (paperless trade)
 
 Example call for the createShipment API:
 
@@ -503,7 +505,7 @@ Example call for the createShipment API:
 }
 ```
 
-The difference to the createConsigment-API of Customs Managment is the structure *interactionControls*. The fields of this structure are on consignment and on item level both. 
+The difference to the createConsigment-API of Customs Managment is the structure _interactionControls_. The fields of this structure are on consignment and on item level both.
 
 ### Paperless trade (Carrier Connect)
 
@@ -569,7 +571,7 @@ This example can be applied for the data exchange with Export Controls. This one
 
 ## Synchronize the data from Customs Management
 
-Next step is synchronizing the data from Customs Management toword Carrier Connect & Export Controls. The API named *synchronizeEvents* is extended by a field for the partner server, which needs to be provided. Here is an example call:
+Next step is synchronizing the data from Customs Management toword Carrier Connect & Export Controls. The API named _synchronizeEvents_ is extended by a field for the partner server, which needs to be provided. Here is an example call:
 
 ```json
 {
