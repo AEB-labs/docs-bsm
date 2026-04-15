@@ -27,7 +27,7 @@ And functional extensions for these AEB business services:
 
 * Origin & Preferences
 * Trade Compliance Management
-* LogiCarrier Connect, Carrier Event Service, Monitoring & Alerting
+* Carrier Connect, Carrier Event Service, Monitoring & Alerting
 * Customs Management
 
 <br />
