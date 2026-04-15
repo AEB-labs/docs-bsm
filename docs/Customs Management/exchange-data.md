@@ -610,7 +610,7 @@ Next step is synchronizing the data from Customs Management towards Carrier Conn
   </tbody>
 </Table>
 
-Here is an example call:
+Here is an example for synchronizeEvents:
 
 ```json
 {
