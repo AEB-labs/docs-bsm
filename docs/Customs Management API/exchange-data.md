@@ -569,7 +569,7 @@ This example can be applied for the data exchange with Export Controls. This one
 
 ## Synchronize the data from Customs Management
 
-Next step is synchronizing the data from Customs Management toword Carrier Connect & Export Controls. The API to  synchronizeEvents is extended by a field for the partner server which needs to be provided. Here is an example call:
+Next step is synchronizing the data from Customs Management toword Carrier Connect & Export Controls. The API named *synchronizeEvents* is extended by a field for the partner server, which needs to be provided. Here is an example call:
 
 ```json
 {
@@ -607,4 +607,4 @@ Next step is synchronizing the data from Customs Management toword Carrier Conne
 </soapenv:Envelope>
 ```
 
-With this call the BSM gets the changes from Customs Management and could synchronize the data with Carrier Connect and Export Controls.
+When calling this function,  all updates from Customs Management are retrieved and then synchronized accordingly with Carrier Connect and Export Controls.
