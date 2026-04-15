@@ -9,12 +9,12 @@ metadata:
 
 ## Extend the createShipment call
 
-There are two use cases where data between Customs Management and other business services needs to be exchanged:
+There are two use cases where data between Customs Management and other AEB business services needs to be exchanged:
 
 * Paperless Trade with Carrier Connect
 * Approvals with Compliance Export Controls
 
-For this requirement Business Service Managment extends the createConsignment API.
+For this requirement, call the *createConsignment* API in Business Service Managment to create the shipment in Customs Management. 
 
 <Table>
   <thead>
@@ -60,7 +60,7 @@ There are two usecase-Ids:
 * EC_APPROVAL_DATA for data exchange with Compliance Export Controls (approvals)
 * CCO_SHP_CUSTOMS_UPD for data exchange with Carrier Connect (paperless trade)
 
-Example call for the createShipment API:
+Example call for the createConsignment API:
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.customs.bf">
@@ -509,7 +509,7 @@ The difference to the createConsigment-API of Customs Managment is the structure
 
 ### Paperless trade (Carrier Connect)
 
-The following example can be applied for the "paperless trade" use case. This one requires the interactionControls on consignment level.
+The following example can be applied for the "paperless trade" use case. In this scenario provide the interactionControls on consignment level.
 
 ```json
  "interactionControls": [
@@ -539,7 +539,7 @@ The following example can be applied for the "paperless trade" use case. This on
 
 ### Export controls (Trade Compliance Management)
 
-This example can be applied for the data exchange with Export Controls. This one requires the interactionControls on item level.
+This example can be applied for the data exchange with Export Controls. In this scenario provide the interactionControls on item level.
 
 ```json
 "interactionControls": [
