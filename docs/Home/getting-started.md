@@ -1,31 +1,29 @@
 ---
 title: Getting Started with Business Service Management (BSM)
 excerpt: >-
-  This guide supports you get started with the side-by-side integration
-  components of AEB running through Business Service Management (BSM). 
+  This guide helps you get started with the side-by-side integration components
+  of AEB, running through Business Service Management (BSM). 
 hidden: false
 icon: far fa-house-medical
 next:
-  description: 'You could start with whatever interests you. '
+  description: Main topics in this guide
   pages:
     - slug: overview
       title: Origin & Preferences - Overview
       type: basic
     - slug: carrier-api-gateway
-      title: Carrier API Gateway - Overview
+      title: Carrier Integration API - Overview
       type: basic
 ---
-BSM not just offers side-by-side integrations for SAP, Salesforce and HAUFE X360 ERP. It also extends the AEB business services and the interaction between where helpful.
+BSM not only provides integrations for various ERP and CRM solutions, but also extends ceratin AEB business services and interaction points where beneficial. Additionally, BSM can serve as a hub for most APIs offered by AEB.
 
-And the BSM could be used as an API-Hub for the most APIs offered by AEB.
+The following chapters describe the built-in side-by-side integrations available for the respective systems:
 
-So in the following chapters we describe our build in side-by-side Integrations for the following Systems:
-
-* SAP S/4 HANA
+* SAP 
 * Salesforce
 * Haufe X360 ERP
 
-And functional extensions in the following domains:
+And functional extensions for these AEB business services:
 
 * Origin & Preferences
 * Trade Compliance Management
