@@ -62,7 +62,7 @@ Lets assume we an example scenario with two systems:
 *  An EWM system with system ID "JNH" and client 080. This EWM system sends the shipment data to Carrier Cloud. The outbound delivery order in EWM is 80000123, same as the linked outbound delivery in ERP.
 * An ERP system with system ID "E01" and client 400. This ERP system will receive (synchronize) the tracking events. The data shall be linked to the outbound delivery. 
 
-With these assumptions, the createShipment call from EWM will look like as follows:   
+With these assumptions, the createShipment call from EWM will look like this:   
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.carrier.bf">
@@ -287,8 +287,8 @@ With these assumptions, the createShipment call from EWM will look like as follo
 
 <br />
 
-## Subscription
+## Subscription (synchronization of tracking data) 
 
-To synchronize the tracking data back to SAP ERP,  maintain a subscription in BSM for the object _VCP-Consignment_. Assuming the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_JNH_080’.
-The ERP system will synchronize all the the data with installation ID ‘SAP_ERP_E01_400’.
-Therefore, enter ‘SAP_ERP_E01_400’ in the field ‘Installation ID’ and “SAP_EWM_JNH_080” in the field ‘Source Installation ID’.
+To synchronize the tracking data back to SAP ERP,  maintain a subscription in BSM for the object _VCP-Consignment_. Assuming the shipment was created by EWM in Carrier Connect with the host installation ID ‘SAP_EWM_JNH_080’.
+But the target ERP system synchronizes only data with an installation ID ‘SAP_ERP_E01_400’.
+Therefore, enter ‘SAP_ERP_E01_400’ in the field ‘Installation ID’ and “SAP_EWM_JNH_080” in the field ‘Source Installation ID’. This way the link is established between the tracking data and the target ERP system.    
