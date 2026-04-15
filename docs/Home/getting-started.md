@@ -14,6 +14,9 @@ next:
     - slug: carrier-api-gateway
       title: Carrier Integration API - Overview
       type: basic
+    - slug: overview
+      title: Origin & Preferences - Overview
+      type: basic
 ---
 BSM not only provides integrations for various ERP and CRM solutions, but also extends ceratin AEB business services and interaction points where beneficial. Additionally, BSM can serve as a hub for most APIs offered by AEB.
 
