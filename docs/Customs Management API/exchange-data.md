@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-There are two usecases where data between Customs Management and other business services has to be exchanged:
+There are two use cases where data between Customs Management and other business services needs to be exchanged:
 
 * Paperless Trade in context of Carrier Connect
 * Approvals in context of Export Controls
