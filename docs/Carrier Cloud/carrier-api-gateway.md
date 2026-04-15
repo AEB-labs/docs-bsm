@@ -16,5 +16,5 @@ next:
 The Carrier Integration API of the Business Service Managment offers the following functionalities.
 
 * Call all APIs of Carrier Connect through Business Service Management (BSM)
-* For the provision of tracking data in a complex system landscape, use the extended createShipment API (can also be used in combination with the AEB add-on for SAP)
-* Make use of an API to calculate freight costs or to get quotes
+* For the distribution of tracking data in a complex system landscape, use the extended createShipment API (this one can also be used in combination with the AEB add-on for SAP)
+* To calculate freight charges or to request a freight charge quotation 
