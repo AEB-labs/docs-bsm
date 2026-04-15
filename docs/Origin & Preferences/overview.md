@@ -20,8 +20,6 @@ next:
       title: Integrate UIs
       type: basic
 ---
-<br />
-
 From an API perspective, the following components are relevant for integrating and automating the business service for  Origin & Preferences:
 
 * Data transfer of all business objects required for OPM processes  
