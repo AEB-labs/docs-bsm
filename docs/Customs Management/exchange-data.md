@@ -569,9 +569,9 @@ This example can be applied for the data exchange with Export Controls. In this 
 </interactionControls>
 ```
 
-## Synchronize data from Customs Management to other services
+## Synchronize data from Customs Management to other business services
 
-Next step is synchronizing the data from Customs Management toward Carrier Connect and Export Controls. The API named _synchronizeEvents_ is extended by a field for the partner server, which needs to be provided. Here is an example call:
+Next step is synchronizing the data from Customs Management towards Carrier Connect or Export Controls. The API named _synchronizeEvents_ is extended by a field for the partner server, which needs to be provided. Here is an example call:
 
 ```json
 {
