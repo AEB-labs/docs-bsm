@@ -14,7 +14,7 @@ There are two use cases where data between Customs Management and other AEB busi
 * Paperless Trade with Carrier Connect
 * Approvals with Compliance Export Controls
 
-For this requirement, call the *createConsignment* API in Business Service Managment to create the shipment in Customs Management. 
+For this requirement, call the _createConsignment_ API in Business Service Managment to create the shipment in Customs Management.
 
 <Table>
   <thead>
@@ -571,7 +571,46 @@ This example can be applied for the data exchange with Export Controls. In this 
 
 ## Synchronize data from Customs Management to other business services
 
-Next step is synchronizing the data from Customs Management towards Carrier Connect or Export Controls. The API named _synchronizeEvents_ is extended by a field for the partner server, which needs to be provided. Here is an example call:
+Next step is synchronizing the data from Customs Management towards Carrier Connect or Export Controls. The API named _synchronizeEvents_ is extended by a field for the partner server, which needs to be provided. 
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Technique
+      </th>
+
+      <th>
+        Documentation
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        REST
+      </td>
+
+      <td>
+        <Anchor label="synchronizeEvents" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/BSM%20Sync/synchronizeEvents">synchronizeEvents</Anchor>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SOAP
+      </td>
+
+      <td>
+        <Anchor label="BSMSyncBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/BSMSyncBF?WSDL">BSMSyncBF (WSDL)</Anchor> |
+        <Anchor label="synchronizeEvents (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/BSMSyncBF/de/aeb/xnsg/bsm/foundation/bf/sync/IBSMSyncBF.html#synchronizeEvents(de.aeb.xnsg.bsm.foundation.bf.sync.BSMSyncEventsRequestDTO)">synchronizeEvents (Java Doc)</Anchor>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+Here is an example call:
 
 ```json
 {
