@@ -1,12 +1,14 @@
 ---
 title: Create a custom API
-excerpt: Modify the data using a custom api.
+excerpt: >-
+  o modify data collected from the SAP system, one can call a customized API in
+  addition and change data on the fly.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-To modify data collected from the SAP System by us, you can hook your own custom API to our process and change all the data on the fly.
+<br />
 
 # Create the API via ADT
 
