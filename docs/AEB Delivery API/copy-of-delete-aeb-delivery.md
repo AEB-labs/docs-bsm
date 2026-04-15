@@ -272,7 +272,7 @@ This is a response containing the delivery data:
 </S:Envelope>
 ```
 
-If an error occured it looks like this.
+Response in case of an error:
 
 ```json
 {
