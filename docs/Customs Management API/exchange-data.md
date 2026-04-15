@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+## Extend the createShipment call 
+
 There are two use cases where data between Customs Management and other business services needs to be exchanged:
 
 * Paperless Trade with Carrier Connect
@@ -501,9 +503,11 @@ Example call for the createShipment API:
 }
 ```
 
-The difference to the createConsigment-API of Customs Managment is the structure *interactionControls*.
+The difference to the createConsigment-API of Customs Managment is the structure *interactionControls*. The fields of this structure are on consignment and on item level both. 
 
-The fields of this structure are on consignment and on item level both. The following example is for the paperless trade use case. This one requires the information on consignment level.
+## Paperless trade (Customs Management - Carrier Connect)
+
+The following example can be applied for the "paperless trade" use case. This one requires the information on consignment level.
 
 ```json
  "interactionControls": [
@@ -531,7 +535,9 @@ The fields of this structure are on consignment and on item level both. The foll
 </interactionControls>
 ```
 
-And here the part for the usecase in context of Export Controls & Approvals. This one is on item level.
+## Export controls approvals (Customs Management - Trade Complliance Management)
+
+This example can be applied for the data exchange with Export Controls. This one requires the information on item level.
 
 ```json
 "interactionControls": [
@@ -561,7 +567,9 @@ And here the part for the usecase in context of Export Controls & Approvals. Thi
 </interactionControls>
 ```
 
-Ok but that's not all. We have to synchronize the data from Customs Management to Carrier Connect & Export Controls.
+## Synchronize
+
+Next step is synchronizin the data from Customs Management to Carrier Connect & Export Controls.
 
 For this the BSM has an extended Sync-API. The synchronizeEvents-API in BSM is extended by an partner server which has to be filled. Here is an example call:
 
