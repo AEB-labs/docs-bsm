@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-## Shipment creation 
+## Shipment creation
 
 In some system landscapes, one system (e.g., SAP EWM) must initiate carrier shipment creation, while tracking events for those shipments are synchronized to another system (e.g., SAP ERP).
 
@@ -53,9 +53,16 @@ The following shows an example call for this scenario. It matches the standard `
 * usecaseId: in this case "CES_EVENT_DATA"
 * ids:
   * boIdClientSystem: ID of the target business object in the backend ERP system
-  * clientSystemId: ID of the backend ERP system 
+  * clientSystemId: ID of the backend ERP system
 
-The IDs are required to link the event data (tracking data) to the business object in the backend ERP system. In this example scenario, an EWM system JNH, with client 080,  sends shipment data to Carrier Cloud.  The backend ERP system is E01, client 400. The outbound delivery order in EWM is 80000123, same as the linked outbound delivery in ERP. 
+The IDs are required to link the event data (tracking data) to the business object in the target system. 
+
+Lets assume we an example scenario with two systems: 
+
+*  An EWM system with system ID "JNH" and client 080. This EWM system sends the shipment data to Carrier Cloud. The outbound delivery order in EWM is 80000123, same as the linked outbound delivery in ERP.
+* An ERP system with system ID "E01" and client 400. This ERP system will receive (synchronize) the tracking events. The data shall be linked to the outbound delivery. 
+
+With these assumptions, the createShipment call from EWM will look like as follows:   
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.carrier.bf">
@@ -280,8 +287,8 @@ The IDs are required to link the event data (tracking data) to the business obje
 
 <br />
 
-## Subscription 
+## Subscription
 
-To synchronize the tracking data back to SAP ERP,  maintain a subscription in BSM for the object *VCP-Consignment*. Assuming the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_JNH_080’.
+To synchronize the tracking data back to SAP ERP,  maintain a subscription in BSM for the object _VCP-Consignment_. Assuming the shipping order was created in the EWM system with the installation ID ‘SAP_EWM_JNH_080’.
 The ERP system will synchronize all the the data with installation ID ‘SAP_ERP_E01_400’.
 Therefore, enter ‘SAP_ERP_E01_400’ in the field ‘Installation ID’ and “SAP_EWM_JNH_080” in the field ‘Source Installation ID’.
