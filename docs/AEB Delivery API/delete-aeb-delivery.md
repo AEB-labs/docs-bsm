@@ -1,5 +1,5 @@
 ---
-title: Delete AEB Delivery
+title: Delete an AEB Delivery
 deprecated: false
 hidden: false
 metadata:
