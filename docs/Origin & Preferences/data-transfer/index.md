@@ -20,14 +20,14 @@ This is really the main part. Transferring all the business object which are rel
 * purchase orders
 * goods receipts
 
-The APIs we provide for those data transfer are bulk-APIs. **VERY IMPORTANT**. You should not transfer more than **50** objects per API-Call. Otherwise you could run into timeouts.
+The APIs we provide for those data transfer are bulk-APIs. **VERY IMPORTANT**. You should not transfer more than **10** objects per API-Call. Otherwise you could run into timeouts.
 
 When we look into the transfer-APIs there always the following fields for one business object:
 
 * idHost: this has to be unique for one client in combination with the organizational unit.
 * isDeleted: If the object should be deleted, this is always possible over this flag
 * labelHost: in addition to idHost a readable id
-* organizationalUnit: used to differ between orginazational units, if not filled "DEFAULT" is used. 
+* organizationalUnit: used to differ between orginazational units, if not filled "DEFAULT" is used.
 
 Also each transfer request needs some basic information:
 
