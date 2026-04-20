@@ -9,12 +9,12 @@ You can use the the Compliance API to check a business object. This check contai
 
 If you are interested in learning more about Compliance Screening or Export Controls, you can find additional information here:
 
-* **Compliance Screening:** https://docs.aeb.com/doc/cm-287937803-923804811-en-US/t-923804811-288463499-en-US
-* **Export Controls:** https://docs.aeb.com/doc/cm-287939723-996830731-en-US/t-996830731-288627211-en-US
+* **Compliance Screening:** [https://docs.aeb.com/doc/cm-287937803-923804811-en-US/t-923804811-288463499-en-US](https://docs.aeb.com/doc/cm-287937803-923804811-en-US/t-923804811-288463499-en-US)
+* **Export Controls:** [https://docs.aeb.com/doc/cm-287939723-996830731-en-US/t-996830731-288627211-en-US](https://docs.aeb.com/doc/cm-287939723-996830731-en-US/t-996830731-288627211-en-US)
 
 <br />
 
-To check a business object, you can use the following function: 
+To check a business object, you can use the following function:
 
 | API  | Function                                                                                                                                                                                                                                                                                                                         |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,35 +26,29 @@ To check a business object, you can use the following function:
 ```json JSON
 {
   "clientSystemId": "BRUYES",
-  "clientIdentCode": "API_TEST_CLIENT",
-  "userName": "API_TEST_USER",
+  "clientIdentCode": "TEST_CLIENT",
+  "userName": "API_TEST",
   "resultLanguageIsoCodes": [
-    "DE, "EN"
+    "en"
   ],
-  "boIdClientSystem": "X360_X360-Test-System:BEX_CUSTOMER_DEBITOR202",
-  "boIdClientSystemLabel": "UNIQUE_BO_ID_CLIENT_SYSTEM_LABEL",
-  "referenceNumber": "DEBITOR202",
-  "businessObjectType": "<EXISTING_BO_TYPE>",
-  "mappingProfile": "<EXISTING_MAPPING_PROFILE>",
+  "boIdClientSystem": "12345",
+  "boIdClientSystemLabel": "12345_Label",
+  "referenceNumber": "DEBITOR2020022",
+  "businessObjectType": "X360_CUSTOMER",
+  "mappingProfile": "X360",
   "parties": [
     {
       "orgUnits": [
         "SALES"
       ],
       "roleIdentCode": "",
-      "name1": "Wladimir Putin",
-      "street": "Straße 20",
+      "name1": "Wladimir",
+      "street": "Straße 21",
       "city": "Ulm",
       "postalCode": "73447",
       "countryIso": "DE",
       "companyReference": "MainContact_Wladimir Putin",
       "addressType": "3"
-    }
-  ],
-  "blockMemories": [
-    {
-      "blockIdClientSystem": "Status",
-      "blockValue": "Compliance"
     }
   ],
   "monitorParty": {
