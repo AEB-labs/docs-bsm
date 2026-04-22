@@ -11,7 +11,9 @@ next:
       title: Transfer Addresses
       type: basic
 ---
-For the calculation and handling of preferences, certain business objects are required:
+## Available APIs
+
+For the calculation and handling of preferences, certain business objects are required and can be transfered from your ERP system via API:
 
 * addresses (customers and vendors)
 * materials
@@ -27,6 +29,8 @@ For the calculation and handling of preferences, certain business objects are re
 > The APIs for transferring the data objects are bulk-APIs. However, do not transfer more than **10** objects per API call. Otherwise time outs can occur.
 
 <br />
+
+## General fields  
 
 Looking into the APIs for data transfer, there are always the following fields for each business object:
 
