@@ -34,6 +34,6 @@ Looking into the APIs for data transfer, there are always the following fields f
 Also each transfer request needs to have some basic information:
 
 * clientIdentCode: the identcode of the client in BSM
-* clientSystemId: the id of the calling system
+* clientSystemId: the id of the calling system, e.g. SAP_P01_400 
 * resultLanguages:  list of languages - responses are returned in theses languages 
 * userName: the business user working with the application (not a user for authentification)
