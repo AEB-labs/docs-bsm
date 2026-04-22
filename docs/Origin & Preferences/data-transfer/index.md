@@ -20,9 +20,13 @@ For the calculation and handling of preferences, certain business objects are re
 * purchase orders
 * goods receipts
 
-The APIs for transferring these data objects are bulk-APIs.
+<br />
 
-**Please note**. You should not transfer more than **10** objects per API-Call. Otherwise time outs can occur.
+> ❗️ Limit when transferring multiple objects in a call
+>
+> The APIs for transferring the data objects are bulk-APIs. However, do not transfer more than **10** objects per API call. Otherwise time outs can occur.
+
+<br />
 
 Looking into the APIs for data transfer, there are always the following fields for each business object:
 
