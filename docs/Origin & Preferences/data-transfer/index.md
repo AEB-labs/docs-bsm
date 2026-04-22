@@ -36,7 +36,7 @@ Looking into the APIs for data transfer, there are always the following fields f
 * idHost: this ID has to be unique per client in combination with the organizational unit
 * labelHost:  an ID which is "readable" for the users,  as the idHost is more of a technical ID   
 * isDeleted:  use this flag to delete an object
-*  organizationalUnit: used to differentiate between organizational units. If not provided "DEFAULT" is used a constant value.
+*  organizationalUnit: used to differentiate between organizational units. If not provided, "DEFAULT" is used a constant value.
 
 Also each transfer request needs to have some basic information:
 
