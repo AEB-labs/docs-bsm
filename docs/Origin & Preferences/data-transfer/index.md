@@ -20,7 +20,7 @@ For the calculation and handling of preferences, certain business objects are re
 * purchase orders
 * goods receipts
 
-The available APIs for transferring these data objects are bulk-APIs. 
+The available APIs for transferring these data objects are bulk-APIs.
 
 **VERY IMPORTANT**. You should not transfer more than **10** objects per API-Call. Otherwise you could run into timeouts.
 
@@ -35,5 +35,5 @@ Also each transfer request needs to have some basic information:
 
 * clientIdentCode: the identcode of the client in BSM
 * clientSystemId: the id of the calling system
-* resultLanguages: the given languages are used for error messages
-* userName: gibt the API-Call an functional user, this is not a user for authentifcation
+* resultLanguages:  list of languages - responses are returned in theses languages 
+* userName: the business user, this is not a user for authentifcation
