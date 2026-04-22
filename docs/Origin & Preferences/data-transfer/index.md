@@ -5,15 +5,14 @@ hidden: false
 metadata:
   robots: index
 next:
-  description: Start with your first business object the addresses.
   pages:
     - slug: transfer-addresses
-      title: Transfer Addresses
+      title: Transfer addresses
       type: basic
 ---
 ## Available APIs
 
-For the calculation and handling of preferences, certain business objects are required and can be transfered from your ERP system via API:
+For the calculation and handling of preference information, certain business objects are required and can be transferred from your ERP system via API:
 
 * addresses (customers and vendors)
 * materials
@@ -34,10 +33,10 @@ For the calculation and handling of preferences, certain business objects are re
 
 Looking into the APIs for data transfer, there are always the following fields for each business object:
 
-* idHost: this has to be unique for one client in combination with the organizational unit.
-* isDeleted: If the object should be deleted, this is always possible over this flag
-* labelHost: in addition to idHost a readable id
-* organizationalUnit: used to differ between orginazational units, if not filled "DEFAULT" is used.
+* idHost: this ID has to be unique per client in combination with the organizational unit
+* labelHost:  provide an ID "readable" for an user, compared to technical idHost
+* isDeleted:  use this flag to delete an object
+*  organizationalUnit: used to differentiate between organizational units. If not provided "DEFAULT" is used a constant value.
 
 Also each transfer request needs to have some basic information:
 
