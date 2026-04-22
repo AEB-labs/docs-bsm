@@ -36,4 +36,4 @@ Also each transfer request needs to have some basic information:
 * clientIdentCode: the identcode of the client in BSM
 * clientSystemId: the id of the calling system
 * resultLanguages:  list of languages - responses are returned in theses languages 
-* userName: the business user, this is not a user for authentifcation
+* userName: the business user working with the application (not a user for authentification)
