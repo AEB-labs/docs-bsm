@@ -34,7 +34,7 @@ For the calculation and handling of preference information, certain business obj
 Looking into the APIs for data transfer, there are always the following fields for each business object:
 
 * idHost: this ID has to be unique per client in combination with the organizational unit
-* labelHost:  provide an ID "readable" for an user, compared to technical idHost
+* labelHost:  an ID which is "readable" for the users,  as the idHost is more of a technical ID   
 * isDeleted:  use this flag to delete an object
 *  organizationalUnit: used to differentiate between organizational units. If not provided "DEFAULT" is used a constant value.
 
