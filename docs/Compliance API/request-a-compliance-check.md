@@ -27,37 +27,177 @@ To execute a simple check, use the request body shown below. Please ensure that 
 
 ```json JSON
 {
-  "clientSystemId": "BRUYES",
-  "clientIdentCode": "API_TEST_CLIENT",
-  "userName": "API_TEST",
-  "resultLanguageIsoCodes": [
-    "en"
-  ],
-  "boIdClientSystem": "UNIQUE_BO_ID",
-  "boIdClientSystemLabel": "UNIQUE_BO_ID_READBLE",
-  "referenceNumber": "REFERENCE_NUMBER",
-  "businessObjectType": "BUSINESS_OBJECT_TYPE",
-  "mappingProfile": "CMP_MAPPING_PROFILE",
+  "boIdClientSystem": "SAP_JNH_080_SALES_ORDER_1",
+  "boIdClientSystemLabel": "SAP JNH 080 Sales order 1",
+  "referenceNumber": "1",
+  "businessObjectType": "SAP_SALES_ORDER",
+  "businessObjectSubType": "OR",
+  "mappingProfile": "SAP",
   "parties": [
     {
       "orgUnits": [
-        "ORG_UNIT"
+        "SalesOrganization1010"
       ],
-      "roleIdentCode": "",
-      "name1": "United Aircraft Corporation",
-      "street": "Ulansky side-street 22",
-      "city": "Moscow",
-      "postalCode": "101000",
-      "countryIso": "RU",
-      "companyReference": "United_Aircraft_Corporation",
-      "addressType": "3"
+      "roleIdentCode": "SP",
+      "name1": "Ausländischer Kunde 50 (US)",
+      "name2": "",
+      "name3": "",
+      "name4": "",
+      "street": "Confederate Ave 15400",
+      "district": "",
+      "city": "Baton Rouge",
+      "postalCode": "70817-3609",
+      "countryIso": "US",
+      "poBox": "",
+      "postalCodePoBox": "",
+      "companyReference": "10100050",
+      "addressType": "2",
+      "telephoneNo": "+19992365237",
+      "email": "info@10100050.com",
+      "ids": []
+    },
+    {
+      "orgUnits": [
+        "SalesOrganization1010"
+      ],
+      "roleIdentCode": "BP",
+      "name1": "Ausländischer Kunde 50 (US)",
+      "name2": "",
+      "name3": "",
+      "name4": "",
+      "street": "Confederate Ave 15400",
+      "district": "",
+      "city": "Baton Rouge",
+      "postalCode": "70817-3609",
+      "countryIso": "US",
+      "poBox": "",
+      "postalCodePoBox": "",
+      "companyReference": "10100050",
+      "addressType": "2",
+      "telephoneNo": "+19992365237",
+      "email": "info@10100050.com",
+      "ids": []
+    },
+    {
+      "orgUnits": [
+        "SalesOrganization1010"
+      ],
+      "roleIdentCode": "PY",
+      "name1": "Ausländischer Kunde 50 (US)",
+      "name2": "",
+      "name3": "",
+      "name4": "",
+      "street": "Confederate Ave 15400",
+      "district": "",
+      "city": "Baton Rouge",
+      "postalCode": "70817-3609",
+      "countryIso": "US",
+      "poBox": "",
+      "postalCodePoBox": "",
+      "companyReference": "10100050",
+      "addressType": "2",
+      "telephoneNo": "+19992365237",
+      "email": "info@10100050.com",
+      "ids": []
+    },
+    {
+      "orgUnits": [
+        "SalesOrganization1010"
+      ],
+      "roleIdentCode": "SH",
+      "name1": "Ausländischer Kunde 50 (US)",
+      "name2": "",
+      "name3": "",
+      "name4": "",
+      "street": "Confederate Ave 15400",
+      "district": "",
+      "city": "Baton Rouge",
+      "postalCode": "70817-3609",
+      "countryIso": "US",
+      "poBox": "",
+      "postalCodePoBox": "",
+      "companyReference": "10100050",
+      "addressType": "2",
+      "telephoneNo": "+19992365237",
+      "email": "info@10100050.com",
+      "ids": []
+    },
+    {
+      "orgUnits": [
+        "CompanyCode1010",
+        "SalesOrganization1010"
+      ],
+      "roleIdentCode": "SalesOrganization",
+      "name1": "DE Company Code",
+      "city": "Walldorf",
+      "countryIso": "DE",
+      "companyReference": "1010"
+    }
+  ],
+  "items": [
+    {
+      "orderNumber": "1",
+      "idClientSystem": "10",
+      "idClientSystemLabel": "FIN111, MTS-DI, PD",
+      "orgUnits": [
+        "ProductionPlant1010"
+      ],
+      "materialNo": "FG111",
+      "quantity": {
+        "value": 2,
+        "unit": "PCE"
+      },
+      "values": [
+        {
+          "value": 0.00,
+          "currencyIso": "USD"
+        }
+      ],
+      "parties": [
+        {
+          "orgUnits": [
+            "SalesOrganization1010",
+            "ProductionPlant1010"
+          ],
+          "roleIdentCode": "ProductionPlant",
+          "name1": "Werk 1010 als Geschäftspartner",
+          "name2": "",
+          "name3": "",
+          "name4": "",
+          "street": "Dietmar-Hopp-Alle 1",
+          "district": "",
+          "city": "Walldorf",
+          "postalCode": "69190",
+          "countryIso": "DE",
+          "poBox": "",
+          "postalCodePoBox": "",
+          "companyReference": "1010",
+          "addressType": "2",
+          "telephoneNo": "+4999907770",
+          "email": "info@10401010.com",
+          "ids": [
+            {
+              "idType": "DE0",
+              "idValue": "DE154512324"
+            }
+          ]
+        }
+      ],
+      "decisiveDate": "2024-06-13",
+      "ctryProductOrigin": ""
     }
   ],
   "monitorParty": {
-    "roleIdentCode": "",
-    "companyReference": "United_Aircraft_Corporation"
+    "roleIdentCode": "SH",
+    "companyReference": "10100050"
   },
-  "forceCheck": false
+  "forceCheck": false,
+  "clientSystemId": "SAP_JNH_080",
+  "clientIdentCode": "API_TEST_CLIENT",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "EN"
+  ]
 }
 ```
 ```xml XML
@@ -96,6 +236,40 @@ To execute a simple check, use the request body shown below. Please ensure that 
 </soapenv:Envelope>
 ```
 
-<br />
+After execution checkRequest, you'll receive the following response:
 
-The response
+```
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "boIdClientSystem": "SAP_JNH_080_SALES_ORDER_1",
+  "boIdClientSystemLabel": "SAP JNH 080 Sales order 1",
+  "referenceNumber": "1",
+  "orgUnitResults": [
+    {
+      "orgUnit": "DEFAULT",
+      "resultType": "NOT_CRITICAL",
+      "screeningStatus": "NOT_CRITICAL",
+      "exportControlsStatus": "NOT_CRITICAL",
+      "lastScreeningCheck": "2026-04-27T10:08:45",
+      "lastExportControlsCheck": "2026-04-27T10:08:45"
+    }
+  ],
+  "items": [
+    {
+      "idClientSystem": "10",
+      "orgUnitResults": [
+        {
+          "orgUnit": "DEFAULT",
+          "resultType": "NOT_CRITICAL"
+        }
+      ]
+    }
+  ],
+  "blockMemories": []
+}
+```
+
+<br />
