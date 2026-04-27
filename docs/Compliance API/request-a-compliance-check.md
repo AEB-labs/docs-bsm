@@ -23,7 +23,7 @@ To check a business object, you can use the following function:
 
 <br />
 
-To execute a simple check, use the request body shown below. Please ensure that the values for _businessObjectType_, _mappingProfile_, and _orgUnit_ are adjusted accordingly.
+To perform a simple validation, use the request body below and adapt the fields _businessObjectType_, _mappingProfile_, and _orgUnits_ to match your specific use case.
 
 ```json JSON
 {
@@ -236,7 +236,9 @@ To execute a simple check, use the request body shown below. Please ensure that 
 </soapenv:Envelope>
 ```
 
-After execution checkRequest, you'll receive the following response:
+<br />
+
+After execution, you'll receive a repsonse similar to the example shown below:
 
 ```
 {
@@ -272,4 +274,4 @@ After execution checkRequest, you'll receive the following response:
 }
 ```
 
-<br />
+The response body includes the compliance status, the screening status, and the export controls status for each org unit. If you have also performed the export controls check, the response will additionally contain the check result for each item
