@@ -46,7 +46,7 @@ To check a business object, you can use the following function:
       "street": "Ulansky side-street 22",
       "city": "Moscow",
       "postalCode": "101000",
-      "countryIso": RU",
+      "countryIso": "RU",
       "companyReference": "United_Aircraft_Corporation",
       "addressType": "3"
     }
