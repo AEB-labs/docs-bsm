@@ -240,7 +240,7 @@ To perform a simple validation, use the request body below and adapt the fields 
 
 After execution, you'll receive a repsonse similar to the example shown below:
 
-```
+```json
 {
   "hasErrors": false,
   "hasOnlyRetryableErrors": false,
@@ -273,5 +273,39 @@ After execution, you'll receive a repsonse similar to the example shown below:
   "blockMemories": []
 }
 ```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:requestCheckResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <boIdClientSystem>SAP_JNH_080_SALES_ORDER_1</boIdClientSystem>
+                <boIdClientSystemLabel>SAP JNH 080 Sales order 1</boIdClientSystemLabel>
+                <referenceNumber>1</referenceNumber>
+                <orgUnitResults>
+                    <orgUnit>DEFAULT</orgUnit>
+                    <resultType>NOT_CRITICAL</resultType>
+                    <screeningStatus>NOT_CRITICAL</screeningStatus>
+                    <exportControlsStatus>NOT_CRITICAL</exportControlsStatus>
+                    <lastScreeningCheck>2026-04-27T10:45:00</lastScreeningCheck>
+                    <lastExportControlsCheck>2026-04-27T10:45:00</lastExportControlsCheck>
+                </orgUnitResults>
+                <items>
+                    <idClientSystem>10</idClientSystem>
+                    <orgUnitResults>
+                        <orgUnit>DEFAULT</orgUnit>
+                        <resultType>NOT_CRITICAL</resultType>
+                    </orgUnitResults>
+                </items>
+            </result>
+        </ns2:requestCheckResponse>
+    </S:Body>
+</S:Envelope>
+```
 
 The response body includes the compliance status, the screening status, and the export controls status for each org unit. If you have also performed the export controls check, the response will additionally contain the check result for each item
+
+<br />
