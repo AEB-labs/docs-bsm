@@ -14,7 +14,7 @@ You can fetch the check results of a business object by executing the following 
 
 <br />
 
-To execute the function, you' have to provide the system id of executing system (_clientSystemid_), the BSM client (_clientIdentCode_), a user name and the ID of the business object you want to fetch:
+To execute the function, you' have to provide the system id of the pre-system (_clientSystemid_), the BSM client (_clientIdentCode_), a user name and the ID of the business object you want to fetch:
 
 ```json
 {
@@ -26,4 +26,6 @@ To execute the function, you' have to provide the system id of executing system 
   ],
   "boIdClientSystem": "{{boIdClientSystem}}"  
 }
+```
+```xml
 ```
