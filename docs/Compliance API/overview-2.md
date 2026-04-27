@@ -5,14 +5,13 @@ hidden: false
 metadata:
   robots: index
 ---
-Available APIs in Compliance can be used to:
+The AEB Compliance API provides multiple endpoints to:
 
-* **Check a business object**
-* **Get the check result**
-* **Delete the check results of a business object**
-* **Synchronize the changed check results**
-* **Acknowledge the changed check results**
-* **Synchronize the recheck events**
-* **Acknowledge the recheck events**
+* Check a business object
+* Get the check result
+* Delete the check results of a business object
+* Synchronize Events
+  * Get and acknowledge the changed check results
+  * Get and acknowledge the recheck events
 
 These functions can be executed either as SOAP or as REST calls.
