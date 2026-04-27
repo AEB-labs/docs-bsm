@@ -26,34 +26,34 @@ To check a business object, you can use the following function:
 ```json JSON
 {
   "clientSystemId": "BRUYES",
-  "clientIdentCode": "{{client}}",
+  "clientIdentCode": "API_TEST_CLIENT",
   "userName": "API_TEST",
   "resultLanguageIsoCodes": [
     "en"
   ],
-  "boIdClientSystem": "12356",
-  "boIdClientSystemLabel": "123",
-  "referenceNumber": "DEBITOR2020022",
-  "businessObjectType": "X360_CUSTOMER",
-  "mappingProfile": "X360",
+  "boIdClientSystem": "UNIQUE_BO_ID",
+  "boIdClientSystemLabel": "UNIQUE_BO_ID_READBLE",
+  "referenceNumber": "REFERENCE_NUMBER",
+  "businessObjectType": "BUSINESS_OBJECT_TYPE",
+  "mappingProfile": "CMP_MAPPING_PROFILE",
   "parties": [
     {
       "orgUnits": [
-        "SALES"
+        "ORG_UNIT"
       ],
       "roleIdentCode": "",
-      "name1": "Wladimir",
-      "street": "Straße 21",
-      "city": "Ulm",
-      "postalCode": "73447",
-      "countryIso": "DE",
-      "companyReference": "MainContact_Wladimir Putin",
+      "name1": "United Aircraft Corporation",
+      "street": "Ulansky side-street 22",
+      "city": "Moscow",
+      "postalCode": "101000",
+      "countryIso": RU",
+      "companyReference": "United_Aircraft_Corporation",
       "addressType": "3"
     }
   ],
   "monitorParty": {
     "roleIdentCode": "",
-    "companyReference": "MainContact_Wladimir Putin"
+    "companyReference": "United_Aircraft_Corporation"
   },
   "forceCheck": false
 }
