@@ -1,5 +1,5 @@
 ---
-title: Request a Compliance Check
+title: Perform Check
 deprecated: false
 hidden: false
 metadata:
