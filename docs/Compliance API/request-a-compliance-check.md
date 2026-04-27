@@ -26,13 +26,13 @@ To check a business object, you can use the following function:
 ```json JSON
 {
   "clientSystemId": "BRUYES",
-  "clientIdentCode": "TEST_CLIENT",
+  "clientIdentCode": "{{client}}",
   "userName": "API_TEST",
   "resultLanguageIsoCodes": [
     "en"
   ],
-  "boIdClientSystem": "12345",
-  "boIdClientSystemLabel": "12345_Label",
+  "boIdClientSystem": "12356",
+  "boIdClientSystemLabel": "123",
   "referenceNumber": "DEBITOR2020022",
   "businessObjectType": "X360_CUSTOMER",
   "mappingProfile": "X360",
