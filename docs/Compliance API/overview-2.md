@@ -11,8 +11,8 @@ Available APIs in Compliance can be used to:
 * **Get the check result**
 * **Delete the check results of a business object**
 * **Synchronize the changed check results**
+* **Acknowledge the changed check results**
 * **Synchronize the recheck events**
+* **Acknowledge the recheck events**
 
 These functions can be executed either as SOAP or as REST calls.
-
-<br />
