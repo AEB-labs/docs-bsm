@@ -59,7 +59,39 @@ To check a business object, you can use the following function:
 }
 ```
 ```xml XML
-console.log('Code Tab B');
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:requestCheck>
+         <request>
+            <clientSystemId>BRUYES</clientSystemId>
+            <clientIdentCode>API_TEST_CLIENT</clientIdentCode>
+            <userName>API_TEST</userName>
+            <resultLanguageIsoCodes>EN</resultLanguageIsoCodes>
+            <boIdClientSystem>UNIQUE_BO_ID</boIdClientSystem>
+            <boIdClientSystemLabel>UNIQUE_BO_ID_READBLE</boIdClientSystemLabel>
+            <referenceNumber>REFERENCE_NUMBER</referenceNumber>
+            <businessObjectType>BUSINESS_OBJECT_TYPE</businessObjectType>
+            <mappingProfile>CMP_MAPPING_PROFILE</mappingProfile>
+            <parties>
+               <orgUnits>ORG_UNIT</orgUnits>
+               <roleIdentCode></roleIdentCode>
+               <name1>United Aircraft Corporation</name1>
+               <street>Ulansky side-street 22</street>
+               <city>Moscow</city>
+               <postalCode>101000</postalCode>
+               <countryIso>RU</countryIso>
+               <companyReference>United_Aircraft_Corporation</companyReference>
+            </parties>
+           <monitorParty>
+             <roleIdentCode></roleIdentCode>
+             <companyReference>United_Aircraft_Corporation</companyReference>
+           </monitorParty>
+           <forceCheck>false</forceCheck>
+         </request>
+      </urn:requestCheck>
+   </soapenv:Body>
+</soapenv:Envelope>
 ```
 
 <br />
