@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-You can use the the Compliance API to check a business object. This check contains compliance screening and export controls.
+You can use the Compliance API to check a business object. This check contains compliance screening and export controls.
 
 If you are interested in learning more about Compliance Screening or Export Controls, you can find additional information here:
 
