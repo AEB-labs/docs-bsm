@@ -23,7 +23,7 @@ To check a business object, you can use the following function:
 
 <br />
 
-To execute a simple check, use the request body shown below. Please ensure that the values for _businessObjectType_, _mappingProfile_, and _orgUnit _are adjusted accordingly.
+To execute a simple check, use the request body shown below. Please ensure that the values for _businessObjectType_, _mappingProfile_, and _orgUnit_ are adjusted accordingly.
 
 ```json JSON
 {
@@ -98,4 +98,4 @@ To execute a simple check, use the request body shown below. Please ensure that 
 
 <br />
 
-The response 
+The response
