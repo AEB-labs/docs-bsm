@@ -34,7 +34,7 @@ To execute the function, you' have to provide the system id of the pre-system (_
       <urn:getCheckResult>
          <request>
             <clientSystemId>BRUYES</clientSystemId>
-            <clientIdentCode>{{client}}</clientIdentCode>
+            <clientIdentCode>SAP_JNH_080</clientIdentCode>
             <userName>API_TEST</userName>
             <resultLanguageIsoCodes>de</resultLanguageIsoCodes>
             <boIdClientSystem>{{boIdClientSystem}}</boIdClientSystem>
