@@ -28,4 +28,20 @@ To execute the function, you' have to provide the system id of the pre-system (_
 }
 ```
 ```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCheckResult>
+         <request>
+            <clientSystemId>BRUYES</clientSystemId>
+            <clientIdentCode>{{client}}</clientIdentCode>
+            <userName>API_TEST</userName>
+            <resultLanguageIsoCodes>de</resultLanguageIsoCodes>
+            <boIdClientSystem>{{boIdClientSystem}}</boIdClientSystem>
+         </request>
+      </urn:getCheckResult>
+   </soapenv:Body>
+</soapenv:Envelope>
 ```
+
+The response 
