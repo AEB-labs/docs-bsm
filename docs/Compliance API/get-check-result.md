@@ -37,7 +37,7 @@ To execute the function, you' have to provide the system id of the pre-system (_
             <clientIdentCode>SAP_JNH_080</clientIdentCode>
             <userName>API_TEST</userName>
             <resultLanguageIsoCodes>de</resultLanguageIsoCodes>
-            <boIdClientSystem>{{boIdClientSystem}}</boIdClientSystem>
+            <boIdClientSystem>SAP_JNH_080_SALES_ORDER_1</boIdClientSystem>
          </request>
       </urn:getCheckResult>
    </soapenv:Body>
