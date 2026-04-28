@@ -44,4 +44,4 @@ To execute the function, you' have to provide the system id of the pre-system (_
 </soapenv:Envelope>
 ```
 
-The response 
+The response is equal to the _requestCheck_ response. It includes the compliance status, the screening status and the export controls status for each org unit and for each item.
