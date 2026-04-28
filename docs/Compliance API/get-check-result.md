@@ -24,7 +24,7 @@ To execute the function, you' have to provide the system id of the pre-system (_
   "resultLanguageIsoCodes": [
     "en"
   ],
-  "boIdClientSystem": "{{boIdClientSystem}}"  
+  "boIdClientSystem": "SAP_JNH_080_SALES_ORDER_1"  
 }
 ```
 ```xml
