@@ -19,7 +19,7 @@ To execute the function, you' have to provide the system id of the pre-system (_
 ```json
 {
   "clientSystemId": "BRUYES",
-  "clientIdentCode": "{{client}}",
+  "clientIdentCode": "SAP_JNH_080",
   "userName": "API_TEST",
   "resultLanguageIsoCodes": [
     "en"
