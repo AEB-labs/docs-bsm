@@ -2,3 +2,4 @@
 - request-a-compliance-check
 - get-check-result
 - delete-the-check-results
+- synchronize-changed-check-results
