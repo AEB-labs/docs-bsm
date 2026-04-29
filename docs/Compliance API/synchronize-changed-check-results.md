@@ -114,13 +114,20 @@ The result will look simliar to the following response body:
 
 You can use the data from _complianceBusinessObjects_ to handle the changes, .e.g. update the compliance status of your business object.
 
-Once you handled the changes you can confirm it by calling _acknowledgeChangedCheckResults_. 
+Once you handled the changes you can confirm it by calling _acknowledgeChangedCheckResults_.
 
 <br />
 
 ## acknowledgeChangedCheckResults
 
-The function can be used to acknowledge that you completely handled all changes of the business objects. To call the function, you need to provide the system id of the pre-system, the BSM client, a username and the _syncId_ that is provided by the response of the _getChangedCheckResults _function.
+The function can be used to acknowledge that you handled all business object check results. 
+
+| API  | Function                                                                                                                                                                                                                                                                                                                                      |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST | POST acknowledgeChangedCheckResults                                                                                                                                                                                                                                                                                                           |
+| SOAP | [ComplianceBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/ComplianceBF?WSDL)  \| <Anchor label=" acknowledgeChangedCheckResults (JavaDoc)" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/doc/ComplianceBF/de/aeb/xnsg/bsm/compliance/bf/checkrequest/IComplianceBF.html"> acknowledgeChangedCheckResults (JavaDoc)</Anchor> |
+
+To call the function, you need to provide the system id of the pre-system, the BSM client, a username and the _syncId_ that is provided by the response of the _getChangedCheckResults _function.
 
 ```json
 {
@@ -130,7 +137,7 @@ The function can be used to acknowledge that you completely handled all changes 
   "resultLanguageIsoCodes": [
     "en"
   ],
-  "syncId": "347"
+  "syncId": "353"
 }
 ```
 ```xml
@@ -143,11 +150,36 @@ The function can be used to acknowledge that you completely handled all changes 
             <clientIdentCode>SAP_JNH_080</clientIdentCode>
             <userName>API_TEST</userName>
            <resultLanguageIsoCodes>de</resultLanguageIsoCodes>           
-					 <syncId>347</syncId>
+					 <syncId>353</syncId>
          </request>
       </urn:getCheckResult>
    </soapenv:Body>
 </soapenv:Envelope>
+```
+
+The result will look like the response body below:
+
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": []
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:acknowledgeChangedCheckResultsResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+            </result>
+        </ns2:acknowledgeChangedCheckResultsResponse>
+    </S:Body>
+</S:Envelope>
 ```
 
 <br />
