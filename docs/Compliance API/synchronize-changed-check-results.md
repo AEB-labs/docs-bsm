@@ -5,6 +5,7 @@ hidden: false
 metadata:
   robots: index
 next:
+  description: In the next section, you'll learn how to handle recheck events.
   pages:
     - slug: synchronize-recheck-events
       title: Synchronize recheck events
