@@ -4,6 +4,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: synchronize-recheck-events
+      title: Synchronize recheck events
+      type: basic
 ---
 After performing a check, the status of the check result may change. For instance, you executed a screening check that leads to a _critical_ check result. Defining a good guy for the critical address will change the compliance status to _not critical_.
 
