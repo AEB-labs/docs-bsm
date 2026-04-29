@@ -83,7 +83,7 @@ Errors, warnings and informations will also be provided in the field messages:
       "messageTexts": [
         {
           "languageISOCode": "en",
-          "text": "No check transaction of client "ATC" with transaction number (transactionIdHost) \"SAP_JNH_080_SALES_ORDER_32$DEFAULT\" created by partner system \"PGTEST1BSM_JER\" was found."
+          "text": "No check transaction of client \"ATC\" with transaction number (transactionIdHost) \"SAP_JNH_080_SALES_ORDER_32$DEFAULT\" created by partner system \"PGTEST1BSM_JER\" was found."
         }
       ],
       "indentationLevel": 0
