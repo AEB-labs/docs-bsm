@@ -47,6 +47,37 @@ To execute the function, you' have to provide the system id of the pre-system (_
 The response is equal to the _requestCheck_ response. It includes the compliance status, the screening status and the export controls status for each org unit and for each item.
 
 ```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "boIdClientSystem": "SAP_JNH_080_SALES_ORDER_1",
+  "boIdClientSystemLabel": "SAP JNH 080 Sales order 1",
+  "referenceNumber": "1",
+  "orgUnitResults": [
+    {
+      "orgUnit": "DEFAULT",
+      "resultType": "NOT_CRITICAL",
+      "screeningStatus": "NOT_CRITICAL",
+      "exportControlsStatus": "NOT_CRITICAL",
+      "lastScreeningCheck": "2026-04-27T10:08:45",
+      "lastExportControlsCheck": "2026-04-27T10:08:45"
+    }
+  ],
+  "items": [
+    {
+      "idClientSystem": "10",
+      "orgUnitResults": [
+        {
+          "orgUnit": "DEFAULT",
+          "resultType": "NOT_CRITICAL"
+        }
+      ]
+    }
+  ],
+  "blockMemories": []
+}
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
