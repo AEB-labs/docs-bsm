@@ -13,7 +13,7 @@ next:
       title: Get Check Results
       type: basic
 ---
-You can use the Compliance API to check a business object. This check contains <Anchor label="Compliance Screening" target="_blank" href="https://docs.aeb.com/doc/cm-287937803-923804811-en-US/t-923804811-288463499-en-US">Compliance Screening</Anchor> and [Export Controls](https://docs.aeb.com/doc/cm-287939723-996830731-en-US/t-996830731-288627211-en-US).
+You can use the Compliance API to check a business object. This check contains <Anchor label="Compliance Screening" target="_blank" href="https://docs.aeb.com/doc/cm-287937803-923804811-en-US/t-923804811-288463499-en-US">Compliance Screening</Anchor> and <Anchor label="Export Controls" target="_blank" href="https://docs.aeb.com/doc/cm-287939723-996830731-en-US/t-996830731-288627211-en-US">Export Controls</Anchor>.
 
 To perform a check, you can use the following function:
 
