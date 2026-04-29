@@ -22,7 +22,7 @@ After performing a check request you will be able to delete the check requests o
 
 <br />
 
-The function requires the system id of the pre-system (_clientSystemid_), the BSM client (_clientIdentCode_), a user name and the ID of the business object you want to delete:
+The function requires the system id of the pre-system (_clientSystemid_), the BSM client (_clientIdentCode_), a username and the ID of the business object you want to delete:
 
 ```json
 {
@@ -52,7 +52,7 @@ The function requires the system id of the pre-system (_clientSystemid_), the BS
 </soapenv:Envelope>
 ```
 
-You can validate if the request could be executed successfully by checking if any error occured. 
+You can validate if the request could be executed successfully by checking if any error occured.
 
 ```json
 {
