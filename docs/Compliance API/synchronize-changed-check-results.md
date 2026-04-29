@@ -114,10 +114,42 @@ The result will look simliar to the following response body:
 
 You can use the data from _complianceBusinessObjects_ to handle the changes, .e.g. update the compliance status of your business object.
 
-Once you handled the changes you can confirm it by calling _acknowledgeChangedCheckResults_.
+Once you handled the changes you can confirm it by calling _acknowledgeChangedCheckResults_. 
 
 <br />
 
 ## acknowledgeChangedCheckResults
 
-The function can be used to acknowledge that you completely handled the changes of your business object. 
+The function can be used to acknowledge that you completely handled all changes of the business objects. To call the function, you need to provide the system id of the pre-system, the BSM client, a username and the _syncId_ that is provided by the response of the _getChangedCheckResults _function.
+
+```json
+{
+  "clientSystemId": "BRUYES",
+  "clientIdentCode": "SAP_JNH_080",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "syncId": "347"
+}
+```
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCheckResult>
+         <request>
+            <clientSystemId>BRUYES</clientSystemId>
+            <clientIdentCode>SAP_JNH_080</clientIdentCode>
+            <userName>API_TEST</userName>
+           <resultLanguageIsoCodes>de</resultLanguageIsoCodes>           
+					 <syncId>347</syncId>
+         </request>
+      </urn:getCheckResult>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+<br />
+
+<br />
