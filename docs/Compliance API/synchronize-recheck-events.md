@@ -1,5 +1,5 @@
 ---
-title: Synchronize "Recheck" events
+title: Synchronize recheck events
 deprecated: false
 hidden: false
 metadata:
