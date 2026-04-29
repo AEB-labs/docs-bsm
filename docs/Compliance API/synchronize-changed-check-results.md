@@ -31,7 +31,7 @@ The function getChangedCheckResults can be used to fetch the changes.
 
 <br />
 
-The function expects system id of the pre-system, the BSM client and a username :
+The function expects the system id of the pre-system, the BSM client and an username :
 
 ```json
 {
