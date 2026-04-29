@@ -1,5 +1,5 @@
 ---
-title: Delete the Check Results
+title: Delete Check Results
 deprecated: false
 hidden: false
 metadata:
