@@ -307,6 +307,6 @@ After execution, you'll receive a repsonse similar to the example shown below:
 </S:Envelope>
 ```
 
-The response body includes the compliance status, the screening status, and the export controls status for each org unit. If you have also performed the export controls check, the response will additionally contain the check result for each item
+The response body includes the compliance status, the screening status, and the export controls status for each org unit. If you have performed an export controls check, the response will additionally contain the check result for each item.
 
 <br />
