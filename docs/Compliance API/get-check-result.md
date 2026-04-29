@@ -46,7 +46,39 @@ To execute the function, you' have to provide the system id of the pre-system (_
 
 The response is equal to the _requestCheck_ response. It includes the compliance status, the screening status and the export controls status for each org unit and for each item.
 
+```json
 ```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:requestCheckResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <boIdClientSystem>SAP_JNH_080_SALES_ORDER_1</boIdClientSystem>
+                <boIdClientSystemLabel>SAP JNH 080 Sales order 1</boIdClientSystemLabel>
+                <referenceNumber>1</referenceNumber>
+                <orgUnitResults>
+                    <orgUnit>DEFAULT</orgUnit>
+                    <resultType>NOT_CRITICAL</resultType>
+                    <screeningStatus>NOT_CRITICAL</screeningStatus>
+                    <exportControlsStatus>NOT_CRITICAL</exportControlsStatus>
+                    <lastScreeningCheck>2026-04-27T10:45:00</lastScreeningCheck>
+                    <lastExportControlsCheck>2026-04-27T10:45:00</lastExportControlsCheck>
+                </orgUnitResults>
+                <items>
+                    <idClientSystem>10</idClientSystem>
+                    <orgUnitResults>
+                        <orgUnit>DEFAULT</orgUnit>
+                        <resultType>NOT_CRITICAL</resultType>
+                    </orgUnitResults>
+                </items>
+            </result>
+        </ns2:requestCheckResponse>
+    </S:Body>
+</S:Envelope>
 ```
 
 <br />
