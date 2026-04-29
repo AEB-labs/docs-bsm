@@ -1,5 +1,5 @@
 ---
-title: Compliance API - Overview
+title: Overview
 deprecated: false
 hidden: false
 metadata:
