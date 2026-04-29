@@ -1,5 +1,5 @@
 ---
-title: Get Check Result
+title: Get Check Results
 deprecated: false
 hidden: false
 metadata:
