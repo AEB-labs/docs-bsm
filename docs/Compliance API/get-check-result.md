@@ -4,6 +4,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: >-
+    In the next section, you'll learn how to delete the check results of a
+    business object.
+  pages:
+    - slug: delete-the-check-results
+      title: Delete the Check Results
+      type: basic
 ---
 You can fetch the check results of a business object by executing the following function:
 
