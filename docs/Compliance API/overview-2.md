@@ -4,6 +4,10 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: >-
+    The next section provides a more detailed explanation of how a business
+    object can be checked.
 ---
 The AEB Compliance API provides multiple endpoints to:
 
