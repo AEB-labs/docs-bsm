@@ -4,6 +4,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: >-
+    In the next section, you'll learn how to handle changes of the check
+    results.
+  pages:
+    - slug: synchronize-changed-check-results
+      title: Synchronize changed check results
+      type: basic
 ---
 After performing a check request you will be able to delete the check requests of a business object. Therefore, you can use the function below:
 
