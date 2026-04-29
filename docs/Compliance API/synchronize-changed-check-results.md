@@ -53,7 +53,7 @@ The function expects system id of the pre-system, the BSM client and a username 
 </soapenv:Envelope>
 ```
 
-The result can look like the following response body:  
+The result will look simliar to the following response body:
 
 ```json
 {
@@ -112,4 +112,12 @@ The result can look like the following response body:
 </S:Envelope>
 ```
 
+You can use the data from _complianceBusinessObjects_ to handle the changes, .e.g. update the compliance status of your business object.
+
+Once you handled the changes you can confirm it by calling _acknowledgeChangedCheckResults_.
+
 <br />
+
+## acknowledgeChangedCheckResults
+
+The function can be used to acknowledge that you completely handled the changes of your business object. 
