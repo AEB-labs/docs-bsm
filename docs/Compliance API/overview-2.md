@@ -6,8 +6,8 @@ metadata:
   robots: index
 next:
   description: >-
-    The next section provides a more detailed explanation of how a business
-    object can be checked.
+    The next section [Link Text](https://example.com) provides a more detailed
+    explanation of how a business object can be checked.
 ---
 The AEB Compliance API provides multiple endpoints to:
 
