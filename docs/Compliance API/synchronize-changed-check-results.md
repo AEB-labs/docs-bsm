@@ -53,6 +53,63 @@ The function expects system id of the pre-system, the BSM client and a username 
 </soapenv:Envelope>
 ```
 
-<br />
+The result can look like the following response body:  
+
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "syncId": "353",
+  "isComplete": true,
+  "complianceBusinessObjects": [
+    {
+      "boIdClientSystem": "SAP_JNH_080_SALES_ORDER_32",
+      "boIdClientSystemLabel": "SAP JNH 080 Sales order 32",
+      "referenceNumber": "32",
+      "orgUnitResults": [
+        {
+          "orgUnit": "DEFAULT",
+          "resultType": "RELEASED_WITHOUT_LICENSE",
+          "screeningStatus": "RELEASED_WITHOUT_LICENSE",
+          "exportControlsStatus": "NOT_CHECKED",
+          "lastScreeningCheck": "2026-04-29T10:19:23",
+          "lastExportControlsCheck": "2026-04-29T10:19:23"
+        }
+      ]
+    }
+  ]
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:getChangedCheckResultsResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <syncId>353</syncId>
+                <isComplete>true</isComplete>
+                <complianceBusinessObjects>
+                    <boIdClientSystem>SAP_JNH_080_SALES_ORDER_32</boIdClientSystem>
+                    <boIdClientSystemLabel>SAP JNH 080 Sales order 32</boIdClientSystemLabel>
+                    <referenceNumber>32</referenceNumber>
+                    <orgUnitResults>
+                        <orgUnit>DEFAULT</orgUnit>
+                        <resultType>RELEASED_WITHOUT_LICENSE</resultType>
+                        <screeningStatus>RELEASED_WITHOUT_LICENSE</screeningStatus>
+                        <exportControlsStatus>NOT_CHECKED</exportControlsStatus>
+                        <lastScreeningCheck>2026-04-29T10:19:23</lastScreeningCheck>
+                        <lastExportControlsCheck>2026-04-29T10:19:23</lastExportControlsCheck>
+                    </orgUnitResults>
+                </complianceBusinessObjects>
+            </result>
+        </ns2:getChangedCheckResultsResponse>
+    </S:Body>
+</S:Envelope>
+```
 
 <br />
