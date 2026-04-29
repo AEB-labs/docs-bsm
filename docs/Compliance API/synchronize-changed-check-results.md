@@ -25,7 +25,32 @@ The function getChangedCheckResults can be used to fetch the changes.
 
 <br />
 
+The function expects 
+
 ```json
+{
+  "clientSystemId": "BRUYES",
+  "clientIdentCode": "SAP_JNH_080",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+}
+```
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCheckResult>
+         <request>
+            <clientSystemId>BRUYES</clientSystemId>
+            <clientIdentCode>SAP_JNH_080</clientIdentCode>
+            <userName>API_TEST</userName>
+            <resultLanguageIsoCodes>de</resultLanguageIsoCodes>
+         </request>
+      </urn:getCheckResult>
+   </soapenv:Body>
+</soapenv:Envelope>
 ```
 
 <br />
