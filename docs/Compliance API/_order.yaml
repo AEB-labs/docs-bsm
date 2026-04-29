@@ -3,3 +3,4 @@
 - get-check-result
 - delete-the-check-results
 - synchronize-changed-check-results
+- synchronize-recheck-events
