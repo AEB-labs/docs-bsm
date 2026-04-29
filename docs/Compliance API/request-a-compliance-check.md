@@ -4,6 +4,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: >-
+    In the next section, you'll learn how to get the check results of a business
+    object.
+  pages:
+    - slug: get-check-result
+      title: Get Check Results
+      type: basic
 ---
 You can use the Compliance API to check a business object. This check contains compliance screening and export controls.
 
