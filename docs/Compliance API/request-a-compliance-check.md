@@ -24,7 +24,7 @@ To perform a check, you can use the following function:
 
 <br />
 
-To perform a simple validation, use the request body below and adapt the fields _businessObjectType_, _mappingProfile_, and _orgUnits_ to match your specific use case.
+To execute a check, use the request body below and adapt the fields _businessObjectType_, _mappingProfile_, and _orgUnits_ to match your specific use case.
 
 ```json JSON
 {
@@ -239,7 +239,7 @@ To perform a simple validation, use the request body below and adapt the fields 
 
 <br />
 
-After execution, you'll receive a repsonse similar to the example shown below:
+You'll receive a repsonse similar to the example shown below:
 
 ```json
 {
