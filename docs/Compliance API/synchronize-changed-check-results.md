@@ -11,7 +11,7 @@ next:
       title: Synchronize recheck events
       type: basic
 ---
-After performing a check, the status of the check result may change. For instance, you executed a screening check that leads to a _critical_ check result. Defining a good guy for the critical address will change the compliance status to _not critical_.
+The compliance status of a business object may change after the initial check. For instance, you executed a screening check that leads to a _critical_ check result. Defining a good guy for the critical address will change the compliance status to _not critical_.
 
 The Compliance API provides two functions to handle these changes:
 
@@ -124,7 +124,7 @@ Once you handled the changes you can confirm it by calling _acknowledgeChangedCh
 
 ## acknowledgeChangedCheckResults
 
-The function can be used to acknowledge that you handled all business object check results.
+The function can be used to acknowledge that you handled all check results.
 
 | API  | Function                                                                                                                                                                                                                                                                                                                                      |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
