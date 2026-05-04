@@ -13,14 +13,14 @@ next:
       title: Perform Check
       type: basic
 ---
-The AEB Compliance API provides multiple endpoints to:
+The AEB Compliance API offers serveral endpoints that allow you to:
 
-* Check a business object
-* Get the check results of a business object
+* Perform a compliance check on a business object
+* Retrieve the check results for a business object
 * Delete the check results of a business object
-* Synchronize Events
-  * Get and acknowledge the changed check results
-  * Get and acknowledge the recheck events
+* Synchronize events, including
+  * Retrieving and acknowledging the changed check results
+  * Retrieving and acknowledging recheck events
 
 These functions can be executed either as SOAP or as REST calls.
 
