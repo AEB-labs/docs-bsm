@@ -122,17 +122,18 @@ To call the function, you need to provide the system id of the pre-system, the B
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
    <soapenv:Header/>
    <soapenv:Body>
-      <urn:getCheckResult>
+      <urn:acknowledgeChangedRecheckEvents>
          <request>
             <clientSystemId>BRUYES</clientSystemId>
             <clientIdentCode>SAP_JNH_080</clientIdentCode>
             <userName>API_TEST</userName>
-           <resultLanguageIsoCodes>de</resultLanguageIsoCodes>           
-					 <syncId>354</syncId>
+            <resultLanguageIsoCodes>en</resultLanguageIsoCodes>
+            <syncId>354</syncId>
          </request>
-      </urn:getCheckResult>
+      </urn:acknowledgeChangedRecheckEvents>
    </soapenv:Body>
 </soapenv:Envelope>
+
 ```
 
 The result will look like the response body below:
@@ -149,13 +150,13 @@ The result will look like the response body below:
 <?xml version="1.0" encoding="UTF-8"?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
     <S:Body>
-        <ns2:acknowledgeChangedCheckResultsResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+        <ns2:acknowledgeChangedRecheckEventsResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
             <result>
                 <hasErrors>false</hasErrors>
                 <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
                 <hasWarnings>false</hasWarnings>
             </result>
-        </ns2:acknowledgeChangedCheckResultsResponse>
+        </ns2:acknowledgeChangedRecheckEventsResponse>
     </S:Body>
 </S:Envelope>
 ```
