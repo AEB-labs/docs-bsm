@@ -23,7 +23,6 @@ The function getChangedRecheckEvents can be used to fetch the events.
 | REST | POST getChangedRecheckEvents                                                                                                                                                                                                                                                                                                  |
 | SOAP | [ComplianceBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/ComplianceBF?WSDL)  \| <Anchor label=" getChangedCheckResults (JavaDoc)" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/doc/ComplianceBF/de/aeb/xnsg/bsm/compliance/bf/checkrequest/IComplianceBF.html"> getChangedCheckResults (JavaDoc)</Anchor> |
 
-```
-```
+The function expects the system id of the pre-system, the BSM client and an username
 
 <br />
