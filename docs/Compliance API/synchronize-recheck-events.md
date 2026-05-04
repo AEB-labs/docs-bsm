@@ -13,3 +13,12 @@ Similar to the _changed check results_, the compliance API provides two function
 * acknowledgeChangedRecheckEvents
 
 <br />
+
+## getChangedRecheckEvents
+
+<br />
+
+```
+```
+
+<br />
