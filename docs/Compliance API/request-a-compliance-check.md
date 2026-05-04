@@ -239,7 +239,7 @@ To execute a check, use the request body below and adapt the fields _businessObj
 
 <br />
 
-You'll receive a repsonse similar to the example shown below:
+You'll receive a response similar to the example shown below:
 
 ```json
 {
