@@ -51,7 +51,7 @@ The function expects the system id of the pre-system, the BSM client and an user
 </soapenv:Envelope>
 ```
 
-The result will contain 
+The result returns all business objects for which the _check again_ button was clicked:
 
 ```
 {
@@ -71,4 +71,8 @@ The result will contain
 }
 ```
 
+You can use the _syncId_ similar to the _check results_.
+
 <br />
+
+## acknowledgeChangedRecheckEvents
