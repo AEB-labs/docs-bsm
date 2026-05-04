@@ -25,4 +25,30 @@ The function getChangedRecheckEvents can be used to fetch the events.
 
 The function expects the system id of the pre-system, the BSM client and an username
 
+```json
+{
+  "clientSystemId": "BRUYES",
+  "clientIdentCode": "SAP_JNH_080",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+}
+```
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCheckResult>
+         <request>
+            <clientSystemId>BRUYES</clientSystemId>
+            <clientIdentCode>SAP_JNH_080</clientIdentCode>
+            <userName>API_TEST</userName>
+            <resultLanguageIsoCodes>en</resultLanguageIsoCodes>
+         </request>
+      </urn:getCheckResult>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
 <br />
