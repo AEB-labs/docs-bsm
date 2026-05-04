@@ -16,7 +16,12 @@ Similar to the _changed check results_, the compliance API provides two function
 
 ## getChangedRecheckEvents
 
-<br />
+The function getChangedRecheckEvents can be used to fetch the events.
+
+| API  | Function                                                                                                                                                                                                                                                                                                                      |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST | POST getChangedRecheckEvents                                                                                                                                                                                                                                                                                                  |
+| SOAP | [ComplianceBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/ComplianceBF?WSDL)  \| <Anchor label=" getChangedCheckResults (JavaDoc)" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/doc/ComplianceBF/de/aeb/xnsg/bsm/compliance/bf/checkrequest/IComplianceBF.html"> getChangedCheckResults (JavaDoc)</Anchor> |
 
 ```
 ```
