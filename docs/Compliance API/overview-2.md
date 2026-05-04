@@ -18,7 +18,7 @@ The AEB Compliance API offers serveral endpoints that allow you to:
 * Perform a compliance check on a business object
 * Retrieve the check results for a business object
 * Delete the check results of a business object
-* Synchronize events, including
+* Synchronize changes, including:
   * Retrieving and acknowledging the changed check results
   * Retrieving and acknowledging recheck events
 
