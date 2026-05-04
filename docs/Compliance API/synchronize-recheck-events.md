@@ -53,7 +53,7 @@ The function expects the system id of the pre-system, the BSM client and an user
 
 The result returns all business objects for which the _check again_ button was clicked:
 
-```
+```json
 {
   "hasErrors": false,
   "hasOnlyRetryableErrors": false,
@@ -70,9 +70,92 @@ The result returns all business objects for which the _check again_ button was c
   ]
 }
 ```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:getChangedRecheckEventsResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+                <syncId>354</syncId>
+                <isComplete>true</isComplete>
+                <recheckEvents>
+                    <boIdClientSystem>SAP_JNH_080_SALES_ORDER_32</boIdClientSystem>
+                    <boIdClientSystemLabel>SAP JNH 080 Sales order 32</boIdClientSystemLabel>
+                    <referenceNumber>32</referenceNumber>
+                </recheckEvents>
+            </result>
+        </ns2:getChangedRecheckEventsResponse>
+    </S:Body>
+</S:Envelope>
+```
 
-You can use the _syncId_ similar to the _check results_.
+After you handled the event you can use the _syncId_ to confirm it.
 
 <br />
 
 ## acknowledgeChangedRecheckEvents
+
+Similar to the _check results_, the function can be used to acknowledge the recheck events.
+
+| API  | Function                                                                                                                                                                                                                                                                                                                  |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST | POST acknowledgeChangedRecheckEvents                                                                                                                                                                                                                                                                                      |
+| SOAP | [ComplianceBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/ComplianceBF?WSDL)  \| <Anchor label="acknowledgeChangedRecheckEvents" target="_blank" href="https://rz3.aeb.de/test1bsm/servlet/bf/doc/ComplianceBF/de/aeb/xnsg/bsm/compliance/bf/checkrequest/IComplianceBF.html">acknowledgeChangedRecheckEvents</Anchor> |
+
+To call the function, you need to provide the system id of the pre-system, the BSM client, a username and the _syncId_ that is provided by the response of the _getChangedRecheckEvents_ function.
+
+```json
+{
+  "clientSystemId": "BRUYES",
+  "clientIdentCode": "SAP_JNH_080",
+  "userName": "API_TEST",
+  "resultLanguageIsoCodes": [
+    "en"
+  ],
+  "syncId": "354"
+}
+```
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCheckResult>
+         <request>
+            <clientSystemId>BRUYES</clientSystemId>
+            <clientIdentCode>SAP_JNH_080</clientIdentCode>
+            <userName>API_TEST</userName>
+           <resultLanguageIsoCodes>de</resultLanguageIsoCodes>           
+					 <syncId>354</syncId>
+         </request>
+      </urn:getCheckResult>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+The result will look like the response body below:
+
+```json
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": []
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:acknowledgeChangedCheckResultsResponse xmlns:ns2="urn:de.aeb.xnsg.bsm.compliance.bf.checkrequest">
+            <result>
+                <hasErrors>false</hasErrors>
+                <hasOnlyRetryableErrors>false</hasOnlyRetryableErrors>
+                <hasWarnings>false</hasWarnings>
+            </result>
+        </ns2:acknowledgeChangedCheckResultsResponse>
+    </S:Body>
+</S:Envelope>
+```
