@@ -19,7 +19,7 @@ To perform a check, you can use the following function:
 
 | API  | Function                                                                                                                                                                                                                                                                                                |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| REST | POST <Anchor label="requestCheck" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/">requestCheck</Anchor>                                                                                                                                                                                     |
+| REST | <Anchor label="POST requestCheck" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/">POST requestCheck</Anchor>                                                                                                                                                                                |
 | SOAP | [ComplianceBF (WSDL)](https://rz3.aeb.de/test1bsm/servlet/bf/ComplianceBF?WSDL)  \| <Anchor label="requestCheck (JavaDoc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/ComplianceBF/de/aeb/xnsg/bsm/compliance/bf/checkrequest/IComplianceBF.html">requestCheck (JavaDoc)</Anchor> |
 
 <br />
