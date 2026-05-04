@@ -22,6 +22,6 @@ The AEB Compliance API offers serveral endpoints that allow you to:
   * Retrieving and acknowledging the changed check results
   * Retrieving and acknowledging recheck events
 
-All operations can be executed either SOAP or REST.
+All operations can be executed using either SOAP or REST.
 
 <br />
