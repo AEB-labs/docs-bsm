@@ -17,7 +17,7 @@ After performing a check request you will be able to delete the check results of
 
 | API  | Function                                                                                                                                                                                                                                                                                      |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| REST | POST delete                                                                                                                                                                                                                                                                                   |
+| REST | <Anchor label="POST delete" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/">POST delete</Anchor>                                                                                                                                                                                  |
 | SOAP | [ComplianceBF (WSDL)](https://rz3.aeb.de/test2bsm/servlet/bf/ComplianceBF?WSDL)  \| <Anchor label=" delete (JavaDoc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/ComplianceBF/de/aeb/xnsg/bsm/compliance/bf/checkrequest/IComplianceBF.html"> delete (JavaDoc)</Anchor> |
 
 <br />
