@@ -51,4 +51,24 @@ The function expects the system id of the pre-system, the BSM client and an user
 </soapenv:Envelope>
 ```
 
+The result will contain 
+
+```
+{
+  "hasErrors": false,
+  "hasOnlyRetryableErrors": false,
+  "hasWarnings": false,
+  "messages": [],
+  "syncId": "354",
+  "isComplete": true,
+  "recheckEvents": [
+    {
+      "boIdClientSystem": "SAP_JNH_080_SALES_ORDER_32",
+      "boIdClientSystemLabel": "SAP JNH 080 Sales order 32",
+      "referenceNumber": "32"
+    }
+  ]
+}
+```
+
 <br />
