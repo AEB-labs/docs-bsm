@@ -287,4 +287,15 @@ You'll receive a response similar to the example shown below:
 
 The response body includes the compliance status, the screening status, and the export controls status for each org unit. If you have performed an export controls check, the response will additionally contain the check result for each item.
 
+The meaning of each status is as follows:
+
+| Status                   | Meaning                                                                                                                |
+| :----------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| CRITICAL                 | One of the checked addresses has a high similarity to a restricted part list entry and must be reviewed.               |
+| NOT_CRITICAL             | None of the addresses was found on the restricted party lists.                                                         |
+| FORBIDDEN                | The restricted party address found on a restricted party list matches the suspicious address. This is a genuine match. |
+| RELEASED_WITHOUT_LICENSE | A suspicious address was released by creating a Good Guy. (only relevant for Screening)                                |
+| RELEASED_WITH_LICENSE    | A critical business transaction was released using a license (only relevant for Export Controls)                       |
+| TECHNICAL_ERROR          | A communication error with another program component occurred.                                                         |
+
 <br />
