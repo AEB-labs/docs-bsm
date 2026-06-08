@@ -96,7 +96,7 @@ If you require a declaration of origin on your invoice document, or need to veri
 </soapenv:Envelope>
 ```
 
-And the response look like the following.
+Example for a response:
 
 ```json
 {
@@ -149,4 +149,4 @@ ________________________________________ Emil
 </S:Envelope>
 ```
 
-<br />
+The "text"-element needs to be printed on the invoice document (or any other sufficient document).  
