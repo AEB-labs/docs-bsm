@@ -11,44 +11,12 @@ next:
       title: Integrate UIs
       type: basic
 ---
-If you like to have a declaration of origin on your invoice document or a check if a transaction has preference you could use our API getDeclarationOfOrigin like the following.
+If you require a declaration of origin on your invoice document, or need to verify whether a transaction qualifies for preferential treatment, you can use the `getDeclarationOfOrigin` API as shown below.
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Technique
-      </th>
-
-      <th>
-        Documentation
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        REST
-      </td>
-
-      <td>
-        <Anchor label="GetDeclarationOfOrigin" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getDeclarationOfOrigin">GetDeclarationOfOrigin</Anchor>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        SOAP
-      </td>
-
-      <td>
-        <Anchor label="DeclarationOfOriginBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL">DeclarationOfOriginBF (WSDL)</Anchor> | 
-        <Anchor label="getDeclarationOfOrigin (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO)">getDeclarationOfOrigin (Java Doc)</Anchor>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Technique | Documentation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST      | <Anchor label="GetDeclarationOfOrigin" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/O%26P/getDeclarationOfOrigin">GetDeclarationOfOrigin</Anchor>                                                                                                                                                                                                                                                                                                                                                                                          |
+| SOAP      | <Anchor label="DeclarationOfOriginBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/DeclarationOfOriginBF?WSDL">DeclarationOfOriginBF (WSDL)</Anchor> \| <Anchor label="getDeclarationOfOrigin (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/DeclarationOfOriginBF/de/aeb/xnsg/onpintegration/bf/declarationoforigin/IDeclarationOfOriginBF.html#getDeclarationOfOrigin(de.aeb.xnsg.onpintegration.bf.declarationoforigin.DeclarationOfOriginRequestDTO)">getDeclarationOfOrigin (Java Doc)</Anchor> |
 
 ```json
 {
