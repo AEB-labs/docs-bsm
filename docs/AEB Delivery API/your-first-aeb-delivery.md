@@ -10,54 +10,16 @@ next:
       title: Delete AEB Delivery
       type: basic
 ---
-The AEB delivery API offers one api to create or update the AEB delivery.
+Use the API to create or update an AEB delivery. See more details on field level in the interface description:  <Anchor target="_blank" href="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US">https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US</Anchor>
 
-If you like to know more about what happens if an AEB delivery is updated/created by API have a look in our interface description.
+To see the mapping of the AEB delivery to a consignment of Customs Management, look here: [https://docs.aeb.com/doc/cm-3ZxLOQ6TSH/t-3ZxLOQ6TSH](https://docs.aeb.com/doc/cm-NtUocTToRG/t-NtUocTToRG)
 
-<Anchor label="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US" target="_blank" href="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US">https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US</Anchor>
+Let's start directly with creating your first AEB delivery.
 
-And if you like to have an detailed mapping which data of the AEB delivery is mapped to the Customs Management consignment. You will find it here:
-
-[https://docs.aeb.com/doc/cm-3ZxLOQ6TSH/t-3ZxLOQ6TSH](https://docs.aeb.com/doc/cm-NtUocTToRG/t-NtUocTToRG)
-
-Ok but why not start directly with creating your first AEB delivery.
-
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Technique
-      </th>
-
-      <th>
-        Documentation
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        REST
-      </td>
-
-      <td>
-        <Anchor label="updateAEBDelivery" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/updateDelivery">updateAEBDelivery</Anchor>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        SOAP
-      </td>
-
-      <td>
-        <Anchor label="AEBDeliveryBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> |
-        <Anchor label="updateAEBDelivery (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#updateDelivery(de.aeb.xnsg.bsm.core.bf.delivery.update.UpdateAEBDeliveryRequestDTO)">updateAEBDelivery (Java Doc)</Anchor>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Protocoll | Documentation                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST      | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/updateDelivery">updateAEBDelivery</Anchor>                                                                                                                                                                                                                                                                         |
+| SOAP      | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> \|<br /><Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#updateDelivery(de.aeb.xnsg.bsm.core.bf.delivery.update.UpdateAEBDeliveryRequestDTO)">updateAEBDelivery (Java Doc)</Anchor> |
 
 ```json
 {
@@ -633,5 +595,3 @@ If there was an error this could like this.
     </S:Body>
 </S:Envelope>
 ```
-
-<br />
