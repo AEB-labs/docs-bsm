@@ -10,7 +10,7 @@ next:
       title: Your first AEB Delivery
       type: basic
 ---
-Using the API for the business objects AEB delivery, certain shipping functions can be bundled:
+Using the API for the business object AEB delivery, certain shipping functions can be bundled:
 
 - Customs Management
 - Automated consolidation of deliveries
