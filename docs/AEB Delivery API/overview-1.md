@@ -10,15 +10,10 @@ next:
       title: Your first AEB Delivery
       type: basic
 ---
-The AEB delivery offers shipping functions bundled in one API.
+Using the API for the business objects AEB delivery, certain shipping functions can be bundled:
 
-* Customs Management
-* Automated consolidaton of AEB-Deliveries
-
-In the future this will be extended by:
+- Customs Management
+- Automated consolidation of deliveries
 
 * Carrier Connect
-* Document Services
-* and further AEB business services
-
-So it will become a standard small shipping solution which could be used to intergrate in your ERP system.
+* ...extended with further AEB business services in the future&#x20;
