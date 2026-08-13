@@ -1,5 +1,5 @@
 ---
-title: Create an AEB Delivery
+title: Create and update an AEB Delivery
 deprecated: false
 hidden: false
 metadata:
@@ -10,16 +10,16 @@ next:
       title: Delete AEB Delivery
       type: basic
 ---
-Use the API to create or update an AEB delivery. See more details on field level in the interface description:  <Anchor target="_blank" href="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US">https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US</Anchor>
+Use the following API to create or update an AEB delivery.&#x20;
 
-To see the mapping of the AEB delivery to a consignment of Customs Management, look here: [https://docs.aeb.com/doc/cm-3ZxLOQ6TSH/t-3ZxLOQ6TSH](https://docs.aeb.com/doc/cm-NtUocTToRG/t-NtUocTToRG)
+More details about the fields can be found in the interface description:  <Anchor target="_blank" href="https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US">https://docs.aeb.com/doc/cm-994054667-1045011595-en-US/t-1045011595-994054667-en-US</Anchor>
 
-Let's start directly with creating your first AEB delivery.
+| Protocol | Documentation                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST     | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/updateDelivery">updateAEBDelivery</Anchor>                                                                                                                                                                                                                                                                         |
+| SOAP     | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> \|<br /><Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#updateDelivery(de.aeb.xnsg.bsm.core.bf.delivery.update.UpdateAEBDeliveryRequestDTO)">updateAEBDelivery (Java Doc)</Anchor> |
 
-| Protocoll | Documentation                                                                                                                                                                                                                                                                                                                                                                                         |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| REST      | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/updateDelivery">updateAEBDelivery</Anchor>                                                                                                                                                                                                                                                                         |
-| SOAP      | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> \|<br /><Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#updateDelivery(de.aeb.xnsg.bsm.core.bf.delivery.update.UpdateAEBDeliveryRequestDTO)">updateAEBDelivery (Java Doc)</Anchor> |
+Let's start directly with creating your first AEB delivery. Here is an example call:
 
 ```json
 {
@@ -595,3 +595,11 @@ If there was an error this could like this.
     </S:Body>
 </S:Envelope>
 ```
+
+### Mapping to a customs declaration
+
+To check the mapping of an AEB delivery to a consignment of Customs Management, look here: [https://docs.aeb.com/doc/cm-3ZxLOQ6TSH/t-3ZxLOQ6TSH](https://docs.aeb.com/doc/cm-NtUocTToRG/t-NtUocTToRG)
+
+<br />
+
+<br />
