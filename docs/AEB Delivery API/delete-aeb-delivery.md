@@ -1,5 +1,5 @@
 ---
-title: Delete an AEB Delivery
+title: Delete an AEB delivery
 deprecated: false
 hidden: false
 metadata:
@@ -10,46 +10,14 @@ next:
       title: Get AEB Delivery
       type: basic
 ---
-Sometime it might be needed to delete the AEB Delivery via API.
+Use this API to delete an existing AEB delivery:
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Technique
-      </th>
+| Protocol | Documentation                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST     | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/deleteDelivery">deleteAEBDelivery</Anchor>                                                                                                                                                                                                                                                                         |
+| SOAP     | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> \|<br /><Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#deleteDelivery(de.aeb.xnsg.bsm.core.bf.delivery.delete.DeleteAEBDeliveryRequestDTO)">deleteAEBDelivery (Java Doc)</Anchor> |
 
-      <th>
-        Documentation
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        REST
-      </td>
-
-      <td>
-        <Anchor label="deleteAEBDelivery" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/deleteDelivery">deleteAEBDelivery</Anchor>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        SOAP
-      </td>
-
-      <td>
-        <Anchor label="AEBDeliveryBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> |
-        <Anchor label="deleteAEBDelivery (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#deleteDelivery(de.aeb.xnsg.bsm.core.bf.delivery.delete.DeleteAEBDeliveryRequestDTO)">deleteAEBDelivery (Java Doc)</Anchor>
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-The request for a delete has to be like this.
+This is an example for a deletion request:
 
 ```json
 {
@@ -79,7 +47,7 @@ The request for a delete has to be like this.
 </soapenv:Envelope>
 ```
 
-If the deletion of the AEB delivery is done the response looks like this.
+In case of a successfull deletion of an AEB delivery, the response looks like this:
 
 ```json
 {
@@ -104,9 +72,7 @@ If the deletion of the AEB delivery is done the response looks like this.
 </S:Envelope>
 ```
 
-<br />
-
-If an error occured the response looks like this.
+If case of a an error the response looks like this:
 
 ```json
 {
@@ -152,5 +118,3 @@ Locking für AEB-Lieferung - [BRUYES_1] fehlgeschlagen.</text>
     </S:Body>
 </S:Envelope>
 ```
-
-<br />
