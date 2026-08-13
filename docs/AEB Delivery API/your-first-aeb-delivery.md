@@ -523,7 +523,7 @@ Let's start directly with creating your first AEB delivery. Here is an example c
 </soapenv:Envelope>
 ```
 
-And the response of this update request could look like this. In the response you have the information if the AEB Delivery is created or updated in the field "wasCreated". This could sometimes be usefull.
+The response of the request above could look like this.  It provides information if the AEB delivery has been created or updated in the field "wasCreated".
 
 ```json
 {
@@ -550,7 +550,7 @@ And the response of this update request could look like this. In the response yo
 </S:Envelope>
 ```
 
-If there was an error this could like this.
+If there was an error respones could look like this:
 
 ```json
 {
