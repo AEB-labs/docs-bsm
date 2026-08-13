@@ -1,5 +1,5 @@
 ---
-title: Create and update an AEB Delivery
+title: Create and update an AEB delivery
 deprecated: false
 hidden: false
 metadata:
