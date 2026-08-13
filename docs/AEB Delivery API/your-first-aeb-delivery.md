@@ -550,7 +550,7 @@ The response of the request above could look like this.  It provides information
 </S:Envelope>
 ```
 
-If there was an error respones could look like this:
+If there was an error, the response could look like this:
 
 ```json
 {
@@ -586,7 +586,7 @@ If there was an error respones could look like this:
                     <messageIdentCode>EMPTY_MANDATORY_FIELD</messageIdentCode>
                     <messageTexts>
                         <languageISOCode>de</languageISOCode>
-                        <text>Die UsecaseId "CCO_SHP_CUSTOMS_UPD1" ist nicht bekannt.</text>
+                        <text>Use case ID "CCO_SHP_CUSTOMS_UPD1" is unknown.</text>
                     </messageTexts>
                     <indentationLevel>0</indentationLevel>
                 </messages>
