@@ -1,48 +1,16 @@
 ---
-title: Get an AEB Delivery
+title: Get data of an AEB Delivery
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-To fetch the data of an AEB Delivery, use the according API: 
+To fetch the data of an AEB delivery, use the according API:
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Technique
-      </th>
-
-      <th>
-        Documentation
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        REST
-      </td>
-
-      <td>
-        <Anchor label="getAEBDelivery" target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/getDelivery">getAEBDelivery</Anchor>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        SOAP
-      </td>
-
-      <td>
-        <Anchor label="AEBDeliveryBF (WSDL)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> |
-        <Anchor label="getAEBDelivery (Java Doc)" target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#getDelivery(de.aeb.xnsg.bsm.core.bf.delivery.get.GetAEBDeliveryRequestDTO)">getAEBDelivery (Java Doc)</Anchor>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Technique | Documentation                                                                                                                                                                                                                                                                                                                                                                             |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| REST      | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/swagger/#/AEB%20Delivery/getDelivery">getAEBDelivery</Anchor>                                                                                                                                                                                                                                                                   |
+| SOAP      | <Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/AEBDeliveryBF?WSDL">AEBDeliveryBF (WSDL)</Anchor> \|<br /><Anchor target="_blank" href="https://rz3.aeb.de/test2bsm/servlet/bf/doc/AEBDeliveryBF/de/aeb/xnsg/bsm/core/bf/delivery/IAEBDeliveryBF.html#getDelivery(de.aeb.xnsg.bsm.core.bf.delivery.get.GetAEBDeliveryRequestDTO)">getAEBDelivery (Java Doc)</Anchor> |
 
 The request is structured like this:
 
@@ -317,5 +285,3 @@ Response in case of an error:
     </S:Body>
 </S:Envelope>
 ```
-
-<br />
