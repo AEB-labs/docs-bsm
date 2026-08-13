@@ -563,8 +563,8 @@ If there was an error respones could look like this:
       "messageIdentCode": "EMPTY_MANDATORY_FIELD",
       "messageTexts": [
         {
-          "languageISOCode": "de",
-          "text": "Die UsecaseId \"CCO_SHP_CUSTOMS_UPD1\" ist nicht bekannt."
+          "languageISOCode": "en",
+          "text": "Use case ID \"CCO_SHP_CUSTOMS_UPD1\" is unknown."
         }
       ],
       "indentationLevel": 0
