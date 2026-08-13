@@ -1,5 +1,5 @@
 ---
-title: Your first AEB Delivery
+title: Create an AEB Delivery
 deprecated: false
 hidden: false
 metadata:
