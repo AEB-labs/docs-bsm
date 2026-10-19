@@ -34,7 +34,9 @@ Publish the communication scenario locally (top right). Then create a communicat
 
 To make the coding more comfortable we created a template you can insert into your service class. Copy the template to your clipboard like this:  
 
-* in the AEB delivery collector profile 
-* in SAP Compliance check profile (general)
+* in SAP - AEB delivery - Collector profile
+* in SAP - Trade Compliance - Check profile (general)
+* in SAP - Product Classification - Collector profile
+* in SAP - Origin & Preferences - Collector profile
 
 Insert this code simply into the service class to comfortably change the supplied data in the afterStdFilling method.
