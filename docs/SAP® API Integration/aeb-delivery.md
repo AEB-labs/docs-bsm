@@ -11,16 +11,14 @@ Configure the custom HTTP service in the **AEB delivery collector profile**. BSM
 
 The service receives an `UpdateAEBDeliveryRequestDTO` and must return an `UpdateAEBDeliveryRequestDTO`. You can modify the collected request, including delivery data and transfer options, while retaining the other fields.
 
-For example, the following handler disables label printing for one illustrative client:
+For example, the following handler sets the shipping condition to `04` for deliveries belonging to one illustrative client:
 
 ```abap
 METHOD after_std_filling.
-  IF ch_object-client_ident_code = 'DEMO'.
-    ch_object-print_labels = space.
-  ENDIF.
+    ch_object-delivery-shipping_condition = '04'.
 ENDMETHOD.
 ```
 
-Replace `DEMO` with a condition appropriate to your installation. Generate the handler template from the collector profile so that `ch_object` has the correct structure.
+Generate the handler template from the collector profile so that `ch_object` has the correct structure.
 
 If the service returns no request, BSM stops processing this delivery; it does not send an empty delivery. Errors from the custom service also stop this update. Consequently, return the unchanged request when no customization is required.
