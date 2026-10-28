@@ -23,6 +23,6 @@ METHOD after_std_filling.
 ENDMETHOD.
 ```
 
-This example is specific to the material request structure. Keep the remaining request fields unchanged, including its identity and deletion information. Return the unchanged request when the condition does not apply.
+This example is specific to the material request structure. Keep the remaining request fields unchanged, especially its business-object ID and deletion flag. Return the complete, unchanged request when no customization is required.
 
-The hook is also used for deletion requests. If it returns no request, BSM stops processing that operation rather than forwarding it to Origin & Preferences.
+**Clearing&#x20;**`ch_object`**&#x20;skip processing the business object.**&#x20;
