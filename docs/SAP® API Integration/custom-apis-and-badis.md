@@ -5,11 +5,11 @@ hidden: false
 metadata:
   robots: index
 ---
-SAP® API Integration can call a custom HTTP service to adapt data collected from SAP before it is sent to BSM or an AEB business service. The HTTP service is configured in the relevant collector or check profile.
+SAP® API Integration can call a custom HTTP service to adapt data collected from SAP before it going on in processing in BSM or an AEB business service. The HTTP service is configured in the relevant collector or check profile.
 
 There are two kinds of hooks:
 
-- **Modify a request:** The service receives a request, changes it if necessary, and returns the request. This is used for deliveries, compliance checks, classification material data, and Origin & Preferences data.
+- **Modify a request:** The service receives a request, changes it if necessary, and returns the request. This is for example used for AEB Deliveries, Compliance checks, classification material data, and Origin & Preferences data.
 - **Handle an event:** The service receives a classification-value event and returns a processing result. This is used to synchronize classification values back to SAP.
 
 | Business area          | Hook                                        | Configuration                          |
