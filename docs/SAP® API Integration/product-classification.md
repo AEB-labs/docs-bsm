@@ -25,7 +25,7 @@ METHOD after_std_filling.
 ENDMETHOD.
 ```
 
-Adapt the condition and text to your requirements. **Do not return an empty request as a way to skip the update:** in this processing path, a missing response or an empty material-number condition can lead to deletion handling.
+Adapt the condition and text to your requirements. **Only return an empty request as a way to skip the update or to delete the material if it exists.**
 
 ## Synchronize classification values
 
@@ -73,6 +73,38 @@ ENDMETHOD.
 | `has_errors = 'X'`, `has_only_retryable_errors = 'X'` | Temporary failure; BSM invokes its retry strategy.         |
 | `has_errors = 'X'`, `has_only_retryable_errors` blank | Permanent failure; BSM logs the error without retrying it. |
 
-The response also has a `messages` collection. Use the message structure in the generated template to provide useful error details. Do not set `has_only_retryable_errors` for a permanent validation error: that would request retries for an issue that needs a data or configuration change.
+## Response messages
 
-> A `DELETE` event must be handled according to your SAP-side synchronization rule. BSM skips superseded non-delete events, but does not skip delete events on that basis.
+The response can contain `messages` with one of these `message_type` values:
+
+| `message_type` | Meaning               |
+| -------------- | --------------------- |
+| `ERROR`        | Error message         |
+| `WARNING`      | Warning message       |
+| `INFO`         | Informational message |
+
+For example, a successful synchronization can include a warning:
+
+```json
+{
+  "has_errors": " ",
+  "has_only_retryable_errors": " ",
+  "messages": [
+    {
+      "message_type": "WARNING",
+      "message_ident_code": "CLS_WARNING",
+      "indentation_level": 0,
+      "message_texts": [
+        {
+          "language_i_s_o_code": "en",
+          "text": "The classification value was synchronized with a warning."
+        }
+      ]
+    }
+  ]
+}
+```
+
+The `message_ident_code` is optional; use `message_texts` for localized details. The generated ABAP response type contains a `messages` table. **Message severity does not control retry behavior:** BSM determines success, permanent failure, or retry from `has_errors` and `has_only_retryable_errors`. For a retryable failure, set both flags; for a permanent failure, set only `has_errors`.
+
+> A `DELETE` event must be handled according to your SAP-side synchronization rule.&#x20;
