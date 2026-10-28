@@ -11,14 +11,12 @@ Configure the custom HTTP service in the **AEB delivery collector profile**. BSM
 
 The service receives an `UpdateAEBDeliveryRequestDTO` and must return an `UpdateAEBDeliveryRequestDTO`. You can modify the collected request, including delivery data and transfer options, while retaining the other fields.
 
-For example, the following handler sets the shipping condition to `04`:
+Generate the handler template in the AEB delivery collector profile and insert it into your HTTP service class. Then adapt the generated `after_std_filling` method. For example, to set the shipping condition to `04`:
 
 ```abap
 METHOD after_std_filling.
     ch_object-delivery-shipping_condition = '04'.
 ENDMETHOD.
 ```
-
-Generate the handler template from the collector profile so that `ch_object` has the correct structure.
 
 If the service returns no request, BSM stops processing this delivery; it does not send an empty delivery. Errors from the custom service also stop this update. Consequently, return the unchanged request when no customization is required.
