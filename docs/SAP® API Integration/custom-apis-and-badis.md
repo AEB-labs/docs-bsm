@@ -20,11 +20,11 @@ There are two kinds of hooks:
 | Product Classification | Synchronize a classification value          | Classification collector profile       |
 | Origin & Preferences   | Modify a collected business object          | Origin & Preferences collector profile |
 
-Start with [Set up a custom HTTP service](/docs/set-up-a-custom-http-service), then follow the guide for your business area:
+Start with [Set up a custom HTTP service](https://aeb-bsm.readme.io/docs/set-up-a-custom-http-service), then follow the guide for your business area:
 
-- [Customize AEB deliveries](/docs/customize-aeb-deliveries)
-- [Customize trade compliance checks](/docs/customize-trade-compliance-checks)
-- [Customize product classification](/docs/customize-product-classification)
-- [Customize Origin & Preferences data](/docs/customize-origin-and-preferences-data)
+- [AEB Delivery](https://aeb-bsm.readme.io/docs/aeb-delivery)
+- [Compliance](https://aeb-bsm.readme.io/docs/compliance)
+- [Product Classification](https://aeb-bsm.readme.io/docs/product-classification)
+- [Origin & Preference](https://aeb-bsm.readme.io/docs/origin-preference)
 
 > The configured **HTTP service name** determines which SAP service BSM calls. The API handler setting supports the SAP-side implementation and code generation; it does not select the service at runtime.
