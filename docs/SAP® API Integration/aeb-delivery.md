@@ -18,5 +18,3 @@ METHOD after_std_filling.
     ch_object-delivery-shipping_condition = '04'.
 ENDMETHOD.
 ```
-
-If the service returns no request, BSM stops processing this delivery; it does not send an empty delivery. Errors from the custom service also stop this update. Consequently, return the unchanged request when no customization is required.
